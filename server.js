@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5010;
 
-if(process.env.NODE_ENV === 'production') {
-    app.use(express.static("client/build"));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
 }
 
 app.use(express.urlencoded({ extended: true }));
@@ -13,5 +13,5 @@ const apiRoutes = require("./routes/api-routes");
 app.use(apiRoutes);
 
 app.listen(PORT, () => {
-    console.log(`listening at http://localhost:${PORT}`)
-})
+  console.log(`listening at http://localhost:${PORT}`);
+});
