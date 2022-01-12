@@ -3,14 +3,15 @@ import React, { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    axios.get("/example")
-    .then((res) => console.log(res))
-    .catch(err => console.log(err))
+    axios
+      .get("/example")
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   }, []);
 
   return (
     <div>
-      <h1>Party People</h1>
+      <h1>Party Peoplessssdsjkadsad</h1>
     </div>
   );
 }
