@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.box {
+  height: 780px;
+  width: 350px;
+}
+
+.right {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  background-color: red;
+}
+
+.leftBox {
+  animation: slide-in 1 1s linear;
+}
+
+.centerButton {
+  position: relative;
+}
+
+@keyframes slide-in {
+  from {
+    margin-right: 0px;
+  }
+  to {
+    margin-right: 420px;
+  }
+}
