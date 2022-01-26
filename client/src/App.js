@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
+import LandingPage from "./Landing/LandingPage";
+import Nav from "./Nav/Nav";
 
 function App() {
   useEffect(() => {
@@ -10,8 +12,10 @@ function App() {
 
   return (
     <div>
-      <h1>Party People</h1>
+      <Nav/>
+      <LandingPage />
     </div>
+    
   );
 }
 
