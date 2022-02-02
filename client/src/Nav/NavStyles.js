@@ -2,15 +2,13 @@ import styled from "styled-components";
 
 export const Header = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 100px;
+    height: 150px;
+    width: 100%;
     margin-top: 0;
     border: none;
     background-color: rgba(223, 213, 177, 0.5);
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
-
 `;
 export const Heading = styled.p`
     font-weight: 700;
@@ -24,9 +22,14 @@ export const Span = styled.span`
     font-style: normal;
     font-size: 60px;
 `;
-
+export const Icons = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    width: 38%;
+    margin-right: 20px;
+`;
 export const Navi = styled.div`
-    height: 100px;
+    height: 150px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -41,6 +44,10 @@ export const P = styled.p`
     font-family: Helvetica Neue;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 35px;
+    &:hover {
+        text-decoration: underline;
+    }
 `;
+
 
