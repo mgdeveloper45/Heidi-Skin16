@@ -1,5 +1,6 @@
 import { Header, Heading, Icons, List, Navi, P, Span } from './NavStyles';
 import { BsCart3, BsSearch } from 'react-icons/bs';
+import { Link } from "react-router-dom";
 
 const Nav = () => {
    
@@ -15,9 +16,21 @@ const Nav = () => {
                 </Icons>
             </Header>
             <Navi>
-                <List><P>Salon Service</P></List>
-                <List><P>Buy Products</P></List>
-                <List><P>Contact Us</P></List>
+                <List> 
+                    <Link to="/salonservice">
+                        <P>Salon Service</P>
+                    </Link>
+                </List>
+                <List> 
+                    <Link to="/buyproducts">
+                        <P>Buy Products</P>
+                    </Link>
+                </List>
+                <List> 
+                    <Link to="/contactus">
+                        <P>Contact Us</P>
+                    </Link>
+                </List>
             </Navi>
         </>
     )

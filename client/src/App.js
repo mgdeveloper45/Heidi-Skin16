@@ -1,6 +1,10 @@
-import axios from "axios";
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import axios from "axios";
 import LandingPage from "./Landing/LandingPage";
+import SalonServicePage from "./pages/SalonServicePage";
+import BuyProductsPage from "./pages/BuyProductsPage";
+import ContactUsPage from "./pages/ContactUsPage";
 import Nav from "./Nav/Nav";
 
 function App() {
@@ -13,14 +17,28 @@ function App() {
 
   return (
     <div>
-<<<<<<< HEAD
-      <h1>Party Peoplessssdsjkadsad</h1>
-=======
+      <Router>
       <Nav/>
-      <LandingPage />
->>>>>>> 2b4a689130c4c512bafe45768a947a7157944313
+        <Routes>
+          <Route 
+            path="/" 
+            element={ <LandingPage /> } 
+            />
+          <Route 
+            path="/salonservice" 
+            element={ <SalonServicePage /> } 
+            />
+          <Route 
+            path="/buyproducts" 
+            element={ <BuyProductsPage /> } 
+            />
+          <Route 
+            path="/contactus" 
+            element={ <ContactUsPage /> } 
+            />
+        </Routes>
+      </Router>
     </div>
-    
   );
 }
 
