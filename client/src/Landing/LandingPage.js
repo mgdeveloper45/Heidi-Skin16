@@ -1,9 +1,10 @@
 import React from 'react';
 import { 
-    Book, MainContainer, Logo, MainImg, Name, Page, Session, Span
+    Book, MainContainer, 
+    Logo, MainImg, Name, 
+    Page, Session, Span
 } from './LandingStyles';
 import Addresss from './Addresss';
-import Foooter from './Foooter';
 
 const LandingPage = () => {
 
@@ -20,7 +21,6 @@ const LandingPage = () => {
                 </MainImg> 
             </MainContainer>
             <Addresss />
-            <Foooter />  
         </Page>
     )
 }
