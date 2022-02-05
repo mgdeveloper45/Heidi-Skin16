@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <>
       <Header>
-      <Link to="/">
+      <Link to="/" style={{textDecoration:"none", color: "black"}}>
             <Heading>
                 <Span>HEIDI</Span>SKIN16
             </Heading>
@@ -18,17 +18,17 @@ const Nav = () => {
       </Header>
       <Navi>
         <List>
-            <Link to="services">
+            <Link to="services" style={{textDecoration:"none",color:"black"}}>
                 <P>Salon Service</P>
             </Link>
         </List>
         <List>
-          <Link to="products"> 
+          <Link to="products" style={{textDecoration:"none",color:"black"}}> 
             <P>Buy Products</P>
           </Link> 
         </List>
         <List>
-          <Link to="contact">
+          <Link to="contact" style={{textDecoration:"none",color:"black"}}>
             <P>Contact Us</P>
           </Link>
         </List>

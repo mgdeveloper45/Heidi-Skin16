@@ -49,5 +49,8 @@ export const P = styled.p`
         text-decoration: underline;
     }
 `;
+export const Link = styled.link`
+    text-decoration: none;
+`;
 
 
