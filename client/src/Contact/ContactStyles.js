@@ -53,6 +53,7 @@ export const Input = styled.input`
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
+    font-size: 35px;
 `;
 export const TextArea = styled.textarea`
     width: 1126px;
@@ -61,6 +62,7 @@ export const TextArea = styled.textarea`
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
+    font-size: 35px;
 `;
 export const Confirm = styled.div`
     align-self: center;

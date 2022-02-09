@@ -1,11 +1,10 @@
-import React from 'react'
-import Foooter from '../Landing/Foooter'
-import Addresss from '../Landing/Addresss'
+import React from 'react';
+import Addresss from '../Landing/Addresss';
 import { 
     Button, Confirm, Disclaimer, Email, Form, 
     FormContainer, H2, Input, Label, 
     Name, P, Text, TextArea 
-} from './ContactStyles'
+} from './ContactStyles';
 
 const Contact = () => {
     return (
@@ -36,7 +35,6 @@ const Contact = () => {
             </Form>
         </FormContainer>
         <Addresss />
-        <Foooter />
         </>
     )
 }
