@@ -126,24 +126,23 @@ export const allCategories = [
     ],
     color: false,
   },
-  // export const addOn =
-  {  title: "Add-on Services", image: ``, 
-       description: "",
-      subcategories: "",
-       services: [
-        { title: "LED Light", price: "$40" },
-        { title: "Dermaplaning", price: "$40" },
-        { title: "Peel (face)", price: "$40" },
-        { title: "Peel (face & neck)", price: "$50" },
-        { title: "Peel (face & neck & decollete)", price: "$60" },
-        { title: "Oxygen therapy", price: "$30" },
-        { title: "2 steps oxygen", price: "$50" },
-        { title: "Hot Oil Hand Treatment", price: "$20" },
-        { title: "Hot Oil Hand Treatment with peel", price: "$30" },
-        { title: "Brazlian waxing - 30min womens only" },
-        { title: "Soft Wax", price: "$65" },
-        { title: "Hard Wax", price: "$75" },
-    ],
-    color: true,
-  }
 ];
+export const addOn = [
+{  title: "Add-on Services", image: ``, 
+     services: [
+      { title: "LED Light", price: "$40" },
+      { title: "Dermaplaning", price: "$40" },
+      { title: "Peel (face)", price: "$40" },
+      { title: "Peel (face & neck)", price: "$50" },
+      { title: "Peel (face & neck & decollete)", price: "$60" },
+      { title: "Oxygen therapy", price: "$30" },
+      { title: "2 steps oxygen", price: "$50" },
+      { title: "Hot Oil Hand Treatment", price: "$20" },
+      { title: "Hot Oil Hand Treatment with peel", price: "$30" },
+      { title: "Brazlian waxing - 30min womens only" },
+      { title: "Soft Wax", price: "$65" },
+      { title: "Hard Wax", price: "$75" },
+  ],
+  color: true,
+}
+]
