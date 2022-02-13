@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const CategoryContainer = styled.div`
+background-color: blue;
     background-color: ${props => props.bgColor 
     ? "rgba(216, 155, 166, 0.75)"
-    : "rgba(13, 104, 120, 0.75)"
+    : "rgba(13, 104, 120, 0.75)" 
     };
 `;
 export const Categories = styled.div`
@@ -27,7 +28,7 @@ export const Image = styled.div`
     margin-top: -35px;
     background-color: red;
     backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px;
 `;
 export const DescriptionContainer = styled.div`
     display: flex;
@@ -42,4 +43,13 @@ export const Description = styled.p`
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
+`;
+export const Price = styled.span`
+
+`;
+export const Services = styled.div`
+
+`;
+export const ServiceTitle = styled.div`
+
 `;

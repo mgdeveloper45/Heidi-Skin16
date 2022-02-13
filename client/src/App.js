@@ -18,9 +18,9 @@ function App() {
   return (
     <div>
       <Nav />
-      <Routes >
+      <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/services" element={<SalonServices/>} />
+        <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<h1>Buy Products Page</h1>} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
