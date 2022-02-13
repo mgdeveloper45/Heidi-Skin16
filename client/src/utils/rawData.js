@@ -128,7 +128,7 @@ export const allCategories = [
   },
 ];
 export const addOn = [
-{  title: "Add-on Services", image: ``, 
+{  title: "Add-On Services", image: ``, 
      services: [
       { title: "LED Light", price: "$40" },
       { title: "Dermaplaning", price: "$40" },
