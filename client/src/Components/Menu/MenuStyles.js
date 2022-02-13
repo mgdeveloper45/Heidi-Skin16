@@ -47,7 +47,7 @@ export const Description = styled.p`
 export const Price = styled.span`
 
 `;
-export const Services = styled.div`
+export const AddOnContainer = styled.div`
 
 `;
 export const ServiceTitle = styled.div`

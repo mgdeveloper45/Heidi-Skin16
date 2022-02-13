@@ -3,10 +3,10 @@ import { Button, Content, ContentContainer, Description,
     Image, Listing, P, Price, SndPrice, SubMenuContainer, Title 
 } from './SubMenuStyles';
 
-const SubMenu = ({item}) => {
+const SubMenu = ({item,idx}) => {
   return ( 
     <SubMenuContainer>
-        <ContentContainer>
+        <ContentContainer key={idx}>
             <Image>{item.image}</Image>
             <Content>
                 <Title>

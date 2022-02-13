@@ -8,6 +8,7 @@ export const allCategories = [
         the blood circulation and oxygen flow, which promotes collagen production 
         and enhances the elasticity of your skin. (Organic when possible). (Vegetarian always). 
         (Vegan when possible). Chirally Correct (purified) Skincare.`,
+    // services: null,
     subcategories: [
       {
         title: "SKIN16 Facial",
@@ -55,6 +56,7 @@ export const allCategories = [
         blotchy, sun-damaged skin. Each peel has unique benefits for the skin. Peels also improves acne 
         scars, skin texture, and reduces the effects of sun damage. (Must use pre-post home care 
         products). Ask me How Today!`,
+    // services: null,
     subcategories: [
       { title: "Porcelain Peel", image: ``, price: "$185", description: `Want to feel the difference? Reduce 
         the appearance of fine lines, wrinkles and various types of pigmentation. Here is a peel that you have 
@@ -81,6 +83,7 @@ export const allCategories = [
         convenient way to achieve a healthy, youthful glow in a natural, non-toxic, non-invasive manner. 
         Reduce the appearance of fine lines and wrinkles while experiencing an improvement in skin texture,
         quality and smoothness.`,
+    // services: null,
     subcategories: [
       { title: "Sculplla + H2 + LED Light", image: ``, price: "$245", sndPrice: "$275 (With customize HydroJelly Mask)", 
         description: `A no-needle topical filler that contains PLLA(Poly-L-Lactic Acid) which is the same ingredient in Sculptra. 
@@ -95,7 +98,7 @@ export const allCategories = [
   // { title: "Eyebrows Eyeliner Lips", image: ``, description: `Coming Soon!! - Microblading -  Is a manual
   //     form of tattooing, often referred to as 3D brows or brow-embroidery. Natural and crisp hair strokes
   //     are created using a fine blade that deposits pigment into the skin. Hair strokes resemble eyebrow hairs,
-  //     therefore the most natural.`, categories: [
+  //     therefore the most natural.`, services: null, subcategories: [
         // {title: '', image: ``, price: '', description: '', button: 'Book'},
         // {title: '', image: ``, price: '', description: '', button: ''},
         // {title: '', image: ``, price: '', description: '', button: ''}
@@ -110,6 +113,7 @@ export const allCategories = [
         is necessary for your health. Prevention is always more effective than treating the issue when it happens. 
         30min consultation free for first time client. book today! 
         Available only in San Rafael. `,
+    // services: null,
     subcategories: [
       { title: "Pure Flash", image: ``, price: "$100", description: `Remove build up on the scalp with deep clean steam-clean-dry. 
         Relief, Refresh, Restore!`, 
@@ -123,22 +127,23 @@ export const allCategories = [
     color: false,
   },
   // export const addOn =
-  // {  title: "Add-on Services", image: ``, 
-  //      description: null,
-  //      services: [
-  //       { title: "LED Light", price: "$40" },
-  //       { title: "Dermaplaning", price: "$40" },
-  //       { title: "Peel (face)", price: "$40" },
-  //       { title: "Peel (face & neck)", price: "$50" },
-  //       { title: "Peel (face & neck & decollete)", price: "$60" },
-  //       { title: "Oxygen therapy", price: "$30" },
-  //       { title: "2 steps oxygen", price: "$50" },
-  //       { title: "Hot Oil Hand Treatment", price: "$20" },
-  //       { title: "Hot Oil Hand Treatment with peel", price: "$30" },
-  //       { title: "Brazlian waxing - 30min womens only" },
-  //       { title: "Soft Wax", price: "$65" },
-  //       { title: "Hard Wax", price: "$75" },
-  //   ],
-  //   color: true,
-  // }
+  {  title: "Add-on Services", image: ``, 
+       description: "",
+      subcategories: "",
+       services: [
+        { title: "LED Light", price: "$40" },
+        { title: "Dermaplaning", price: "$40" },
+        { title: "Peel (face)", price: "$40" },
+        { title: "Peel (face & neck)", price: "$50" },
+        { title: "Peel (face & neck & decollete)", price: "$60" },
+        { title: "Oxygen therapy", price: "$30" },
+        { title: "2 steps oxygen", price: "$50" },
+        { title: "Hot Oil Hand Treatment", price: "$20" },
+        { title: "Hot Oil Hand Treatment with peel", price: "$30" },
+        { title: "Brazlian waxing - 30min womens only" },
+        { title: "Soft Wax", price: "$65" },
+        { title: "Hard Wax", price: "$75" },
+    ],
+    color: true,
+  }
 ];
