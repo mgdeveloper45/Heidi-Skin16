@@ -9,8 +9,8 @@ export const ToTopContainer = styled.div`
 export const ToTopBox = styled.div`
     display: flex;
     justify-content: center;
-    width: 550px;
-    height: 100px
+    width: 500px;
+    height: 100px;
 `;
 export const Title = styled.h1`
     font-family: Helvetica Neue;

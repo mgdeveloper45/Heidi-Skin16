@@ -45,9 +45,14 @@ export const Description = styled.p`
     font-size: 35px;
 `;
 export const ToTopButton = styled.button`
-    top: 750px;
-    position: sticky;
-    z-index: 10;
+    top: 600px;
+    bottom: none;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    z-index: 1;
+    position: fixed;
+    /* position: sticky; */
+    /* z-index: -10; */
     margin-left: 10px;
     background: rgba(13, 104, 120, 0.75);
     border-radius: 50%;

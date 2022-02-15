@@ -4,10 +4,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import allReducers from "./Reducers";
+// import allReducers from "./Reducers";
 
 const store = createStore(
-  allReducers,
+  // allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
