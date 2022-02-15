@@ -5,6 +5,7 @@ import {
     Image,
     Price,
     ServiceTitle,
+    ServiceTitleWrap,
     Title,
 } from "./AddOnStyles";
 
@@ -17,10 +18,12 @@ const AddOn = () => {
                 {addOn[0].title}
             </Title>
             {service.map((service, idx) => (
-            <ServiceTitle key={idx}>
-                {service.title}
-                <Price>{service.price}</Price>
-            </ServiceTitle>
+            <ServiceTitleWrap key={idx}>
+                <ServiceTitle>
+                    <Price>{service.title}</Price>
+                    <Price>{service.price}</Price>
+                </ServiceTitle>
+            </ServiceTitleWrap>
         ))}
         </AddON>
             <Image>

@@ -24,7 +24,7 @@ const Menu = ({ category }) => {
         </CategoryContainer>
         {category.subcategories.map((item) => (
           <SubMenu item={item} />
-        ))}
+          ))}
     </div>
   );
 };

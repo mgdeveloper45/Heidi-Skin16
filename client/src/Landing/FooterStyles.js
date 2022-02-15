@@ -17,7 +17,8 @@ export const Declaration = styled.div`
 export const UL = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  
+  align-items: flex-start;
+  justify-content: flex-end;  
   /* height: 325px; */
   width: 165px;
 `;

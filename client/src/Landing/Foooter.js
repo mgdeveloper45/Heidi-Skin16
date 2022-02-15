@@ -28,14 +28,17 @@ const Foooter = () => {
                     <UL>
                         <LI>About Us</LI>  
                         <LI>Gallery</LI>
-                        <LI>Reviews</LI>
+                        {/* <LI>Reviews</LI> */}
                         <LI>Contact Us</LI>
+                        
                     </UL>
                     <Policy>
-                        <LI>Appointment Policy</LI>
-                        <LI>Cancellation Policy</LI>
-                        <LI>Covid 19 Protocols</LI>
+                        {/* <LI>Appointment Policy</LI> */}
+                        
+                        
+                        <LI>Policy</LI>
                         <LI>Bookings</LI>
+                        <LI>Covid 19 Protocols</LI>
                     </Policy>
                 </Declaration>
                 <HR/>
