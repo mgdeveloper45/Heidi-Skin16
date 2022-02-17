@@ -21,6 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
+client/src/images
 /src/images
+client/src/SlideImages
 /src/SlideImages
+src/images/mysql-8.0.28-macos11-arm64 (1).dmg
