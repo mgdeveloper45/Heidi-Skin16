@@ -85,7 +85,40 @@ export const LeftImg = styled.div`
      height: 925px;
      margin-top: 10px; 
 `;
+export const Appointment = styled.p`
 
+`; 
+export const Bold = styled.span`
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 140px;
+`; 
+export const Covid = styled.div`
+  
+`; 
+export const Deserve = styled.div`
+  /* visibility: hidden; */
+  z-index: -1
+`; 
+export const More = styled.h1`
+  font-family: Helvetica Neue;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 80px;
+`;
+// export const Link = styled.link`
+
+// `;  
+export const Policy = styled.div`
+
+`; 
+export const Protocol = styled.p`
+
+`;
+export const Statement = styled.div`
+
+`; 
 
 
 
