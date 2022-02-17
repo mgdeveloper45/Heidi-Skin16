@@ -23,10 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 # /client/src/images
-# /src/images
+/src/images
 # /client/src/SlideImages
 # /src/SlideImages
-# /client/src/images/mysql-8.0.28-macos11-arm64 (1).dmg
+
 # images/
 # SlideImages/
 .env
