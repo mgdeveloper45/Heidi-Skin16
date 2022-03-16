@@ -98,7 +98,7 @@ export const Covid = styled.div`
   
 `; 
 export const Deserve = styled.div`
-  /* visibility: hidden; */
+  visibility: hidden;
   z-index: -1
 `; 
 export const More = styled.h1`

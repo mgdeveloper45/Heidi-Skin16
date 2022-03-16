@@ -1,16 +1,28 @@
-import { Header, Heading, Icons, List, Navi, P, Span } from "./NavStyles";
+import {
+  Header,
+  Heading,
+  Icons,
+  List,
+  Logo,
+  NavContainer,
+  Navi,
+  P,
+  Span,
+} from "./NavStyles";
 import { Link } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
 
 const Nav = () => {
   return (
-    <>
+    <NavContainer>
       <Header>
-      <Link to="/" style={{textDecoration:"none", color: "black"}}>
+        <Logo>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
             <Heading>
-                <Span>HEIDI</Span>SKIN16
+              <Span>HEIDI</Span>SKIN16
             </Heading>
-     </Link>
+          </Link>
+        </Logo>
         <Icons>
           <BsSearch size={25} />
           <BsCart3 style={{ marginLeft: "10px" }} size={30} />
@@ -18,22 +30,28 @@ const Nav = () => {
       </Header>
       <Navi>
         <List>
-            <Link to="services" style={{textDecoration:"none",color:"black"}}>
-                <P>Salon Service</P>
-            </Link>
+          <Link
+            to="services"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <P>Salon Service</P>
+          </Link>
         </List>
         <List>
-          <Link to="products" style={{textDecoration:"none",color:"black"}}> 
+          <Link
+            to="products"
+            style={{ textDecoration: "none", color: "black" }}
+          >
             <P>Buy Products</P>
-          </Link> 
+          </Link>
         </List>
         <List>
-          <Link to="contact" style={{textDecoration:"none",color:"black"}}>
+          <Link to="contact" style={{ textDecoration: "none", color: "black" }}>
             <P>Contact Us</P>
           </Link>
         </List>
       </Navi>
-    </>
+    </NavContainer>
   );
 };
 

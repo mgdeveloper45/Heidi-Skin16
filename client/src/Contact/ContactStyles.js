@@ -25,18 +25,18 @@ export const H2 = styled.h2`
 `;
 export const Name = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 60vw;
 `;
 export const Email = styled.div`
     display: flex;  
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 60vw;
 `;
 export const Text = styled.div`
     display: flex;  
-    justify-content: space-evenly;
-    width: 90vw;
+    justify-content: space-around;
+    width: 87vw;
 `;
 export const Label = styled.label`
     width: 88px;
@@ -56,7 +56,7 @@ export const Input = styled.input`
     font-size: 35px;
 `;
 export const TextArea = styled.textarea`
-    width: 1126px;
+    width: 968px;
     height: 271px;     
     background-color: #FFFFFF;
     border: 1px solid #000000;

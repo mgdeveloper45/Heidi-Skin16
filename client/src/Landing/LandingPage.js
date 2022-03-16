@@ -17,9 +17,9 @@ const LandingPage = () => {
             <MainContainer>
                 <MainImg>
                     <Logo> 
-                        <Deserve>
+                        {/* <Deserve>
                             <More>You<Bold>Deserve</Bold>More</More>
-                        </Deserve>
+                        </Deserve> */}
                         <Session>
                             <Book>Book a Session</Book>
                         </Session>
