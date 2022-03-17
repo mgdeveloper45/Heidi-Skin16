@@ -5,6 +5,7 @@ export const NavContainer = styled.div`
 `;
 export const Header = styled.div`
   display: flex;
+  justify-content: space-around;
   height: 150px;
   margin-top: 0;
   border: none;
@@ -37,16 +38,21 @@ export const Icons = styled.div`
 `;
 export const Navi = styled.div`
   height: 150px;
-  background-color: white;
+  background-color: pink;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 `;
+
 export const List = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;
+
 export const P = styled.p`
   font-family: Helvetica Neue;
   font-style: normal;

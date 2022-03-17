@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
 export const AddressContainer = styled.div`
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 `;
 export const Address = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 839px;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
 `;
 export const H3 = styled.h3`
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    margin: 10px;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 10px;
 `;
 export const Directions = styled.div`
   display: flex;

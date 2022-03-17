@@ -4,21 +4,20 @@ export const Footer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 100vw;
+  /* width: 100vw; */
   height: 500px;
   background: rgba(223, 213, 177, 0.5);
-
 `;
 export const Declaration = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 100vw;
+  /* width: 100vw; */
 `;
 export const UL = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;  
+  justify-content: flex-end;
   /* height: 325px; */
   width: 165px;
 `;
@@ -42,12 +41,12 @@ export const HR = styled.hr`
 `;
 
 export const Foot = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* height: 150px; */
-    width: 100%;
-    /* margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 150px; */
+  width: 100%;
+  /* margin-top: 0;
     border: none;
     background-color: rgba(223, 213, 177, 0.5); */
 `;
@@ -63,12 +62,10 @@ export const Rights = styled.div`
   font-weight: 400;
   font-size: 20px;
 `;
-export const Social = styled.div`
-
-`;
-export const  Span = styled.span`
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 100px;
+export const Social = styled.div``;
+export const Span = styled.span`
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 100px;
 `;

@@ -16,6 +16,7 @@ const Nav = () => {
   return (
     <NavContainer>
       <Header>
+        <div></div>
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
             <Heading>
@@ -29,27 +30,17 @@ const Nav = () => {
         </Icons>
       </Header>
       <Navi>
-        <List>
-          <Link
-            to="services"
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            <P>Salon Service</P>
-          </Link>
-        </List>
-        <List>
-          <Link
-            to="products"
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            <P>Buy Products</P>
-          </Link>
-        </List>
-        <List>
-          <Link to="contact" style={{ textDecoration: "none", color: "black" }}>
-            <P>Contact Us</P>
-          </Link>
-        </List>
+        <Link to="services" style={{ textDecoration: "none", color: "black" }}>
+          <P>Salon Service</P>
+        </Link>
+
+        <Link to="products" style={{ textDecoration: "none", color: "black" }}>
+          <P>Buy Products</P>
+        </Link>
+
+        <Link to="contact" style={{ textDecoration: "none", color: "black" }}>
+          <P>Contact Us</P>
+        </Link>
       </Navi>
     </NavContainer>
   );
