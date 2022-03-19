@@ -24,15 +24,22 @@ const LandingPage = () => {
     <Page>
       <MainContainer>
         <MainImg>
+        <Name>
+          <Span>Heidi</Span>Skin16
+        </Name>
+        </MainImg>
           <Logo>
+            <More>
+              You <Deserve>Deserve</Deserve> More
+            </More>
+            <Statement>
             <Session>
               <Book>Book a Session</Book>
             </Session>
-            <Statement>
-              <Appointment>
+              {/* <Appointment> */}
                 <Protocol>In-Salon appointments only.</Protocol>
-              </Appointment>
-              <Policy>
+              {/* </Appointment> */}
+              {/* <Policy> */}
                 <Link
                   to="policy"
                   style={{ textDecoration: "none", color: "black" }}
@@ -43,15 +50,13 @@ const LandingPage = () => {
                   to="covid"
                   style={{ textDecoration: "none", color: "black" }}
                 >
-                  <Protocol>Covid 19 Protocols</Protocol>
+                  <Protocol>Covid Protocols</Protocol>
                 </Link>
-              </Policy>
+              {/* </Policy> */}
             </Statement>
-            <Name>
-              <Span>Heidi</Span>Skin16
-            </Name>
+            
           </Logo>
-        </MainImg>
+        {/* </MainImg> */}
       </MainContainer>
       <Addresss />
     </Page>

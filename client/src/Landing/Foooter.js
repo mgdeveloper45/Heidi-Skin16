@@ -39,9 +39,9 @@ const Foooter = () => {
           <LI>Contact Us</LI>
         </UL>
         <Policy>
-          <LI>Policy</LI>
           <LI>Bookings</LI>
-          <LI>Covid 19 Protocols</LI>
+          <LI>Policy</LI>
+          <LI>Covid Protocols</LI>
         </Policy>
       </Declaration>
       <HR />

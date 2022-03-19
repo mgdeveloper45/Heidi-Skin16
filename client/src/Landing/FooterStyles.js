@@ -36,8 +36,9 @@ export const Policy = styled.div`
   /* height: 325px; */
 `;
 export const HR = styled.hr`
+  align-self: center;
   border: 2px solid #000;
-  width: 81vw;
+  width: 85vw;
 `;
 
 export const Foot = styled.div`

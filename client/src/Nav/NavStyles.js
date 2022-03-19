@@ -38,7 +38,7 @@ export const Icons = styled.div`
 `;
 export const Navi = styled.div`
   height: 150px;
-  background-color: pink;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

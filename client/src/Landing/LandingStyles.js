@@ -13,10 +13,12 @@ export const Page = styled.div`
 export const MainContainer = styled.div`
   width: 100%;
   height: 780px;
+  position: relative;
   background: rgba(216, 155, 166, 0.75);
   /* border-radius: 20px 20px 0 0; */
   display: flex;
   justify-content: center;
+  align-items: space-around;
 `;
 export const MainImg = styled.div`
   background-repeat: no-repeat;
@@ -30,12 +32,15 @@ export const MainImg = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
+  z-index: 100;
 `;
 export const Logo = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 425px;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 425px; */
 `;
 export const Name = styled.div`
   justify-items: flex-end;
@@ -43,6 +48,7 @@ export const Name = styled.div`
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
+  z-index: 100;
 `;
 export const Span = styled.span`
   font-family: Helvetica Neue;
@@ -68,7 +74,7 @@ export const Session = styled.div`
   border-radius: 20px;
   left: 589px;
   top: 732px;
-  z-index: 10;
+  z-index: 100;
   background-color: rgba(13, 104, 120, 0.75);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 `;
@@ -87,25 +93,34 @@ export const RightImg = styled.div`
 `;
 export const Appointment = styled.p``;
 export const Bold = styled.span`
+`;
+export const Covid = styled.div``;
+export const Deserve = styled.span`
+  z-index: -1;
   font-family: Helvetica Neue;
   font-weight: 700;
   font-style: normal;
   font-size: 140px;
 `;
-export const Covid = styled.div``;
-export const Deserve = styled.div`
-  visibility: hidden;
-  z-index: -1;
-`;
-export const More = styled.h1`
+export const More = styled.p`
+  visibility: hidden; // toggle visibility
   font-family: Helvetica Neue;
   font-weight: 300;
   font-style: normal;
   font-size: 80px;
 `;
-// export const Link = styled.link`
-
-// `;
 export const Policy = styled.div``;
-export const Protocol = styled.p``;
-export const Statement = styled.div``;
+export const Protocol = styled.p`
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+`;
+export const Statement = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 552px;
+  height: 280px;
+`;
