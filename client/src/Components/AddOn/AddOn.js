@@ -10,14 +10,19 @@ import {
 } from "./AddOnStyles";
 
 const AddOn = () => {
-  let service = addOn[0].services;
+  let service = {
+    title: addOn[0].title,
+    service: addOn[0].services,
+    color: addOn[0].color,
+    image: addOn[0].image
+  }
   return (
-    <AddOnContainer bgColor={addOn[0].color}>
+    <AddOnContainer bgColor={service.color}>
       <AddON>
-        <Title mb="200px" color={addOn[0].color}>
-          {addOn[0].title}
+        <Title mb="200px" color={service.color}>
+          {service.title}
         </Title>
-        {service.map((service, idx) => (
+        {service.service.map((service, idx) => (
           <ServiceTitleWrap key={idx}>
             <ServiceTitle>
               <Price>{service.title}</Price>
@@ -26,7 +31,7 @@ const AddOn = () => {
           </ServiceTitleWrap>
         ))}
       </AddON>
-      <Image>{addOn[0].image}</Image>
+      <Image>{service.image}</Image>
     </AddOnContainer>
   );
 };

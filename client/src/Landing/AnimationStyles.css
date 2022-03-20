@@ -1,0 +1,16 @@
+.rightBox {
+  animation: slide-in 1 2s linear;
+}
+
+.book {
+  position: relative;
+}
+
+@keyframes slide-in {
+  from {
+    margin-right: 0px;
+  }
+  to {
+    margin-right: 50%;
+  }
+}

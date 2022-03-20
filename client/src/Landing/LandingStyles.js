@@ -13,7 +13,7 @@ export const Page = styled.div`
 export const MainContainer = styled.div`
   width: 100%;
   height: 780px;
-  position: relative;
+  /* position: relative; */
   background: rgba(216, 155, 166, 0.75);
   /* border-radius: 20px 20px 0 0; */
   display: flex;
@@ -23,9 +23,13 @@ export const MainContainer = styled.div`
 export const MainImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
+  
   width: 850px;
   height: 825px;
   margin-top: 10px;
+
+  /* background-image: url("${rightImg}"),url("${leftImg}"); */
+  /* background-position: left center, right center; */
   background-image: url("${fullImg}");
   border-radius: 20px 20px 0px 0px;
   display: flex;
@@ -78,21 +82,38 @@ export const Session = styled.div`
   background-color: rgba(13, 104, 120, 0.75);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 `;
-export const LeftImg = styled.div`
-  background-image: url(${leftImg});
-  width: 20vw;
-  height: 925px;
+export const SlidingImg = styled.div`
+  /* width: 850px; */
+  width: 100%;
+  height: 825px;
   margin-top: 10px;
+  /* background-image: url("${rightImg}"),url("${leftImg}"); */
+  display: flex;
+  justify-content: center;
+  
+  position: absolute;
+  z-index: 100; 
+  `;
+export const LeftImg = styled.div`
+  /* border: 2px solid rgb(175,210,232); */
+  background-image: url(${leftImg});
+  border-radius: 0px 20px 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 425px;
+  height: 825px;
+  margin-top: 10px;
+  z-index: 100;
 `;
-
 export const RightImg = styled.div`
   background-image: url(${rightImg});
-  width: 20vw;
-  height: 925px;
+  border-radius: 20px 0px 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 425px;
+  height: 825px;
   margin-top: 10px;
-`;
-export const Appointment = styled.p``;
-export const Bold = styled.span`
+  z-index: 100;
 `;
 export const Covid = styled.div``;
 export const Deserve = styled.span`
