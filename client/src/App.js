@@ -6,7 +6,8 @@ import Foooter from "./Landing/Foooter";
 import LandingPage from "./Landing/LandingPage";
 import SalonServices from "./Pages/SalonServices";
 import Nav from "./Nav/Nav";
-import { Covid, Policy } from "./Landing/LandingStyles";
+import Policy from "./Pages/Policy/Policy";
+import Covid from "./Pages/Covid/Covid"
 import "./appstyles.css";
 
 function App() {

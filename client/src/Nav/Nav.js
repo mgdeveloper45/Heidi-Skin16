@@ -1,8 +1,8 @@
 import {
+  Head,
   Header,
   Heading,
   Icons,
-  List,
   Logo,
   NavContainer,
   Navi,
@@ -16,7 +16,7 @@ const Nav = () => {
   return (
     <NavContainer>
       <Header>
-        <div></div>
+        <Head/>
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
             <Heading>

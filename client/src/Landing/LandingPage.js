@@ -1,6 +1,8 @@
 import React from "react";
-import "./AnimationStyles.css"
+import { Link } from "react-router-dom";
+import "./AnimationStyles.css";
 import {
+  Appointments,
   Book,
   Deserve,
   LeftImg,
@@ -10,6 +12,7 @@ import {
   More,
   Name,
   Page,
+  Policy,
   Protocol,
   RightImg,
   Session,
@@ -18,50 +21,55 @@ import {
   Statement,
 } from "./LandingStyles";
 import Addresss from "./Addresss";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const LandingPage = () => {
-  const animateThat = () => {
-    const animatedTHIS = document.querySelector(".rightImg");
-    animatedTHIS.classList.add("rightBox");
-    animatedTHIS.style.marginRight = "50%";
+  const [visible, setVisible] = useState(false);  
+  const animateImg = () => {
+    const animatedImg = document.querySelector(".rightImg");
+    animatedImg.classList.add("rightBox")
+    animatedImg.style.marginRight = "50%";
+    setVisible(true)
   };
-  
+
   return (
     <Page>
       <MainContainer>
-        {/* <MainImg> */}
-        <SlidingImg className="slidingImg">
-          <RightImg className="rightImg"/>
-          <LeftImg className="leftImg"/>
+        <MainImg visible={visible}/>
+        <SlidingImg className="slidingImg" visible={visible}>
+          <RightImg className="rightImg" />
+          <LeftImg className="leftImg" />
         </SlidingImg>
-        {/* </MainImg> */}
-          <Logo>
-            <More>
-              You <Deserve>Deserve</Deserve> More
-            </More>
-            <Statement>
+          <More>
+            You <Deserve>Deserve</Deserve> More
+          </More>
+        <Logo>
+          <Statement>
             <Session>
-              <Book className="book" onClick={() => {animateThat()}}>Book a Session</Book>
+              <Book
+                className="book"
+                onClick={() => animateImg()}
+              >
+                Book a Session
+              </Book>
             </Session>
-                <Protocol>In-Salon appointments only.</Protocol>
-                <Link
-                  to="policy"
-                  style={{ textDecoration: "none", color: "black" }}
-                  >
-                  <Protocol>Appointment Policy</Protocol>
-                </Link>
-                <Link
-                  to="covid"
-                  style={{ textDecoration: "none", color: "black" }}
-                  >
-                  <Protocol>Covid Protocols</Protocol>
-                </Link>
-            </Statement> 
-                  <Name>
-                    <Span>Heidi</Span>Skin16
-                  </Name>
-          </Logo>
+            <Appointments>In-Salon appointments only</Appointments>
+            <Policy>
+            <Link
+              to="policy"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <Protocol>Appointment Policy</Protocol>
+            </Link>
+            <Link to="covid" style={{ textDecoration: "none", color: "black" }}>
+              <Protocol>Covid Protocols</Protocol>
+            </Link>
+            </Policy>
+          </Statement>
+          <Name visible={visible}>
+            <Span>Heidi</Span>Skin16
+          </Name>
+        </Logo>
       </MainContainer>
       <Addresss />
     </Page>

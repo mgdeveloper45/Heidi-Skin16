@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import fullImg from "../images/full_face_cropped.png";
 import leftImg from "../images/left_side_landing_cropped.png";
-import rightImg from "../images/landing_right_cropped.png";
+import rightImg from "../images/landing2_right_cropped.png";
 
 // landing page with main image
 export const Page = styled.div`
@@ -13,29 +13,25 @@ export const Page = styled.div`
 export const MainContainer = styled.div`
   width: 100%;
   height: 780px;
-  /* position: relative; */
+  position: relative;
   background: rgba(216, 155, 166, 0.75);
-  /* border-radius: 20px 20px 0 0; */
   display: flex;
   justify-content: center;
-  align-items: space-around;
 `;
 export const MainImg = styled.div`
+  visibility: ${props => props.visible 
+    ? "hidden" : "visible"};
   background-repeat: no-repeat;
   background-size: cover;
-  
   width: 850px;
   height: 825px;
   margin-top: 10px;
-
-  /* background-image: url("${rightImg}"),url("${leftImg}"); */
-  /* background-position: left center, right center; */
   background-image: url("${fullImg}");
   border-radius: 20px 20px 0px 0px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; */
   position: absolute;
   z-index: 100;
 `;
@@ -47,7 +43,12 @@ export const Logo = styled.div`
   /* height: 425px; */
 `;
 export const Name = styled.div`
-  justify-items: flex-end;
+  visibility: ${
+    props => props.visible 
+    ? "hidden" : "visible"
+  };
+  display: flex;
+  align-items: flex-start;
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 700;
@@ -83,19 +84,17 @@ export const Session = styled.div`
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 `;
 export const SlidingImg = styled.div`
-  /* width: 850px; */
+  visibility: ${props => props.visible 
+    ? "visible" : "hidden"};
   width: 100%;
   height: 825px;
   margin-top: 10px;
-  /* background-image: url("${rightImg}"),url("${leftImg}"); */
   display: flex;
   justify-content: center;
-  
   position: absolute;
   z-index: 100; 
   `;
 export const LeftImg = styled.div`
-  /* border: 2px solid rgb(175,210,232); */
   background-image: url(${leftImg});
   border-radius: 0px 20px 0px 0px;
   background-repeat: no-repeat;
@@ -117,25 +116,34 @@ export const RightImg = styled.div`
 `;
 export const Covid = styled.div``;
 export const Deserve = styled.span`
-  z-index: -1;
+  /* z-index: -1; */
   font-family: Helvetica Neue;
   font-weight: 700;
   font-style: normal;
-  font-size: 140px;
+  font-size: 120px;
 `;
 export const More = styled.p`
-  visibility: hidden; // toggle visibility
+  align-self: center;
   font-family: Helvetica Neue;
   font-weight: 300;
   font-style: normal;
-  font-size: 80px;
+  font-size: 70px;
 `;
 export const Policy = styled.div``;
+export const Appointments = styled.p`
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+`;
 export const Protocol = styled.p`
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 export const Statement = styled.div`
   display: flex;
@@ -143,5 +151,5 @@ export const Statement = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 552px;
-  height: 280px;
+  height: 550px;
 `;
