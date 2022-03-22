@@ -27,6 +27,9 @@ export const LI = styled.h1`
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 export const Policy = styled.div`
   display: flex;

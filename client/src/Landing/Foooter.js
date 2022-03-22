@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Declaration,
   Foot,
@@ -29,19 +30,35 @@ const Foooter = () => {
     span: {
       fontSize: "72px",
     },
+    links: {
+      textDecoration: "none",
+      color: "black"
+    } 
   };
   return (
     <Footer>
       <Declaration>
         <UL>
+        <Link to="about" style={styles.links}>
           <LI>About Us</LI>
+          </Link>
+          <Link to="gallery" style={styles.links}>
           <LI>Gallery</LI>
+          </Link>
+          <Link to="policy" style={styles.links}>
           <LI>Contact Us</LI>
+          </Link>
         </UL>
         <Policy>
+        <Link to="bookings" style={styles.links}>
           <LI>Bookings</LI>
+          </Link>
+          <Link to="policy" style={styles.links}>
           <LI>Policy</LI>
+          </Link>
+          <Link to="covid" style={styles.links}>
           <LI>Covid Protocols</LI>
+          </Link>
         </Policy>
       </Declaration>
       <HR />
