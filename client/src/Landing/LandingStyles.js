@@ -19,8 +19,10 @@ export const MainContainer = styled.div`
   justify-content: center;
 `;
 export const MainImg = styled.div`
-  visibility: ${props => props.visible 
-    ? "hidden" : "visible"};
+  visibility: ${
+    props => props.visible 
+    ? "hidden" : "visible"
+  };
   background-repeat: no-repeat;
   background-size: cover;
   width: 850px;
@@ -29,11 +31,7 @@ export const MainImg = styled.div`
   background-image: url("${fullImg}");
   border-radius: 20px 20px 0px 0px;
   display: flex;
-  /* flex-direction: column;
-  justify-content: flex-end;
-  align-items: center; */
   position: absolute;
-  z-index: 100;
 `;
 export const Logo = styled.div`
   display: flex;
@@ -52,14 +50,18 @@ export const Name = styled.div`
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 700;
-  font-size: 100px;
-  z-index: 100;
+  font-size: 90px;
+  height: 90px;
+  z-index: ${
+    props => props.visible 
+    ? "-1" : "1"
+  };
 `;
 export const Span = styled.span`
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 200;
-  font-size: 100px;
+  font-size: 90px;
 `;
 export const Book = styled.p`
   font-family: Helvetica Neue;
@@ -79,20 +81,24 @@ export const Session = styled.div`
   border-radius: 20px;
   left: 589px;
   top: 732px;
-  z-index: 100;
+  z-index: ${
+    props => props.visible 
+    ? "-1" : "1"
+  };
   background-color: rgba(13, 104, 120, 0.75);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 `;
 export const SlidingImg = styled.div`
-  visibility: ${props => props.visible 
-    ? "visible" : "hidden"};
+  visibility: ${
+    props => props.visible 
+    ? "visible" : "hidden"
+  };
   width: 100%;
   height: 825px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
   position: absolute;
-  z-index: 100; 
   `;
 export const LeftImg = styled.div`
   background-image: url(${leftImg});
@@ -102,7 +108,6 @@ export const LeftImg = styled.div`
   width: 425px;
   height: 825px;
   margin-top: 10px;
-  z-index: 100;
 `;
 export const RightImg = styled.div`
   background-image: url(${rightImg});
@@ -112,29 +117,40 @@ export const RightImg = styled.div`
   width: 425px;
   height: 825px;
   margin-top: 10px;
-  z-index: 100;
 `;
 export const Covid = styled.div``;
 export const Deserve = styled.span`
-  /* z-index: -1; */
   font-family: Helvetica Neue;
   font-weight: 700;
   font-style: normal;
   font-size: 120px;
 `;
-export const More = styled.p`
-  align-self: center;
+export const More = styled.div`
   font-family: Helvetica Neue;
   font-weight: 300;
   font-style: normal;
   font-size: 70px;
+  height: 200px;
 `;
-export const Policy = styled.div``;
+export const Policy = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  z-index: ${
+    props => props.visible 
+    ? "10" : "0"
+  };
+ 
+
+`;
 export const Appointments = styled.p`
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
+  
 `;
 export const Protocol = styled.p`
   font-family: 'Helvetica Neue';
@@ -144,12 +160,12 @@ export const Protocol = styled.p`
   &:hover {
     text-decoration: underline;
   }
-`;
+  `;
 export const Statement = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 552px;
-  height: 550px;
+  height: 340px;
 `;

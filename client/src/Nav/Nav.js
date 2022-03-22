@@ -19,7 +19,7 @@ const Nav = () => {
         <Head/>
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            <Heading>
+            <Heading >
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
