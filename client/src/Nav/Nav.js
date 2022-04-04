@@ -12,14 +12,15 @@ import {
 import { Link } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
 
-const Nav = () => {
+const Nav = ({animation, visible}) => {
   return (
     <NavContainer>
       <Header>
         <Head/>
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            <Heading >
+            <Heading>
+            {/* <Heading onClick={() => animation()}> */}
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>

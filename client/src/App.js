@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./Contact/Contact";
 import Foooter from "./Landing/Foooter";
@@ -17,12 +17,27 @@ function App() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   }, []);
+  const [visible, setVisible] = useState(false);
 
+  const animateImg = () => {
+    const animatedImg = document.querySelector(".rightImg");
+    animatedImg.classList.add("rightBox");
+    animatedImg.style.marginRight = "50%";
+    setVisible(true);
+  };
+  // const animateRevImg = () => {
+  //   const animatedImg = document.querySelector(".rightImg");
+  //   animatedImg.classList.remove("rightBox")  
+  //   animatedImg.classList.add("rightBoxes");
+  //   animatedImg.style.marginRight = "0px";
+  //   setVisible(false);
+  // };
   return (
     <>
-      <Nav />
+      <Nav visible={visible}/>
+      {/* <Nav animation={animateRevImg}  animate={animateImg} visible={visible}/> */}
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage animate={animateImg} visible={visible}/>} />
         <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<h1>Buy Products Page Coming Soon</h1>} />
         <Route path="/contact" element={<Contact />} />
