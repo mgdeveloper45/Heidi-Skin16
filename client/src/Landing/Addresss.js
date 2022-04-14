@@ -22,7 +22,7 @@ const Addresss = () => {
         <H3>San Rafael, CA 94901</H3>
         <H3>(415) 529-5076 (call only)</H3>
       </Address>
-      {/* <Directions>
+      <Directions>
         <H3>
           Get Directions
           <img src={location} alt="gps" style={styles.location} />
@@ -31,7 +31,7 @@ const Addresss = () => {
       <Code>
         <P>Service by Appointment only.</P>
         <P>Door Code Required.</P>
-      </Code> */}
+      </Code>
     </AddressContainer>
   );
 };

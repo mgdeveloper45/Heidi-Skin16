@@ -12,6 +12,7 @@ export const Header = styled.div`
   background-color: rgba(223, 213, 177, 0.5);
   width: 100%;
 `;
+export const Head = styled.div``;
 export const Logo = styled.div`
   display: flex;
   align-items: center;
@@ -38,7 +39,7 @@ export const Icons = styled.div`
 `;
 export const Navi = styled.div`
   height: 150px;
-  background-color: pink;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -61,7 +62,4 @@ export const P = styled.p`
   &:hover {
     text-decoration: underline;
   }
-`;
-export const Link = styled.link`
-  text-decoration: none;
 `;

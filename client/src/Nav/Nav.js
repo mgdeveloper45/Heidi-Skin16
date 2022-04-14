@@ -1,8 +1,8 @@
 import {
+  Head,
   Header,
   Heading,
   Icons,
-  List,
   Logo,
   NavContainer,
   Navi,
@@ -12,21 +12,21 @@ import {
 import { Link } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
 
-const Nav = () => {
+const Nav = ({ animateRevImg, visible }) => {
   return (
     <NavContainer>
       <Header>
-        <div></div>
+        <Head />
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            <Heading>
+            <Heading onClick={() => animateRevImg()}>
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
         </Logo>
         <Icons>
           <BsSearch size={25} />
-          <BsCart3 style={{ marginLeft: "10px" }} size={30} />
+          <BsCart3 style={{ marginLeft: "10px"}} size={30} />
         </Icons>
       </Header>
       <Navi>

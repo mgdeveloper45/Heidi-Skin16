@@ -27,6 +27,9 @@ export const LI = styled.h1`
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 export const Policy = styled.div`
   display: flex;
@@ -36,8 +39,9 @@ export const Policy = styled.div`
   /* height: 325px; */
 `;
 export const HR = styled.hr`
+  align-self: center;
   border: 2px solid #000;
-  width: 81vw;
+  width: 85vw;
 `;
 
 export const Foot = styled.div`

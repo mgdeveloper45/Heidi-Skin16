@@ -22,12 +22,12 @@ const SubMenu = ({item,idx}) => {
                     {item.description}
                 </Description>
             </Content>
+            <Button>
+                <P>
+                    {item.button} 
+                </P>
+            </Button>
         </ContentContainer>
-        <Button>
-            <P>
-                {item.button} 
-            </P>
-        </Button>
     </SubMenuContainer>
   )
 }
