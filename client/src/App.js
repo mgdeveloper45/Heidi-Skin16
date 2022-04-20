@@ -17,6 +17,12 @@ function App() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   }, []);
+  useEffect(() => {
+    axios
+      .get("/product")
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }, []);
   const [visible, setVisible] = useState(false);
 
   // animate open if closed, redirects if open
