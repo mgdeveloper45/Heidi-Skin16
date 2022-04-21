@@ -1,29 +1,32 @@
 import React from 'react';
 import Addresss from '../Landing/Addresss';
 import { 
-    Button, Confirm, Disclaimer, Email, Form, 
-    FormContainer, H2, Input, Label, 
-    Name, P, Text, TextArea 
+    Button, Confirm, Disclaimer, Email, EmailInput, 
+    Form, FormContainer, FormInput, H2, Info, Input, 
+    Label, Name, P, Text, TextArea 
 } from './ContactStyles';
 
 const Contact = () => {
     return (
         <>
         <FormContainer>
+            <H2>Get in Touch!</H2>
             <Form>
-                <H2>Get in Touch!</H2> 
-                <Name> 
-                    <Label>Name: </Label>
+            <Info> 
+                <Label>Name: </Label>
+                <Label>Email:</Label>
+                <Label>Message: </Label>
+            </Info>
+            <FormInput>
+                {/* <Name>  */}
                     <Input/>
-                </Name>
-                <Email>
-                    <Label>Email:</Label>
-                    <Input/>
-                </Email> 
-                <Text>
-                    <Label>Message: </Label>
+                {/* </Name> */}
+                {/* <Email> */}
+                    <EmailInput/>
+                {/* </Email>  */}
+                {/* <Text> */}
                     <TextArea/>   
-                </Text>
+                {/* </Text> */}
                 <Confirm>
                     <Disclaimer>
                         <P>*Service By Appointment Only</P>
@@ -32,6 +35,7 @@ const Contact = () => {
                         Submit
                     </Button>
                 </Confirm>
+            </FormInput>
             </Form>
         </FormContainer>
         <Addresss />
