@@ -1,10 +1,11 @@
-const stripe = require("stripe")(
-  "sk_test_51KqihZBf2bZUjRVF1tUeqS7oFm9fDqx47JkWoxbdapWVGl7mpMMjx1OLNBmGLxRJOjGaZj7zcZsh1ZrcaFCoTKso00CIkLkjvM"
-);
+require("dotenv").config();
+
+const stripe = require("stripe")(process.env.STRIPE_TEST_KEY);
 
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5010;
+const PORT = process.env.PORT;
+const YOUR_DOMAIN = process.env.YOUR_DOMAIN;
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -39,6 +40,90 @@ app.get("/prices", async (req, res) => {
     res.status(510).json({ msg: err });
   }
 });
+
+app.post("/create-checkout-session", async (req, res) => {
+  const { lineItems } = req.body;
+
+  const session = await stripe.checkout.sessions.create({
+    line_items: [
+      {
+        price: "price_1KqiqABf2bZUjRVFtuF69ew7",
+        quantity: 1,
+      },
+    ],
+    mode: "payment",
+    success_url: `${YOUR_DOMAIN}?success=true`,
+    cancel_url: `${YOUR_DOMAIN}?canceled=true`,
+  });
+
+  res.redirect(303, session.url);
+});
+
+// app.post("/create-checkout-session", async (req, res) => {
+//   // const { lineItems } = req.body;
+
+//   const session = await stripe.checkout.sessions.create({
+//     payment_method_types: ["card"],
+//     shipping_address_collection: {
+//       allowed_countries: ["US"],
+//     },
+//     shipping_options: [
+//       {
+//         shipping_rate_data: {
+//           type: "fixed_amount",
+//           fixed_amount: {
+//             amount: 0,
+//             currency: "usd",
+//           },
+//           display_name: "Free shipping",
+//           // Delivers between 5-7 business days
+//           delivery_estimate: {
+//             minimum: {
+//               unit: "business_day",
+//               value: 5,
+//             },
+//             maximum: {
+//               unit: "business_day",
+//               value: 7,
+//             },
+//           },
+//         },
+//       },
+//       {
+//         shipping_rate_data: {
+//           type: "fixed_amount",
+//           fixed_amount: {
+//             amount: 1500,
+//             currency: "usd",
+//           },
+//           display_name: "Next day air",
+//           // Delivers in exactly 1 business day
+//           delivery_estimate: {
+//             minimum: {
+//               unit: "business_day",
+//               value: 1,
+//             },
+//             maximum: {
+//               unit: "business_day",
+//               value: 1,
+//             },
+//           },
+//         },
+//       },
+//     ],
+//     line_items: [
+//       {
+//         price: "price_1KqiqABf2bZUjRVFtuF69ew7",
+//         quantity: 1,
+//       },
+//     ],
+//     mode: "payment",
+//     success_url: `${YOUR_DOMAIN}/?success=true`,
+//     cancel_url: `${YOUR_DOMAIN}/my-cart`,
+//   });
+
+//   res.send(session.url);
+// });
 
 app.listen(PORT, () => {
   console.log(`listening at http://localhost:${PORT}`);
