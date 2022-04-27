@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./Contact/Contact";
@@ -9,20 +8,16 @@ import Nav from "./Nav/Nav";
 import Policy from "./Pages/Policy/Policy";
 import Covid from "./Pages/Covid/Covid";
 import "./appstyles.css";
+import { useDispatch } from "react-redux";
+import { fetchProducts } from "./Redux/actions/index";
 
 function App() {
+  
+  const dispatch = useDispatch();
   useEffect(() => {
-    axios
-      .get("/example")
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-  }, []);
-  useEffect(() => {
-    axios
-      .get("/product")
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-  }, []);
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
   const [visible, setVisible] = useState(false);
 
   // animate open if closed, redirects if open
