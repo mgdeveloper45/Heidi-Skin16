@@ -2,23 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
-import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import allReducers from "./Redux/reducers/index";
-import thunk from "redux-thunk";
+import { store } from "../src/Redux/store";
+// import { configureStore } from "@reduxjs/toolkit";
+// import allReducers from "./Redux/reducers/index";
+// import thunk from "redux-thunk";
 
-const store = configureStore({
-  devtools:
-    window.__REDUX_DEVTOOLS_EXTENSION__ &&
-    window.__REDUX_DEVTOOLS_EXTENSION__(),
+// const store = configureStore({
+//   devtools:
+//     window.__REDUX_DEVTOOLS_EXTENSION__ &&
+//     window.__REDUX_DEVTOOLS_EXTENSION__(),
 
-  reducer: allReducers,
+//   reducer: allReducers,
 
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      thunk,
-    }),
-});
+//   middleware: (getDefaultMiddleware) =>
+//     getDefaultMiddleware({
+//       thunk,
+//     }),
+// });
 
 ReactDOM.render(
   <React.StrictMode>

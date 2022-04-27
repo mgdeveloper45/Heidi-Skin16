@@ -9,10 +9,9 @@ import Policy from "./Pages/Policy/Policy";
 import Covid from "./Pages/Covid/Covid";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
-import { fetchProducts } from "./Redux/actions/index";
+import { fetchProducts } from "./Redux/productSlice";
 
 function App() {
-  
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchProducts());
