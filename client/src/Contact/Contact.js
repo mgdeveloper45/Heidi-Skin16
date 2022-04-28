@@ -1,37 +1,35 @@
 import React from 'react';
 import Addresss from '../Landing/Addresss';
 import { 
-    Button, Confirm, Disclaimer, Email, Form, 
-    FormContainer, H2, Input, Label, 
-    Name, P, Text, TextArea 
+    Button, Confirm, Disclaimer, EmailInput, 
+    Form, FormContainer, FormInput, H2, Info, 
+    Input, Label, P, TextArea 
 } from './ContactStyles';
 
 const Contact = () => {
     return (
         <>
         <FormContainer>
+            <H2>Get in Touch!</H2>
             <Form>
-                <H2>Get in Touch!</H2> 
-                <Name> 
+                <Info> 
                     <Label>Name: </Label>
-                    <Input/>
-                </Name>
-                <Email>
                     <Label>Email:</Label>
-                    <Input/>
-                </Email> 
-                <Text>
                     <Label>Message: </Label>
-                    <TextArea/>   
-                </Text>
-                <Confirm>
-                    <Disclaimer>
-                        <P>*Service By Appointment Only</P>
-                    </Disclaimer>
-                    <Button>
-                        Submit
-                    </Button>
-                </Confirm>
+                </Info>
+                <FormInput>
+                    <Input/>
+                    <EmailInput/>
+                    <TextArea/>
+                    <Confirm>
+                        <Disclaimer>
+                            <P>* Service By Appointment Only</P>
+                        </Disclaimer>
+                        <Button>
+                            Submit
+                        </Button>
+                    </Confirm>
+                </FormInput>
             </Form>
         </FormContainer>
         <Addresss />
