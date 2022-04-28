@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { getPrices, getProducts } from "../utils/stripe-routes";
 
 const initialState = {
-  data: [],
+  arrayData: [],
   loading: false,
   error: "",
 };
