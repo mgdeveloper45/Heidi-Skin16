@@ -45,7 +45,7 @@ const Foooter = () => {
           <Link to="gallery" style={styles.links}>
           <LI>Gallery</LI>
           </Link>
-          <Link to="policy" style={styles.links}>
+          <Link to="contact" style={styles.links}>
           <LI>Contact Us</LI>
           </Link>
         </UL>
