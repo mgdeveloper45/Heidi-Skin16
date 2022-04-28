@@ -1,8 +1,8 @@
-import { axios } from "axios";
+import axios from "axios";
 
 const getProducts = async () => {
   try {
-    const response = await axios.get("/product");
+    const response = await axios.get("/product-list");
     return response.data.data;
   } catch (err) {
     console.log(err);
@@ -11,8 +11,8 @@ const getProducts = async () => {
 
 const getPrices = async () => {
   try {
-    const response = await axios.get("/prices");
-    return response.data.data;
+    const response = await axios.get("/price-id");
+    return response.data;
   } catch (err) {
     console.log(err);
   }

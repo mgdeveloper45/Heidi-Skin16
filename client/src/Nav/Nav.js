@@ -26,8 +26,11 @@ const Nav = ({ animateRevImg, visible }) => {
         </Logo>
         <Icons>
           <BsSearch size={25} />
-          <BsCart3 style={{ marginLeft: "10px"}} size={30} />
+          <BsCart3 style={{ marginLeft: "10px" }} size={30} />
         </Icons>
+        {/* <form action="/create-checkout-session" method="POST">
+          <button type="submit">Checkout</button>
+        </form> */}
       </Header>
       <Navi>
         <Link to="services" style={{ textDecoration: "none", color: "black" }}>
