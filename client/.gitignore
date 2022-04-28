@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/client/src/images
+/src/images
+/client/src/SlideImages
+/src/SlideImages
+images/
+SlideImages/
+.env
