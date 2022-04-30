@@ -52,7 +52,7 @@ const LandingPage = ({animate, visible}) => {
                 Book a Session
               </Book>
             </Session>
-            <Appointments>In-Salon appointments only</Appointments>
+            <Appointments>Live Beautifully</Appointments>
             <Policy>
               <Link
                 to="policy"
