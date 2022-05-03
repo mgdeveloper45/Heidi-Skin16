@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart } from '../../Redux/cartSlicer.js';
 
 const ProductWrapper = styled.div`
   display: flex;
@@ -66,11 +67,23 @@ const ProductDescription = styled.div`
 `;
 
 const CartButton = styled.button`
+  height: 50px;
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
   background-color: #e1b4bd;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ProductsPage = () => {
   const products = useSelector(state => state.productData.entities);
+
+  const dispatch = useDispatch();
 
   return (
     <ProductWrapper>
@@ -88,7 +101,12 @@ const ProductsPage = () => {
                 <h3>{item.data.metadata.size}</h3>
                 <h3>{item.data.description}</h3>
               </ProductDescription>
-              <CartButton>ADD TO CART</CartButton>
+              <CartButton
+                onClick={() =>
+                  dispatch(addToCart({ ...item.data, quantity: 1 }))
+                }>
+                ADD TO CART
+              </CartButton>
             </ProductCard>
           ))}
         </ProductGrid>
