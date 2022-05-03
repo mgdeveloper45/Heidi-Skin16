@@ -9,10 +9,19 @@ import {
   P,
   Span,
 } from "./NavStyles";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
 
 const Nav = ({ animateRevImg, visible }) => {
+  const navigate = useNavigate();
+
+  const closeThenRedirect = (navi) => {
+    return visible 
+    ? animateRevImg()
+    .then(() => navigate(navi)) 
+    : navigate(navi) 
+  };
+
   return (
     <NavContainer>
       <Header>
@@ -33,17 +42,28 @@ const Nav = ({ animateRevImg, visible }) => {
         </form> */}
       </Header>
       <Navi>
-        <Link to="services" style={{ textDecoration: "none", color: "black" }}>
-          <P>Salon Service</P>
-        </Link>
+        <P
+          onClick={() =>
+            closeThenRedirect('/services')
+          }
+        >
+          Salon Service
+        </P>
 
-        <Link to="products" style={{ textDecoration: "none", color: "black" }}>
-          <P>Buy Products</P>
-        </Link>
+        
+          <P
+          onClick={() =>
+            closeThenRedirect('/products')
+          }
+        >Buy Products</P>
+      
 
-        <Link to="contact" style={{ textDecoration: "none", color: "black" }}>
-          <P>Contact Us</P>
-        </Link>
+        
+          <P onClick={() =>
+            closeThenRedirect('/contact')
+          }
+        >Contact Us</P>
+        
       </Navi>
     </NavContainer>
   );
