@@ -4,7 +4,8 @@ export const SubMenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 796px;
+  padding: 2rem 1rem 2rem 7%;
+  /* height: 796px; */
 `;
 export const ContentContainer = styled.div`
   display: flex;
@@ -13,14 +14,16 @@ export const ContentContainer = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  width: 696px;
+  width: 40%;
   height: 500px;
 `;
 export const Image = styled.div`
   background-color: blue;
   border-radius: 20px;
-  width: 596px;
-  height: 496px;
+  position: relative;
+  width: 40%;
+  height: 0;
+  padding-bottom: 40%;
 `;
 export const Listing = styled.div`
   display: flex;

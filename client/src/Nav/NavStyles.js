@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
 export const Header = styled.div`
   display: flex;
   justify-content: space-around;
-  height: 150px;
+  height: 100px;
   margin-top: 0;
   border: none;
   background-color: rgba(223, 213, 177, 0.5);
@@ -58,7 +58,7 @@ export const P = styled.p`
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 2rem;
   &:hover {
     text-decoration: underline;
   }
