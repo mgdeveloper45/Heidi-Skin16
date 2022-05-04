@@ -78,6 +78,10 @@ const CartButton = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  &:active {
+    transform: translateY(1.5px) translateX(1.5px);
+  }
 `;
 
 const ProductsPage = () => {
@@ -103,7 +107,9 @@ const ProductsPage = () => {
               </ProductDescription>
               <CartButton
                 onClick={() =>
-                  dispatch(addToCart({ ...item.data, quantity: 1 }))
+                  dispatch(
+                    addToCart({ ...item.data, ...item.price, quantity: 1 })
+                  )
                 }>
                 ADD TO CART
               </CartButton>
