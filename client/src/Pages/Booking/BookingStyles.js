@@ -50,8 +50,7 @@ export const BookingSelect = styled.select`
   height: 40px;
   width: 45%;
   margin-left: 10px;
-  border-radius: 3px;
-  /* padding: 10px; */
+  border-radius: 5px;
   background-color: #dfd5b180;
   border: 1px solid black;
 `;
@@ -71,11 +70,11 @@ export const BookingButton = styled.button`
   height: 7%;
   border-radius: 8px;
   border: none;
-  background-color: rgba(13, 104, 120);
-  color: white;
+  background-color: #0d6878bf;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   font-weight: 600;
-  font-size: larger;
+  font-size: x-large;
+  color: white;
 `;
 
 export const LinkStyles = styled.div`
@@ -85,4 +84,51 @@ export const LinkStyles = styled.div`
   height: 10%;
   width: 100%;
   margin-top: 20px;
+`;
+export const BookingConfirmation = styled.div`
+  display: flex;
+  height: 39.5vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+`;
+
+export const BookingCard = styled.div`
+  display: flex;
+  text-align: center;
+  width: 650px;
+  height: 200px;
+  flex-direction: row;
+`;
+
+export const BookingRow = styled.div`
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: flex-end;
+  margin-right: 10px;
+`;
+export const BookingRowReverse = styled(BookingRow)`
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10px;
+  flex-direction: column;
+`;
+export const CartButton = styled.button`
+  height: 35px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #e1b4bd;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(1.5px) translateX(1.5px);
+  }
 `;

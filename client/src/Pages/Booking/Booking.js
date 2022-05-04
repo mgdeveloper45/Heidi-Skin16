@@ -14,6 +14,8 @@ import {
   LinkStyles,
 } from './BookingStyles';
 
+// Booking Input might be used going forward
+
 const Booking = () => {
   return (
     <div>

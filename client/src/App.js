@@ -8,6 +8,7 @@ import Nav from './Nav/Nav';
 import Policy from './Pages/Policy/Policy';
 import Covid from './Pages/Covid/Covid';
 import Booking from './Pages/Booking/Booking';
+import Confirmation from './Pages/Booking/Confirmation';
 import './appstyles.css';
 import { useDispatch } from 'react-redux';
 import { fetchProducts } from './Redux/productSlice';
@@ -61,9 +62,11 @@ function App() {
           element={<h1>Buy Products Page Coming Soon</h1>}
         />
         <Route path='/booking' element={<Booking />} />
+
         <Route path='/contact' element={<Contact />} />
         <Route path='/policy' element={<Policy />} />
         <Route path='/covid' element={<Covid />} />
+        <Route path='/confirmation' element={<Confirmation />} />
       </Routes>
       <Foooter />
     </>
