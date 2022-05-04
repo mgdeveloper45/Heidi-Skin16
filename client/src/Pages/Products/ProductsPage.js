@@ -42,26 +42,30 @@ const ProductCard = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  align-items: center;
 `;
 
 const ImgContainer = styled.div`
-  min-width: 150px;
-  /* min-height: 215px; */
-  max-width: 200px;
-  max-height: 200px;
-  height: 100%;
   width: 100%;
+
+  display: flex;
+  justify-content: center;
 `;
 const ProductImg = styled.img`
-  height: 100%;
   width: 100%;
-  background-image: url(https://picsum.photos/400);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+  min-width: 200px;
+
+  max-width: 200px;
+  max-height: 200px;
 `;
 const ProductDescription = styled.div`
+  display: flex;
+  flex-flow: column;
+`;
+
+const ProductName = styled.div``;
+const ProductPrice = styled.div``;
+const ProductDetails = styled.div`
   display: flex;
   flex-flow: column;
 `;
@@ -89,6 +93,17 @@ const ProductsPage = () => {
 
   const dispatch = useDispatch();
 
+  const [num, setNum] = React.useState(0);
+  let incNum = () => {
+    setNum(num + 1);
+  };
+  let decNum = () => {
+    setNum(num - 1);
+  };
+  let handleChange = e => {
+    setNum(e.target.value);
+  };
+
   return (
     <ProductWrapper>
       <ProductBody>
@@ -97,19 +112,27 @@ const ProductsPage = () => {
           {products?.map((item, index) => (
             <ProductCard key={index} item={item}>
               <ImgContainer>
-                <ProductImg />
+                <ProductImg src='https://picsum.photos/400' alt='Product' />
               </ImgContainer>
               <ProductDescription>
-                <h2>{item.data.name}</h2>
-                <h3>{item.data.metadata.price}</h3>
-                <h3>{item.data.metadata.size}</h3>
-                <h3>{item.data.description}</h3>
+                <ProductName>{item.data.name}</ProductName>
+                <ProductPrice>
+                  <div>{item.data.metadata.price}</div>
+                  <div>
+                    <input type='text' value={num} onChange={handleChange} />
+                    <button onClick={incNum}>+</button>
+                    <button onClick={decNum}>-</button>
+                  </div>
+                </ProductPrice>
+                <ProductDetails>
+                  <div>{item.data.metadata.size}</div>
+                  <div>{item.data.description}</div>
+                </ProductDetails>
               </ProductDescription>
               <CartButton
                 onClick={() =>
                   dispatch(addToCart({ ...products[index], quantity: 1 }))
-                }
-              >
+                }>
                 ADD TO CART
               </CartButton>
             </ProductCard>
