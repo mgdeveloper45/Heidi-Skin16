@@ -27,12 +27,16 @@ export const BookingTitle = styled.div`
 
 export const BookingContent = styled.div`
   display: flex;
-  height: 75%;
+  height: 70%;
   width: 80%;
   align-items: center;
   flex-direction: column;
-  background-color: salmon;
+
   padding: 20px;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const BookingLabel = styled.label`
@@ -56,11 +60,21 @@ export const BookingForm = styled.form`
 
 export const BookingInput = styled.input.attrs({ type: 'text' })`
   display: flex;
-  height: ;
-  width: 80%;
+  height: 30%;
+  min-width: 380px;
   align-items: center;
   justify-content: space-between;
   background-color: #dfd5b180;
   border-radius: 8px;
-  border: black;
+`;
+export const BookingButton = styled.button`
+  width: 40%;
+  height: 7%;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(13, 104, 120);
+  color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  font-size: larger;
 `;

@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Declaration,
   Foot,
-  Footer,
+  FooterWrapper,
   HR,
   LI,
   NAME,
@@ -12,52 +12,52 @@ import {
   Span,
   Social,
   UL,
-} from "./FooterStyles";
-import { AiOutlineGoogle } from "react-icons/ai";
-import { FaFacebook, FaTwitter, FaYelp } from "react-icons/fa";
+} from './FoooterStyles';
+import { AiOutlineGoogle } from 'react-icons/ai';
+import { FaFacebook, FaTwitter, FaYelp } from 'react-icons/fa';
 
-const Foooter = () => {
+const Footer = () => {
   const styles = {
     icons: {
-      height: "55px",
-      width: "55px",
+      height: '55px',
+      width: '55px',
     },
     yelp: {
-      height: "45px",
-      width: "45px",
-      paddingBottom: "5px",
+      height: '45px',
+      width: '45px',
+      paddingBottom: '5px',
     },
     span: {
-      fontSize: "72px",
+      fontSize: '72px',
     },
     links: {
-      textDecoration: "none",
-      color: "black"
-    } 
+      textDecoration: 'none',
+      color: 'black',
+    },
   };
   return (
-    <Footer>
+    <FooterWrapper>
       <Declaration>
         <UL>
-        <Link to="about" style={styles.links}>
-          <LI>About Us</LI>
+          <Link to='about' style={styles.links}>
+            <LI>About Us</LI>
           </Link>
-          <Link to="gallery" style={styles.links}>
-          <LI>Gallery</LI>
+          <Link to='gallery' style={styles.links}>
+            <LI>Gallery</LI>
           </Link>
-          <Link to="contact" style={styles.links}>
-          <LI>Contact Us</LI>
+          <Link to='contact' style={styles.links}>
+            <LI>Contact Us</LI>
           </Link>
         </UL>
         <Policy>
-        <Link to="bookings" style={styles.links}>
-          <LI>Bookings</LI>
+          <Link to='bookings' style={styles.links}>
+            <LI>Bookings</LI>
           </Link>
-          <Link to="policy" style={styles.links}>
-          <LI>Policy</LI>
+          <Link to='policy' style={styles.links}>
+            <LI>Policy</LI>
           </Link>
-          <Link to="covid" style={styles.links}>
-          <LI>Covid Protocols</LI>
+          <Link to='covid' style={styles.links}>
+            <LI>Covid Protocols</LI>
           </Link>
         </Policy>
       </Declaration>
@@ -74,8 +74,8 @@ const Foooter = () => {
           <FaYelp style={styles.yelp} />
         </Social>
       </Foot>
-    </Footer>
+    </FooterWrapper>
   );
 };
 
-export default Foooter;
+export default Footer;

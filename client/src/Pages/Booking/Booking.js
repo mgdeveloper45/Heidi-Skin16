@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  BookingButton,
   BookingContainer,
   BookingContent,
   BookingForm,
@@ -58,9 +59,11 @@ const Booking = () => {
             </BookingForm>
             <BookingForm>
               <BookingLabel>Availability</BookingLabel>
-              <BookingInput type='text' />
+              <BookingInput />
             </BookingForm>
+            <BookingButton>Book a Session</BookingButton>
           </BookingContent>
+          <p>In salon appointments only</p>
         </BookingContainer>
       </BookingWrapper>
     </div>

@@ -34,19 +34,22 @@ function App() {
   };
 
   const animateRevImg = () => {
-    if (visible === true) {
-      const animatedImg = document.querySelector('.rightImg');
-      animatedImg.classList.remove('rightBox');
-      animatedImg.classList.add('rightBoxes');
-      animatedImg.style.marginRight = '0px';
-      setTimeout(() => {
-        setVisible(false);
-      }, 1000);
-    }
+    return new Promise((resolve, reject) => {
+      if (visible === true) {
+        const animatedImg = document.querySelector('.rightImg');
+        animatedImg.classList.remove('rightBox');
+        animatedImg.classList.add('rightBoxes');
+        animatedImg.style.marginRight = '0px';
+        setTimeout(() => {
+          setVisible(false);
+          resolve('finished');
+        }, 1000);
+      }
+    });
   };
   return (
     <>
-      <Nav visible={visible} animateRevImg={animateRevImg} />
+      <Nav visible={visible} animateImg={animateRevImg} />
       <Routes>
         <Route
           path='/'
