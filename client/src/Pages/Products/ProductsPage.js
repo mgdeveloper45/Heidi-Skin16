@@ -103,8 +103,9 @@ const ProductsPage = () => {
               </ProductDescription>
               <CartButton
                 onClick={() =>
-                  dispatch(addToCart({ ...item.data, quantity: 1 }))
-                }>
+                  dispatch(addToCart({ ...products[index], quantity: 1 }))
+                }
+              >
                 ADD TO CART
               </CartButton>
             </ProductCard>
