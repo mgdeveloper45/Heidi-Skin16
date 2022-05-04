@@ -3,10 +3,8 @@ import styled from 'styled-components';
 export const BookingWrapper = styled.div`
   display: flex;
   justify-content: center;
-  /* height: 39vh; */
   height: 100vh;
   width: 100vw;
-  background-color: brown;
 `;
 
 export const BookingContainer = styled.div`
@@ -15,7 +13,6 @@ export const BookingContainer = styled.div`
   align-items: center;
   height: 100%;
   width: 70%;
-  background-color: white;
 `;
 export const BookingTitle = styled.div`
   display: flex;
@@ -28,44 +25,44 @@ export const BookingTitle = styled.div`
 export const BookingContent = styled.div`
   display: flex;
   height: 70%;
-  width: 80%;
+  width: 780px;
   align-items: center;
   flex-direction: column;
-
-  padding: 20px;
-
+  padding-top: 50px;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
-
+export const BookingForm = styled.form`
+  display: flex;
+  height: 10%;
+  width: 90%;
+  margin-left: 20%;
+  align-items: flex-start;
+`;
 export const BookingLabel = styled.label`
-  background-color: white;
+  display: flex;
+  width: 100px;
+  line-height: 26px;
+  margin-right: 10px;
 `;
 export const BookingSelect = styled.select`
-  height: 30%;
-  min-width: 380px;
-  border-radius: 8px;
+  height: 40px;
+  width: 45%;
+  margin-left: 10px;
+  border-radius: 3px;
   background-color: #dfd5b180;
+  border: 1px solid black;
 `;
 export const BookingOption = styled.option``;
-export const BookingForm = styled.form`
-  height: 15%;
-  width: 90%;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  display: flex;
-`;
 
 export const BookingInput = styled.input.attrs({ type: 'text' })`
-  display: flex;
-  height: 30%;
-  min-width: 380px;
-  align-items: center;
-  justify-content: space-between;
+  height: 40px;
+  width: 45%;
+  margin-left: 10px;
+  border-radius: 3px;
   background-color: #dfd5b180;
-  border-radius: 8px;
+  border: 1px solid black;
 `;
 export const BookingButton = styled.button`
   width: 40%;

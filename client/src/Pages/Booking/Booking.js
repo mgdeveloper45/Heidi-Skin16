@@ -58,7 +58,7 @@ const Booking = () => {
               </BookingSelect>
             </BookingForm>
             <BookingForm>
-              <BookingLabel>Availability</BookingLabel>
+              <BookingLabel>Promo Code</BookingLabel>
               <BookingInput />
             </BookingForm>
             <BookingButton>Book a Session</BookingButton>
