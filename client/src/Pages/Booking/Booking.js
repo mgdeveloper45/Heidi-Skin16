@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   BookingButton,
   BookingContainer,
   BookingContent,
   BookingForm,
-  BookingInput,
+  // BookingInput,
   BookingLabel,
   BookingOption,
   BookingSelect,
   BookingTitle,
   BookingWrapper,
+  LinkStyles,
 } from './BookingStyles';
 
 const Booking = () => {
@@ -57,13 +59,19 @@ const Booking = () => {
                 <BookingOption>Fiat</BookingOption>
               </BookingSelect>
             </BookingForm>
-            <BookingForm>
+
+            {/* <BookingForm>
               <BookingLabel>Promo Code</BookingLabel>
               <BookingInput />
-            </BookingForm>
+            </BookingForm> */}
             <BookingButton>Book a Session</BookingButton>
+            <LinkStyles>
+              <p>In salon appointments only</p> <br />
+              <Link to='/policy'>Appointment Policy</Link>
+              <br />
+              <Link to='/covid'>Covid 19 Protocols</Link>
+            </LinkStyles>
           </BookingContent>
-          <p>In salon appointments only</p>
         </BookingContainer>
       </BookingWrapper>
     </div>
