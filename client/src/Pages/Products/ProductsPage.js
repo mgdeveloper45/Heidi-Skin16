@@ -78,6 +78,10 @@ const CartButton = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  &:active {
+    transform: translateY(1.5px) translateX(1.5px);
+  }
 `;
 
 const ProductsPage = () => {
