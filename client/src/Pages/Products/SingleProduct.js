@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../../Redux/cartSlicer.js';
 
 import { TiArrowSortedUp, TiArrowSortedDown } from 'react-icons/ti';
@@ -73,7 +73,9 @@ const CartButton = styled.button`
   }
 `;
 
-const SingleProduct = ({ item, products, index }) => {
+const SingleProduct = ({ item, index }) => {
+  const products = useSelector(state => state.productData.entities);
+
   const dispatch = useDispatch();
 
   const [num, setNum] = React.useState(1);
