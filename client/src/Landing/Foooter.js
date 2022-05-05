@@ -12,7 +12,7 @@ import {
   Span,
   Social,
   UL,
-} from './FooterStyles';
+} from './FoooterStyles';
 import { AiOutlineGoogle } from 'react-icons/ai';
 import { FaFacebook, FaTwitter, FaYelp } from 'react-icons/fa';
 
