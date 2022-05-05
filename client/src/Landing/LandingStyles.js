@@ -169,3 +169,4 @@ export const Statement = styled.div`
   width: 552px;
   height: 340px;
 `;
+
