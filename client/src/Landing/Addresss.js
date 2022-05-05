@@ -10,6 +10,9 @@ import {
 import location from "../images/navigation-32.png";
 
 const Addresss = () => {
+  const getDirections = () => {
+    
+  }
   const styles = {
     location: {
       transform: "rotate(33.75deg)",
