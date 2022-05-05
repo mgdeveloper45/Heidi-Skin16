@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
 export const Header = styled.div`
   display: flex;
   justify-content: space-around;
-  height: 100px;
+  height: 150px;
   margin-top: 0;
   border: none;
   background-color: rgba(223, 213, 177, 0.5);

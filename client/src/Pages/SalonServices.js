@@ -7,20 +7,25 @@ import { Top, ToTopButton } from "../Components/Menu/MenuStyles";
 import { allCategories } from "../utils/rawData";
 
 const SalonServices = () => {
-  const [categories, setCategories] = useState([]); 
+  const [categories, setCategories] = useState([]);
   useEffect(() => {
     setCategories(allCategories);
   }, []);
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div>
-      <ToTopButton><Top>Back to Top</Top></ToTopButton>
-      {categories.map((category, idx) => ( 
+      <ToTopButton onClick={scrollTop}>
+        <Top>Back to Top</Top>
+      </ToTopButton>
+      {categories.map((category, idx) => (
         <div key={idx}>
-          <Menu category={category}/>
+          <Menu category={category} />
         </div>
       ))}
-      <AddOn/>
-      <BackToTop/>
+      <AddOn />
+      <BackToTop onClick={() => scrollTop()} />
     </div>
   );
 };

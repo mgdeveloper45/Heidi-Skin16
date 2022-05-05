@@ -24,9 +24,9 @@ const SubMenu = ({ item, idx }) => {
               {item.title}
               {/* <Price>{item.price}</Price> */}
             </Listing>
-            <SndPrice>{item.sndPrice}</SndPrice>
           </Title>
           <Price>{item.price}</Price>
+          <SndPrice>{item.sndPrice}</SndPrice>
           <Description>{item.description}</Description>
         </Content>
       </ContentContainer>

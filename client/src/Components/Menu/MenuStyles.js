@@ -9,13 +9,18 @@ export const CategoryContainer = styled.div`
 `;
 export const Categories = styled.div`
   display: flex;
-  justify-content: space-around;
-  padding-left: 6%;
+  justify-content: center;
+`;
+
+export const TitleContainer = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: center;
 `;
 export const Title = styled.p`
   align-self: center;
   color: ${(props) => (props.color ? "#000" : "#fff")};
-  width: 550px;
+  width: 62%;
   font-family: Helvetica Neue;
   font-weight: 345;
   font-style: normal;
@@ -23,10 +28,11 @@ export const Title = styled.p`
   margin-bottom: 5rem;
 `;
 export const Image = styled.div`
-  width: 40%;
+  /* align-self: center; */
+  width: 80%;
   position: relative;
   height: 0;
-  padding-bottom: 40%;
+  padding-bottom: 80%;
   z-index: 10;
   transform: translateY(-1rem);
   background-color: red;
@@ -41,20 +47,22 @@ export const DescriptionContainer = styled.div`
 `;
 export const Description = styled.p`
   color: ${(props) => (props.color ? "#000" : "#fff")};
-  width: 80%;
-  /* height: 330px; */
+  width: 83.5%;
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 300;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 28px;
+  line-height: 50px;
+  @media screen and (max-width: 1200px) {
+    font-size: 1.5rem;
+  }
 `;
 export const ToTopButton = styled.button`
   top: 600px;
   bottom: none;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  z-index: 1;
+  z-index: 20;
   position: fixed;
   /* position: sticky; */
   /* z-index: -10; */
@@ -64,6 +72,7 @@ export const ToTopButton = styled.button`
   border: ${(props) => (props.color ? "none" : "5px solid #FFFFFF")};
   height: 100px;
   width: 100px;
+  cursor: pointer;
 `;
 export const Top = styled.span`
   font-family: Helvetica Neue;
