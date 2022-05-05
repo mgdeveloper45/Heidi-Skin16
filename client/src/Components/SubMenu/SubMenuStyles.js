@@ -88,6 +88,6 @@ export const Button = styled.div`
     width: 220px;
     height: 60px;
     margin-bottom: 4%;
-    /* transform: translateY(-100px); */
+    transform: translateY(-50px);
   }
 `;
