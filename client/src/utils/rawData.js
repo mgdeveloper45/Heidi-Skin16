@@ -1,3 +1,4 @@
+
 export const galleryImg = []
 export const allCategories = [
   {

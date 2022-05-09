@@ -12,12 +12,12 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
 
-const Nav = ({ animateRevImg, visible }) => {
+const Nav = ({ animateImg, visible }) => {
   const navigate = useNavigate();
 
   const closeThenRedirect = (navi) => {
     return visible 
-    ? animateRevImg()
+    ? animateImg()
     .then(() => navigate(navi)) 
     : navigate(navi) 
   };
@@ -28,7 +28,7 @@ const Nav = ({ animateRevImg, visible }) => {
         <Head />
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            <Heading onClick={() => animateRevImg()}>
+            <Heading onClick={() => animateImg()}>
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
