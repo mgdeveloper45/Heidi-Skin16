@@ -47,7 +47,7 @@ const ArrowContainer = styled.div`
 
 const Input = styled.input`
   text-align: center;
-  width: 25px;
+  width: 30px;
   height: 25px;
   margin-left: 25px;
   border: 1px solid;
