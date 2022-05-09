@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+
+//components
+import SingleProduct from './SingleProduct';
 
 const ProductWrapper = styled.div`
   display: flex;
@@ -21,26 +24,19 @@ const ProductDropdown = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
 `;
 const ProductGrid = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto auto auto;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
 `;
-const ProductCard = styled.div`
-  height: 400px;
-  width: 300px;
-  background-color: blue;
-  display: flex;
-  flex-flow: column;
-`;
-
-const ProductIMG = styled.div``;
-const ProductDescription = styled.div``;
 
 const ProductsPage = () => {
   const products = useSelector(state => state.productData.entities);
@@ -51,18 +47,7 @@ const ProductsPage = () => {
         <ProductDropdown>my boys</ProductDropdown>
         <ProductGrid>
           {products?.map((item, index) => (
-            <ProductCard key={index} item={item}>
-              <ProductIMG>
-                <img></img>
-              </ProductIMG>
-              <ProductDescription>
-                {item.data.name}
-                {item.data.metadata.price}
-                {item.data.metadata.size}
-                {item.data.description}
-              </ProductDescription>
-              <button style={{ width: '50px', height: '25px' }}></button>
-            </ProductCard>
+            <SingleProduct key={index} item={item} />
           ))}
         </ProductGrid>
       </ProductBody>

@@ -46,3 +46,10 @@ export const P = styled.p`
   margin: 0;
   padding: 10px 0;
 `;
+export const GetDirections = styled.a`
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: rgba(13, 104, 120, 0.75);
+  }
+`;

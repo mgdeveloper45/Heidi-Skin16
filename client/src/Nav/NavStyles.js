@@ -37,6 +37,13 @@ export const Icons = styled.div`
   justify-self: flex-end;
   /* margin-right: 20px; */
 `;
+
+export const Icon = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 export const Navi = styled.div`
   height: 150px;
   background-color: white;
