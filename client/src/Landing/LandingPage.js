@@ -67,7 +67,7 @@ const LandingPage = ({animate, visible}) => {
           </Name>
         </Logo>
       </MainContainer>
-      <Addresss />
+    { /* <Addresss />*/}
     </Page>
   );
 };
