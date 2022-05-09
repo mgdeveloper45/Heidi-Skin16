@@ -9,11 +9,13 @@ import Policy from "./Pages/Policy/Policy";
 import Covid from "./Pages/Covid/Covid";
 import Booking from "./Pages/Booking/Booking";
 import Cart from "./Pages/Cart/Cart";
+import ProductsPage from "./Pages/Products/ProductsPage";
 import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
-import ProductsPage from "./Pages/Products/ProductsPage";
+
+import Gallery from "./Gallery/Gallery";
 
 function App() {
   const dispatch = useDispatch();
@@ -58,6 +60,7 @@ function App() {
           path="/"
           element={<LandingPage animate={animateImg} visible={visible} />}
         />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/booking" element={<Booking />} />

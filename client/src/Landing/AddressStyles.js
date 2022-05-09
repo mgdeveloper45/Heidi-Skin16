@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const AddressContainer = styled.div`
   display: flex;
@@ -45,4 +45,11 @@ export const P = styled.p`
   font-size: 25px;
   margin: 0;
   padding: 10px 0;
+`;
+export const GetDirections = styled.a`
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: rgba(13, 104, 120, 0.75);
+  }
 `;
