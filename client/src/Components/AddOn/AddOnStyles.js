@@ -4,6 +4,7 @@ export const AddON = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 200px;
 `;
 export const AddOnContainer = styled.div`
   width: 100%;
@@ -19,10 +20,11 @@ export const Price = styled.span`
   font-size: 30px;
   margin-right: 10px;
 `;
+
 export const Title = styled.div`
   color: ${(props) => (props.color ? "black" : "#fff")};
-
-  margin-bottom: ${(props) => props.mb && props.mb};
+  margin-top: 200px;
+  margin-bottom: 40%;
   width: 550px;
   font-family: Helvetica Neue;
   font-weight: 350;
@@ -30,10 +32,12 @@ export const Title = styled.div`
   font-size: 80px;
 `;
 export const Image = styled.div`
-  width: 596px;
-  height: 696px;
+  width: 40%;
+  position: relative;
+  height: 0;
+  padding-bottom: 40%;
   z-index: 10;
-  margin-top: -25px;
+  transform: translateY(-1rem);
   background-color: red;
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;

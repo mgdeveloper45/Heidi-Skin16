@@ -9,6 +9,7 @@ import Policy from "./Pages/Policy/Policy";
 import Covid from "./Pages/Covid/Covid";
 import Booking from "./Pages/Booking/Booking";
 import Cart from "./Pages/Cart/Cart";
+import ProductsPage from "./Pages/Products/ProductsPage";
 import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
@@ -63,7 +64,9 @@ function App() {
         <Route path='/services' element={<SalonServices />} />
         <Route
           path="/products"
-          element={<h1>Buy Products Page Coming Soon</h1>}
+          element={ 
+            <ProductsPage />
+          }
         />
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />

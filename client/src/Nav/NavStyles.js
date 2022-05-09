@@ -65,7 +65,7 @@ export const P = styled.p`
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 2rem;
   &:hover {
     text-decoration: underline;
   }
