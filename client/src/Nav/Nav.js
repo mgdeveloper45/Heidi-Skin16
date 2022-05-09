@@ -2,6 +2,7 @@ import {
   Head,
   Header,
   Heading,
+  Icon,
   Icons,
   Logo,
   NavContainer,
@@ -12,14 +13,11 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
 
-const Nav = ({ animateRevImg, visible }) => {
+const Nav = ({ animateImg, visible }) => {
   const navigate = useNavigate();
 
   const closeThenRedirect = (navi) => {
-    return visible 
-    ? animateRevImg()
-    .then(() => navigate(navi)) 
-    : navigate(navi) 
+    return visible ? animateImg().then(() => navigate(navi)) : navigate(navi);
   };
 
   return (
@@ -28,42 +26,31 @@ const Nav = ({ animateRevImg, visible }) => {
         <Head />
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            <Heading onClick={() => animateRevImg()}>
+            <Heading onClick={() => animateImg()}>
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
         </Logo>
         <Icons>
           <BsSearch size={25} />
-          <BsCart3 style={{ marginLeft: "10px" }} size={30} />
+          <Icon>
+            <BsCart3
+              onClick={() => closeThenRedirect("/cart")}
+              style={{ marginLeft: "10px" }}
+              size={30}
+            />
+          </Icon>
         </Icons>
         {/* <form action="/create-checkout-session" method="POST">
           <button type="submit">Checkout</button>
         </form> */}
       </Header>
       <Navi>
-        <P
-          onClick={() =>
-            closeThenRedirect('/services')
-          }
-        >
-          Salon Service
-        </P>
+        <P onClick={() => closeThenRedirect("/services")}>Salon Service</P>
 
-        
-          <P
-          onClick={() =>
-            closeThenRedirect('/products')
-          }
-        >Buy Products</P>
-      
+        <P onClick={() => closeThenRedirect("/products")}>Buy Products</P>
 
-        
-          <P onClick={() =>
-            closeThenRedirect('/contact')
-          }
-        >Contact Us</P>
-        
+        <P onClick={() => closeThenRedirect("/contact")}>Contact Us</P>
       </Navi>
     </NavContainer>
   );
