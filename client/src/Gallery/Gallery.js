@@ -5,7 +5,7 @@ import {
   GalleryHead,
   GalleryHeader,
   GalleryImageContainer,
-  GarlleryImage,
+  GalleryImage,
   // StyledArrowContainer,
 } from "./GalleryStyles";
 // import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
@@ -35,7 +35,7 @@ const Gallery = () => {
         {/*left arrow*/}
         <GalleryImageContainer>
           {data.map((img, index) => (
-            <GarlleryImage ke={index} src={img} />
+            <GalleryImage key={index} src={img} />
           ))}
         </GalleryImageContainer>
       </GalleryContainer>

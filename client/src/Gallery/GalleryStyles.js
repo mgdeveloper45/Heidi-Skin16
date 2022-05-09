@@ -34,7 +34,7 @@ export const GalleryImageContainer = styled.div`
   }
 `;
 
-export const GarlleryImage = styled.img`
+export const GalleryImage = styled.img`
   /* background-image: url(${(props) => props.image}); */
   background-color: white;
   margin: 0 10px 0 10px;
