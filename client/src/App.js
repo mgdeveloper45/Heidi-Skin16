@@ -4,16 +4,19 @@ import Contact from "./Contact/Contact";
 import Footer from "./Landing/Footer";
 import LandingPage from "./Landing/LandingPage";
 import SalonServices from "./Pages/SalonServices";
-import ProductsPage from "./Pages/Products/ProductsPage";
 import Nav from "./Nav/Nav";
 import Policy from "./Pages/Policy/Policy";
 import Covid from "./Pages/Covid/Covid";
+import Booking from "./Pages/Booking/Booking";
+import Cart from "./Pages/Cart/Cart";
+import ProductsPage from "./Pages/Products/ProductsPage";
+import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
-
 import Gallery from "./Gallery/Gallery";
 import About from "./About/About";
+
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -51,19 +54,22 @@ function App() {
   };
   return (
     <>
-      <Nav visible={visible} animateRevImg={animateRevImg} />
+      <Nav visible={visible} animateImg={animateRevImg} />
       <Routes>
         <Route
           path="/"
           element={<LandingPage animate={animateImg} visible={visible} />}
         />
-        <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/about" element={<About />}/>
         <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/covid" element={<Covid />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
       <Footer />
     </>
