@@ -16,6 +16,22 @@ import yngw3 from "../SlideImages/yngw_slide_741_cropped.jpeg";
 import yngw4 from "../SlideImages/yngw_slide_934_cropped.jpeg";
 import yngw5 from "../SlideImages/yngw_slide_956_cropped.jpeg";
 
-
-
-export const data = [mida1, mida2, midblk1, midw1, midw2, ola, owl1, owl2, owl3, ynga, yngblk1, yngh,yngw1, yngw2, yngw3, yngw4, yngw5]
+export const data = [
+  mida1,
+  mida2,
+  midblk1,
+  midw1,
+  midw2,
+  ola,
+  owl1,
+  owl2,
+  owl3,
+  ynga,
+  yngblk1,
+  yngh,
+  yngw1,
+  yngw2,
+  yngw3,
+  yngw4,
+  yngw5,
+];
