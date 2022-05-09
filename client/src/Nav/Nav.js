@@ -2,6 +2,7 @@ import {
   Head,
   Header,
   Heading,
+  Icon,
   Icons,
   Logo,
   NavContainer,
@@ -16,10 +17,7 @@ const Nav = ({ animateImg, visible }) => {
   const navigate = useNavigate();
 
   const closeThenRedirect = (navi) => {
-    return visible 
-    ? animateImg()
-    .then(() => navigate(navi)) 
-    : navigate(navi) 
+    return visible ? animateImg().then(() => navigate(navi)) : navigate(navi);
   };
 
   return (
@@ -35,35 +33,24 @@ const Nav = ({ animateImg, visible }) => {
         </Logo>
         <Icons>
           <BsSearch size={25} />
-          <BsCart3 style={{ marginLeft: "10px" }} size={30} />
+          <Icon>
+            <BsCart3
+              onClick={() => closeThenRedirect("/cart")}
+              style={{ marginLeft: "10px" }}
+              size={30}
+            />
+          </Icon>
         </Icons>
         {/* <form action="/create-checkout-session" method="POST">
           <button type="submit">Checkout</button>
         </form> */}
       </Header>
       <Navi>
-        <P
-          onClick={() =>
-            closeThenRedirect('/services')
-          }
-        >
-          Salon Service
-        </P>
+        <P onClick={() => closeThenRedirect("/services")}>Salon Service</P>
 
-        
-          <P
-          onClick={() =>
-            closeThenRedirect('/products')
-          }
-        >Buy Products</P>
-      
+        <P onClick={() => closeThenRedirect("/products")}>Buy Products</P>
 
-        
-          <P onClick={() =>
-            closeThenRedirect('/contact')
-          }
-        >Contact Us</P>
-        
+        <P onClick={() => closeThenRedirect("/contact")}>Contact Us</P>
       </Navi>
     </NavContainer>
   );
