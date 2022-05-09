@@ -13,6 +13,7 @@ import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
+import ProductsPage from "./Pages/Products/ProductsPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -58,10 +59,7 @@ function App() {
           element={<LandingPage animate={animateImg} visible={visible} />}
         />
         <Route path="/services" element={<SalonServices />} />
-        <Route
-          path="/products"
-          element={<h1>Buy Products Page Coming Soon</h1>}
-        />
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
