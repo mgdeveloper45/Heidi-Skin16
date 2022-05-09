@@ -59,9 +59,14 @@ const Input = styled.input`
 const Arrows = styled.div`
   display: flex;
   flex-flow: column;
+  /* font-size: 18px; */
   color: #0d6878;
 
   margin-left: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ProductDetails = styled.div`
@@ -71,7 +76,7 @@ const ProductDetails = styled.div`
 
 const CartButton = styled.button`
   height: 50px;
-  width: 50%;
+  width: 65%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
   background-color: #e1b4bd;
