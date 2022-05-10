@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../../Redux/cartSlicer.js';
+import React from "react";
+import styled from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../Redux/cartSlicer.js";
 
-import { TiArrowSortedUp, TiArrowSortedDown } from 'react-icons/ti';
+import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 
 const ProductCard = styled.div`
   height: 400px;
@@ -74,7 +74,7 @@ const CartButton = styled.button`
 `;
 
 const SingleProduct = ({ item, index }) => {
-  const products = useSelector(state => state.productData.entities);
+  const products = useSelector((state) => state.productData.entities);
 
   const dispatch = useDispatch();
 
@@ -89,21 +89,21 @@ const SingleProduct = ({ item, index }) => {
       setNum(num - 1);
     }
   };
-  let handleChange = e => {
-    setNum(e.target.value);
+  let handleChange = (e) => {
+    setNum(parseInt(e.target.value));
   };
 
   return (
     <ProductCard key={index}>
       <ImgContainer>
-        <ProductImg src='https://picsum.photos/400' alt='Product' />
+        <ProductImg src="https://picsum.photos/400" alt="Product" />
       </ImgContainer>
       <ProductDescription>
         <ProductName>{item.data.name}</ProductName>
         <ProductPrice>
           <div>${item.data.metadata.price}</div>
           <div>
-            <Input type='text' value={num} onChange={handleChange} />
+            <Input type="number" value={num} onChange={handleChange} />
             <Arrows>
               <TiArrowSortedUp onClick={incNum} />
               <TiArrowSortedDown onClick={decNum} />
@@ -116,9 +116,8 @@ const SingleProduct = ({ item, index }) => {
         </ProductDetails>
       </ProductDescription>
       <CartButton
-        onClick={() =>
-          dispatch(addToCart({ ...products[index], quantity: num }))
-        }>
+        onClick={() => dispatch(addToCart({ ...item, quantity: num }))}
+      >
         ADD TO CART
       </CartButton>
     </ProductCard>
