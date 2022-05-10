@@ -10,13 +10,14 @@ const MenuBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgba(13, 104, 120, 0.75);
 
   background: none;
   border: none;
   font-size: 40px;
 
   :hover {
-    color: gray;
+    color: rgba(216, 155, 166, 0.75);
   }
 `;
 
@@ -29,6 +30,7 @@ const Menu = styled.div`
   text-align: center;
   font-size: 20px;
 
+  background-color: rgba(216, 155, 166, 0.75);
   position: absolute;
   padding: 1rem;
   letter-spacing: 0.05rem;
