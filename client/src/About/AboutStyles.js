@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-// export const AboutContainer = styled.div`
-//   /* border: 2px solid green; */
-// `;
+export const AboutContainer = styled.div`
+  /* border: 2px solid green; */
+`;
 
 export const AboutHeader = styled.h1`
   text-align: center;

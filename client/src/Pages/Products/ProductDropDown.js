@@ -46,6 +46,8 @@ const Menu = styled.div`
   }
 `;
 
+const CategoryLinks = styled.div``;
+
 const ProductDropDown = () => {
   const [value, setValue] = useState(false);
 

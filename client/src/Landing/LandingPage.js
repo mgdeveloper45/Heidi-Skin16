@@ -7,6 +7,7 @@ import {
   Session,SlidingImg, Span, Statement,
 } from "./LandingStyles";
 import Addresss from "./Addresss";
+import Gallery from "../Gallery/Gallery";
 // import { useState } from "react";
 
 const LandingPage = ({animate, visible}) => {
@@ -67,6 +68,7 @@ const LandingPage = ({animate, visible}) => {
           </Name>
         </Logo>
       </MainContainer>
+      {/*<Gallery />*/}
     { /* <Addresss />*/}
     </Page>
   );
