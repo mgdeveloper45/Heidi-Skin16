@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../../Redux/cartSlicer.js';
+import React from "react";
+import styled from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../Redux/cartSlicer.js";
 
-import { TiArrowSortedUp, TiArrowSortedDown } from 'react-icons/ti';
+import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 
 const ProductCard = styled.div`
   height: 400px;
@@ -12,6 +12,8 @@ const ProductCard = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: space-around;
+
+  margin-bottom: 100px;
 `;
 
 const ImgContainer = styled.div`
@@ -31,6 +33,7 @@ const ProductImg = styled.img`
 const ProductDescription = styled.div`
   display: flex;
   flex-flow: column;
+  margin-left: 25px;
 `;
 
 const ProductName = styled.div``;
@@ -38,16 +41,32 @@ const ProductPrice = styled.div`
   display: flex;
 `;
 
+const ArrowContainer = styled.div`
+  display: flex;
+`;
+
 const Input = styled.input`
   text-align: center;
-  width: 25px;
+  width: 30px;
   height: 25px;
   margin-left: 25px;
+  border: 1px solid;
+  border-radius: 5px;
+
+  background-color: #e5e5e5;
 `;
 
 const Arrows = styled.div`
   display: flex;
   flex-flow: column;
+  /* font-size: 18px; */
+  color: #0d6878;
+
+  margin-left: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ProductDetails = styled.div`
@@ -57,12 +76,14 @@ const ProductDetails = styled.div`
 
 const CartButton = styled.button`
   height: 50px;
-  width: 75%;
+  width: 65%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
   background-color: #e1b4bd;
   border: none;
   font-weight: bold;
+
+  margin-left: 25px;
 
   &:hover {
     cursor: pointer;
@@ -96,19 +117,19 @@ const SingleProduct = ({ item, index }) => {
   return (
     <ProductCard key={index}>
       <ImgContainer>
-        <ProductImg src='https://picsum.photos/400' alt='Product' />
+        <ProductImg src="https://picsum.photos/400" alt="Product" />
       </ImgContainer>
       <ProductDescription>
         <ProductName>{item.data.name}</ProductName>
         <ProductPrice>
           <div>${item.data.metadata.price}</div>
-          <div>
-            <Input type='text' value={num} onChange={handleChange} />
+          <ArrowContainer>
+            <Input type="text" value={num} onChange={handleChange} />
             <Arrows>
               <TiArrowSortedUp onClick={incNum} />
               <TiArrowSortedDown onClick={decNum} />
             </Arrows>
-          </div>
+          </ArrowContainer>
         </ProductPrice>
         <ProductDetails>
           <div>{item.data.metadata.size}</div>
