@@ -4,7 +4,7 @@ import {
   GalleryHead,
   GalleryHeader,
   GalleryImageContainer,
-  GarlleryImage,
+  GalleryImage,
 } from "./GalleryStyles";
 
 import { data } from "./GalleryData";
@@ -22,7 +22,7 @@ const Gallery = () => {
         </GalleryHead>
         <GalleryImageContainer>
           {data.map((img, index) => (
-            <GarlleryImage key={index} src={img} />
+            <GalleryImage key={index} src={img} />
           ))}
         </GalleryImageContainer>
       </GalleryContainer>
