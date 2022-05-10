@@ -19,7 +19,8 @@ const ProductBody = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const ProductDropdown = styled.div`
+
+const DropDown = styled.h1`
   width: 100%;
   height: 100%;
   display: flex;
@@ -44,7 +45,10 @@ const ProductsPage = () => {
   return (
     <ProductWrapper>
       <ProductBody>
-        <ProductDropdown>my boys</ProductDropdown>
+          <DropDown>
+            PRODUCTS
+            <ProductDropDown />
+          </DropDown>
         <ProductGrid>
           {products?.map((item, index) => (
             <SingleProduct key={index} item={item} />
