@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { FiMenu } from "react-icons/fi";
+import { BsCaretDownSquare } from "react-icons/bs";
 
 const DropContainer = styled.div``;
 
@@ -52,7 +52,7 @@ const ProductDropDown = () => {
   return (
     <DropContainer>
       <MenuBtn onClick={() => setValue(!value)}>
-        <FiMenu />
+        <BsCaretDownSquare />
       </MenuBtn>
       {value === true ? (
         <MenuPosition>
