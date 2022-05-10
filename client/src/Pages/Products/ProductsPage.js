@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 //components
 import SingleProduct from "./SingleProduct";
+import ProductDropDown from "./ProductDropDown";
 
 const ProductWrapper = styled.div`
   display: flex;
@@ -19,7 +20,7 @@ const ProductBody = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const ProductDropdown = styled.div`
+const DropDown = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -44,7 +45,10 @@ const ProductsPage = () => {
   return (
     <ProductWrapper>
       <ProductBody>
-        <ProductDropdown>my boys</ProductDropdown>
+        <DropDown>
+          PRODUCTS
+          <ProductDropDown />
+        </DropDown>
         <ProductGrid>
           {products?.map((item, index) => (
             <SingleProduct key={index} item={item} />

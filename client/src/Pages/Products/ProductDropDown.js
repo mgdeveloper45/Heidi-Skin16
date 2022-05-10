@@ -14,14 +14,9 @@ const MenuBtn = styled.button`
   background: none;
   border: none;
   font-size: 40px;
-  color: rgb(237, 246, 249, 0.9);
 
   :hover {
-    color: rgb(230, 57, 70);
-  }
-
-  @media (max-width: 575px) {
-    font-size: 30px;
+    color: gray;
   }
 `;
 
@@ -38,16 +33,15 @@ const Menu = styled.div`
   padding: 1rem;
   letter-spacing: 0.05rem;
   border-radius: 5px;
-  background: rgb(29, 53, 87);
   z-index: 1;
 
   a:visited,
   a:link,
   a:active {
     text-decoration: none;
-    color: rgb(237, 246, 249, 0.9);
+    color: black;
     :hover {
-      color: rgb(230, 57, 70);
+      color: gray;
     }
   }
 `;
