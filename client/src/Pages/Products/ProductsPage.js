@@ -20,7 +20,7 @@ const ProductBody = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const DropDown = styled.div`
+const DropDown = styled.h1`
   width: 100%;
   height: 100%;
   display: flex;
