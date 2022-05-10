@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
+import React from "react";
+import styled from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
 
 //components
-import SingleProduct from './SingleProduct';
+import SingleProduct from "./SingleProduct";
 
 const ProductWrapper = styled.div`
   display: flex;
@@ -34,8 +34,8 @@ const ProductGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto auto auto;
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 30px;
+  row-gap: 30px;
 `;
 
 const ProductsPage = () => {
