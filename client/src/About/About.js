@@ -6,19 +6,27 @@ import {
   AboutImage,
   ParagraphContainer,
   Paragraph,
-  Span
+  Heading,
+  Span,
 } from "./AboutStyles";
 import "./About.css";
+
 const About = () => {
   return (
     <AboutContainer>
+      <div class="arrow">
+        <div class="line"></div>
+        <div class="point"></div>
+      </div>
       <AboutHeader>About Us</AboutHeader>
       <AboutImageContainer>
         <h3 className="about-live">Live</h3>
         <AboutImage></AboutImage>
         <h3 className="beauty">Beautifully</h3>
       </AboutImageContainer>
-      <Span>HEIDI</Span>SKIN16
+      <Heading>
+        <Span>HEIDI</Span>SKIN16
+      </Heading>
       <ParagraphContainer>
         <Paragraph>
           Enter Owner bio and the mission statement of the company. Can use a
@@ -39,7 +47,7 @@ const About = () => {
           Other esteticians who work at the salon, if any, can be mentioned
           here. Any Additional info.
         </Paragraph>
-        <hr/>
+        <hr />
       </ParagraphContainer>
     </AboutContainer>
   );
