@@ -37,6 +37,13 @@ export const Icons = styled.div`
   justify-self: flex-end;
   /* margin-right: 20px; */
 `;
+
+export const Icon = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 export const Navi = styled.div`
   height: 150px;
   background-color: white;
@@ -58,7 +65,7 @@ export const P = styled.p`
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 2rem;
   &:hover {
     text-decoration: underline;
   }

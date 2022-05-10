@@ -1,4 +1,5 @@
-import React from 'react';
+// import React, { useRef } from 'react';
+// import emailjs from '@emailjs/browser'
 import Addresss from '../Landing/Addresss';
 import { 
     Button, Confirm, Disclaimer, EmailInput, 
@@ -7,6 +8,12 @@ import {
 } from './ContactStyles';
 
 const Contact = () => {
+    // const form = useRef();
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+
+        
+    // }
     return (
         <>
         <FormContainer>
