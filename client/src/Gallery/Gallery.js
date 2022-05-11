@@ -13,9 +13,9 @@ import {
 import { data } from "./GalleryData";
 const Gallery = () => {
   console.log(data);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {}, [currentImageIndex]);
+  // useEffect(() => {}, [currentImageIndex]);
 
   // const nextImage = () => {
   //   console.log("next");

@@ -1,5 +1,3 @@
-
-
 import mida1 from "../SlideImages/mida_slide_269_cropped.jpeg";
 import mida2 from "../SlideImages/mida_slide_893_cropped.jpeg";
 import midblk1 from "../SlideImages/midblk_slide_760_cropped.jpeg";

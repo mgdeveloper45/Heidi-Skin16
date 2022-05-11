@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import fullImg from "../images/full_face_cropped.png";
-import leftImg from "../images/left_side_landing_cropped.png";
-import rightImg from "../images/landing2_right_cropped.png";
+import fullImg from "../../images/full_face_cropped.png";
+import leftImg from "../../images/left_side_landing_cropped.png";
+import rightImg from "../../images/landing2_right_cropped.png";
 
 // landing page with main image
 export const Page = styled.div`
