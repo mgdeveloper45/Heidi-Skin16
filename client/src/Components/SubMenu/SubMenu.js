@@ -15,7 +15,6 @@ import {
 } from "./SubMenuStyles";
 
 const SubMenu = ({ item, idx }) => {
-  // const ref = useRef(800)
   return (
     <SubMenuContainer>
       <ContentContainer key={idx}>
