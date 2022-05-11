@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   GalleryContainer,
   GalleryHead,
@@ -10,9 +10,6 @@ import {
 import { data } from "./GalleryData";
 const Gallery = () => {
   console.log(data);
-  const [currentImageIndex] = useState(0);
-
-  useEffect(() => {}, [currentImageIndex]);
 
   return (
     <>

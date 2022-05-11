@@ -8,7 +8,7 @@ import {
   H3,
   P,
 } from "./AddressStyles";
-import location from "../images/navigation-32.png";
+import location from "../../images/navigation-32.png";
 const Addresss = () => {
   const styles = {
     location: {

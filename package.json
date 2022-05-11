@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mgdeveloper45/Heidi-Skin16#readme",
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "concurrently": "^6.4.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.1",

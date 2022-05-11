@@ -1,24 +1,14 @@
 import React from "react";
-import "./AnimationStyles.css";
+import "../AnimationStyles.css";
 import { Link } from "react-router-dom";
 import {
   Appointments, Book, Deserve, LeftImg, Logo, MainContainer,
   MainImg, More, Name, Page, Policy, Protocol, RightImg,
   Session,SlidingImg, Span, Statement,
 } from "./LandingStyles";
-import Addresss from "./Addresss";
-import Gallery from "../Gallery/Gallery";
-// import { useState } from "react";
+import Addresss from "../Address/Addresss";
 
 const LandingPage = ({animate, visible}) => {
-  // const [visible, setVisible] = useState(false);
-
-  // const animateImg = () => {
-  //   const animatedImg = document.querySelector(".rightImg");
-  //   animatedImg.classList.add("rightBox");
-  //   animatedImg.style.marginRight = "50%";
-  //   setVisible(true);
-  // };
 
   return (
     <Page>
@@ -69,7 +59,7 @@ const LandingPage = ({animate, visible}) => {
         </Logo>
       </MainContainer>
       {/*<Gallery />*/}
-    { /* <Addresss />*/}
+    <Addresss />
     </Page>
   );
 };
