@@ -96,7 +96,8 @@ export const allCategories = [
         button: "Book",
       },
     ],
-    color: true,
+    color: "rgba(216, 155, 166, 0.75)",
+    secondaryColor: "#000",
   },
   {
     title: "Peels",
@@ -165,7 +166,8 @@ export const allCategories = [
         button: "Book",
       },
     ],
-    color: false,
+    color: "rgba(13, 104, 120, 0.75)",
+    secondaryColor: "#fff",
   },
   {
     title: "LED Therapy",
@@ -195,7 +197,8 @@ export const allCategories = [
         button: "Book",
       },
     ],
-    color: true,
+    color: "rgba(216, 155, 166, 0.75)",
+    secondaryColor: "#000",
   },
   // { title: "Eyebrows Eyeliner Lips", image: ``, description: `Coming Soon!! - Microblading -  Is a manual
   //     form of tattooing, often referred to as 3D brows or brow-embroidery. Natural and crisp hair strokes
@@ -204,7 +207,8 @@ export const allCategories = [
   // {title: '', image: ``, price: '', description: '', button: 'Book'},
   // {title: '', image: ``, price: '', description: '', button: ''},
   // {title: '', image: ``, price: '', description: '', button: ''}
-  // ], color: false
+  // ], color: "rgba(13, 104, 120, 0.75)"
+  // secondaryColor: "#fff",
   // },
   {
     title: "Scalp Treatments",
@@ -246,7 +250,8 @@ export const allCategories = [
         button: "Book",
       },
     ],
-    color: false,
+    color: "rgba(13, 104, 120, 0.75)",
+    secondaryColor: "#fff",
   },
 ];
 export const addOn = [
@@ -267,6 +272,7 @@ export const addOn = [
       { title: "Soft Wax", price: "$65" },
       { title: "Hard Wax", price: "$75" },
     ],
-    color: true,
+    color: "rgba(216, 155, 166, 0.75)",
+    secondaryColor: "#000",
   },
 ];
