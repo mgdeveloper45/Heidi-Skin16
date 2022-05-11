@@ -14,8 +14,8 @@ import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
-
-import Gallery from './Gallery/Gallery';
+import Gallery from "./Gallery/Gallery";
+import About from "./About/About";
 
 function App() {
   const dispatch = useDispatch();

@@ -14,7 +14,6 @@ const Cart = () => {
   return (
     <CartPage>
       <Title>Your Cart</Title>
-
       <div>
         {cart.cartItems.map((item, index) => (
           <div key={index} item={item}>
