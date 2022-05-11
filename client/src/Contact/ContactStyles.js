@@ -5,11 +5,11 @@ export const FormContainer = styled.div`
     flex-direction: column;
     justify-content: center;
 `;
-export const Form = styled.div`
+export const Form = styled.form`
     display: flex;
     justify-content: space-around;
 `;
-export const FormInput = styled.form`
+export const FormInput = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -37,7 +37,7 @@ export const H2 = styled.h2`
     justify-content: center;
     align-items: center;
 `;
-export const Label = styled.h3`
+export const Label = styled.label`
     width: 88px;
     height: 64px;
     font-family: Helvetica Neue;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CategoryContainer = styled.div`
   /* background-color: blue; */
   background-color: ${(props) =>
-    props.bgColor ? "rgba(216, 155, 166, 0.75)" : "rgba(13, 104, 120, 0.75)"};
+    props.backgroundColor ? props.backgroundColor : "white"};
   padding-bottom: 4rem;
   margin-bottom: 4rem;
 `;
@@ -27,7 +27,7 @@ export const TitleContainer = styled.div`
 `;
 export const Title = styled.p`
   align-self: center;
-  color: ${(props) => (props.color ? "#000" : "#fff")};
+  color: ${(props) => (props.title ? props.title : "white")};
   width: 62%;
   font-family: Helvetica Neue;
   font-weight: 345;
@@ -64,7 +64,7 @@ export const DescriptionContainer = styled.div`
   /* padding: 7%; */
 `;
 export const Description = styled.p`
-  color: ${(props) => (props.color ? "#000" : "#fff")};
+  color: ${(props) => (props.description ? props.description : "white")};
   width: 83.5%;
   font-family: Helvetica Neue;
   font-style: normal;

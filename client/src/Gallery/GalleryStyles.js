@@ -10,8 +10,7 @@ export const GalleryHead = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 552px; */
-  /* height: 60px; */
+
 `;
 export const GalleryHeader = styled.h1`
   font-family: Helvetica Neue;
@@ -34,8 +33,9 @@ export const GalleryImageContainer = styled.div`
   }
 `;
 
-export const GarlleryImage = styled.img`
-  /* background-image: url(${(props) => props.image}); */
+
+export const GalleryImage = styled.img`
+
   background-color: white;
   margin: 0 10px 0 10px;
   height: 567px;
