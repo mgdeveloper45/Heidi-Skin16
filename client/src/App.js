@@ -56,10 +56,13 @@ function App() {
     <>
       <Nav visible={visible} animateImg={animateRevImg} />
       <Routes>
-        <Route path="/" element={<LandingPage animate={animateImg} visible={visible} />}   />
+        <Route
+          path="/"
+          element={<LandingPage animate={animateImg} visible={visible} />}
+        />
         {/* <Route path="/gallery" element={<Gallery visible={visible} />} /> */}
         <Route path="/services" element={<SalonServices />} />
-        <Route path="/products" element={<ProductsPage />}/>
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />

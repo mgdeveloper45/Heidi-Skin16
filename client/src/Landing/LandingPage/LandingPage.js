@@ -2,14 +2,27 @@ import React from "react";
 import "../AnimationStyles.css";
 import { Link } from "react-router-dom";
 import {
-  Appointments, Book, Deserve, LeftImg, Logo, MainContainer,
-  MainImg, More, Name, Page, Policy, Protocol, RightImg,
-  Session,SlidingImg, Span, Statement,
+  Appointments,
+  Book,
+  Deserve,
+  LeftImg,
+  Logo,
+  MainContainer,
+  MainImg,
+  More,
+  Name,
+  Page,
+  Policy,
+  Protocol,
+  RightImg,
+  Session,
+  SlidingImg,
+  Span,
+  Statement,
 } from "./LandingStyles";
 import Addresss from "../Address/Addresss";
-import Gallery from '../../Gallery/Gallery';
-const LandingPage = ({animate, visible}) => {
-
+import Gallery from "../../Gallery/Gallery";
+const LandingPage = ({ animate, visible }) => {
   return (
     <Page>
       <MainContainer>

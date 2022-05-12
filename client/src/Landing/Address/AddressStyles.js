@@ -24,11 +24,24 @@ export const H3 = styled.h3`
 export const Directions = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 65px;
   width: 265px;
   background-color: rgba(216, 155, 166, 0.75);
+  text-decoration: none;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #e1b4bd;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(1.5px) translateX(1.5px);
+  }
 `;
 export const Code = styled.div`
   display: flex;

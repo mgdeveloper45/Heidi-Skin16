@@ -15,14 +15,25 @@ import yngw2 from "../SlideImages/yngw_slide_327_cropped.jpeg";
 import yngw3 from "../SlideImages/yngw_slide_741_cropped.jpeg";
 import yngw4 from "../SlideImages/yngw_slide_934_cropped.jpeg";
 import yngw5 from "../SlideImages/yngw_slide_956_cropped.jpeg";
-import yngred from "../SlideImages/yngwred_slide_798_cropped.jpeg"
-
-
+import yngred from "../SlideImages/yngwred_slide_798_cropped.jpeg";
 
 export const data = [
-    mida2, yngw3,  midw1, owl1, midblk1, midw2, 
-    yngh, ola, yngw5, mida1, yngw4, yngw2, owl2, 
-    ynga, yngred, yngblk1, yngw1, owl3
+  mida2,
+  yngw3,
+  midw1,
+  owl1,
+  midblk1,
+  midw2,
+  yngh,
+  ola,
+  yngw5,
+  mida1,
+  yngw4,
+  yngw2,
+  owl2,
+  ynga,
+  yngred,
+  yngblk1,
+  yngw1,
+  owl3,
 ];
-
-

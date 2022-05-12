@@ -108,7 +108,7 @@ const SingleProduct = ({ item, index }) => {
       setNum(num - 1);
     }
   };
-  let handleChange = (e) => {
+  let handleChange = e => {
     setNum(parseInt(e.target.value));
   };
 
