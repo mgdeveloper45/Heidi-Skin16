@@ -48,7 +48,7 @@ function App() {
         setTimeout(() => {
           setVisible(false);
           resolve("finished");
-        }, 1000);
+        }, 999);
       }
     });
   };
@@ -57,7 +57,7 @@ function App() {
       <Nav visible={visible} animateImg={animateRevImg} />
       <Routes>
         <Route path="/" element={<LandingPage animate={animateImg} visible={visible} />}   />
-        <Route path="/gallery" element={<Gallery visible={visible} />} />
+        {/* <Route path="/gallery" element={<Gallery visible={visible} />} /> */}
         <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<ProductsPage />}/>
         <Route path="/booking" element={<Booking />} />
