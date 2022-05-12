@@ -10,20 +10,21 @@ export const GalleryHead = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 552px; */
-  /* height: 60px; */
+
 `;
 export const GalleryHeader = styled.h1`
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
-  padding-bottom: 52px;
+  margin: 52px;
 `;
 export const GalleryImageContainer = styled.div`
   display: flex;
-  width: auto;
-  height: 610px;
+  width: 100vw;
+  /* width: auto; */
+  /* height: 610px; */
+  height: 710px;
   background-color: white;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -34,8 +35,9 @@ export const GalleryImageContainer = styled.div`
   }
 `;
 
-export const GarlleryImage = styled.img`
-  /* background-image: url(${(props) => props.image}); */
+
+export const GalleryImage = styled.img`
+
   background-color: white;
   margin: 0 10px 0 10px;
   height: 567px;

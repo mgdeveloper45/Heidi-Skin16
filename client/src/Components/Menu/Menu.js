@@ -12,23 +12,23 @@ import {
 const Menu = ({ category }) => {
   return (
     <div>
-      <CategoryContainer bgColor={category.color}>
+      <CategoryContainer backgroundColor={category.color}>
         <Categories>
           <TitleContainer>
-            <Title color={category.color}>{category.title}</Title>
+            <Title title={category.secondaryColor}>{category.title}</Title>
           </TitleContainer>
           <TitleContainer>
             <Image src={category.image} />
           </TitleContainer>
         </Categories>
         <DescriptionContainer>
-          <Description color={category.color}>
+          <Description description={category.secondaryColor}>
             {category.description}
           </Description>
         </DescriptionContainer>
       </CategoryContainer>
-      {category.subcategories.map((item) => (
-        <SubMenu item={item} />
+      {category.subcategories.map((item, index) => (
+        <SubMenu key={index} item={item} />
       ))}
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import "./AnimationStyles.css";
+import "../AnimationStyles.css";
 import { Link } from "react-router-dom";
 import {
   Appointments,
@@ -20,19 +20,9 @@ import {
   Span,
   Statement,
 } from "./LandingStyles";
-import Addresss from "./Addresss";
-// import { useState } from "react";
-
+import Addresss from "../Address/Addresss";
+import Gallery from "../../Gallery/Gallery";
 const LandingPage = ({ animate, visible }) => {
-  // const [visible, setVisible] = useState(false);
-
-  // const animateImg = () => {
-  //   const animatedImg = document.querySelector(".rightImg");
-  //   animatedImg.classList.add("rightBox");
-  //   animatedImg.style.marginRight = "50%";
-  //   setVisible(true);
-  // };
-
   return (
     <Page>
       <MainContainer>
@@ -81,7 +71,8 @@ const LandingPage = ({ animate, visible }) => {
           </Name>
         </Logo>
       </MainContainer>
-      <Addresss />
+      {/* <Addresss /> */}
+      {visible ? <Gallery /> : <Addresss />}
     </Page>
   );
 };
