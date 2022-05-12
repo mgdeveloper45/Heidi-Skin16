@@ -7,7 +7,7 @@ import {
   Session,SlidingImg, Span, Statement,
 } from "./LandingStyles";
 import Addresss from "../Address/Addresss";
-
+import Gallery from '../../Gallery/Gallery';
 const LandingPage = ({animate, visible}) => {
 
   return (
@@ -58,8 +58,8 @@ const LandingPage = ({animate, visible}) => {
           </Name>
         </Logo>
       </MainContainer>
-      {/*<Gallery />*/}
-    <Addresss />
+      {/* <Addresss /> */}
+      {visible ? <Gallery /> : <Addresss />}
     </Page>
   );
 };
