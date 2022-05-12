@@ -17,12 +17,14 @@ export const GalleryHeader = styled.h1`
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
-  padding-bottom: 52px;
+  margin: 52px;
 `;
 export const GalleryImageContainer = styled.div`
   display: flex;
-  width: auto;
-  height: 610px;
+  width: 100vw;
+  /* width: auto; */
+  /* height: 610px; */
+  height: 710px;
   background-color: white;
   overflow-x: scroll;
   overflow-y: hidden;
