@@ -36,10 +36,11 @@ const cartSlice = createSlice({
         (item) => item.data.id === action.payload.data.id
       );
       state.cartItems.splice(existingIndex, 1);
+      state.cartTotalAmount -=
+        action.payload.quantity * action.payload.data.metadata.price;
       state.cartTotalQuantity -= action.payload.quantity;
-      state.cartTotalAmount -= action.payload.quantity * action.payload.price;
 
-      localStorage.setItem("cart", JSON.stringify(state.cartItems));
+      localStorage.setItem("cart", JSON.stringify(state));
     },
     updateCart(state, action) {
       const existingIndex = state.cartItems.findIndex(
@@ -62,6 +63,7 @@ const cartSlice = createSlice({
       state.cartItems = [];
       state.cartTotalQuantity = 0;
       state.cartTotalAmount = 0;
+      localStorage.setItem("cart", JSON.stringify(state));
     },
   },
 });
