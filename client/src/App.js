@@ -15,7 +15,7 @@ import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
 
-import Gallery from './Gallery/Gallery';
+import Gallery from "./Gallery/Gallery";
 
 function App() {
   const dispatch = useDispatch();
@@ -59,15 +59,10 @@ function App() {
         <Route
           path="/"
           element={<LandingPage animate={animateImg} visible={visible} />}
-          />
-          <Route path="/gallery" element={<Gallery />} />
-        <Route path='/services' element={<SalonServices />} />
-        <Route
-          path="/products"
-          element={ 
-            <ProductsPage />
-          }
         />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/services" element={<SalonServices />} />
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />

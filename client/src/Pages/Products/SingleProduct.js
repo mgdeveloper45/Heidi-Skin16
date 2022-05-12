@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../../Redux/cartSlicer.js';
+import React from "react";
+import styled from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../Redux/cartSlicer.js";
 
-import { TiArrowSortedUp, TiArrowSortedDown } from 'react-icons/ti';
+import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 
 const ProductCard = styled.div`
   height: 400px;
@@ -60,7 +60,7 @@ const CartButton = styled.button`
   width: 75%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
-  background-color: #e1b4bd;
+  background-color: rgba(216, 155, 166, 0.75);
   border: none;
   font-weight: bold;
 
@@ -96,14 +96,14 @@ const SingleProduct = ({ item, index }) => {
   return (
     <ProductCard key={index}>
       <ImgContainer>
-        <ProductImg src='https://picsum.photos/400' alt='Product' />
+        <ProductImg src="https://picsum.photos/400" alt="Product" />
       </ImgContainer>
       <ProductDescription>
         <ProductName>{item.data.name}</ProductName>
         <ProductPrice>
           <div>${item.data.metadata.price}</div>
           <div>
-            <Input type='text' value={num} onChange={handleChange} />
+            <Input type="text" value={num} onChange={handleChange} />
             <Arrows>
               <TiArrowSortedUp onClick={incNum} />
               <TiArrowSortedDown onClick={decNum} />
@@ -118,7 +118,8 @@ const SingleProduct = ({ item, index }) => {
       <CartButton
         onClick={() =>
           dispatch(addToCart({ ...products[index], quantity: num }))
-        }>
+        }
+      >
         ADD TO CART
       </CartButton>
     </ProductCard>
