@@ -2,24 +2,11 @@ import React, { useEffect } from "react";
 import "../AnimationStyles.css";
 import { Link, useSearchParams } from "react-router-dom";
 import {
-  Appointments,
-  Book,
-  Deserve,
-  LeftImg,
-  Logo,
-  MainContainer,
-  MainImg,
-  More,
-  Name,
-  Page,
-  Policy,
-  Protocol,
-  RightImg,
-  Session,
-  SlidingImg,
-  Span,
-  Statement,
-} from "./LandingStyles";
+  Appointments, Book, Deserve, LeftImg, Logo, MainContainer,
+  MainImg, More, Name, Page, Policy, Protocol, RightImg,
+  Session, SlidingImg, Span, Statement
+} 
+from "./LandingStyles";
 import Addresss from "../Address/Addresss";
 import Gallery from "../../Gallery/Gallery";
 
@@ -84,7 +71,6 @@ const LandingPage = ({ animate, visible, setVisible }) => {
           </Name>
         </Logo>
       </MainContainer>
-      {/* <Addresss /> */}
       {visible ? <Gallery /> : <Addresss />}
     </Page>
   );

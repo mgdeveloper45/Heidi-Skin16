@@ -14,8 +14,6 @@ import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
-import Gallery from "./Gallery/Gallery";
-import About from "./About/About";
 
 function App() {
   const dispatch = useDispatch();
@@ -64,8 +62,7 @@ function App() {
     <>
       <Nav visible={visible} animateImg={animateRevImg} close={closeThenRedirect}/>
       <Routes>
-        <Route path="/" element={<LandingPage animate={animateImg} visible={visible} setVisible={setVisible} />}   />
-        {/* <Route path="/gallery" element={<Gallery visible={visible} />} /> */}
+        <Route path="/" element={<LandingPage animate={animateImg} visible={visible} setVisible={setVisible} />} />
         <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<ProductsPage />}/>
         <Route path="/booking" element={<Booking />} />
