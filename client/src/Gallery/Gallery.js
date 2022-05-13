@@ -6,8 +6,9 @@ import {
   GalleryImageContainer,
   GalleryImage,
 } from "./GalleryStyles";
-
 import { data } from "./GalleryData";
+
+import About from "../About/About";
 const Gallery = () => {
   console.log(data);
 
@@ -23,6 +24,7 @@ const Gallery = () => {
           ))}
         </GalleryImageContainer>
       </GalleryContainer>
+      <About />
     </>
   );
 };

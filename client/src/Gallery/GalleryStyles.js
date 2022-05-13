@@ -24,7 +24,7 @@ export const GalleryImageContainer = styled.div`
   width: 100vw;
   /* width: auto; */
   /* height: 610px; */
-  height: 710px;
+  height: 665px;
   background-color: white;
   overflow-x: scroll;
   overflow-y: hidden;
