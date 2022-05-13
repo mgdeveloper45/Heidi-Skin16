@@ -42,7 +42,7 @@ const Footer = () => {
           <Link to="about" style={styles.links}>
             <LI>About Us</LI>
           </Link>
-          <Link to="gallery" style={styles.links}>
+          <Link to="/?visible=true" style={styles.links}>
             <LI>Gallery</LI>
           </Link>
           <Link to="contact" style={styles.links}>
