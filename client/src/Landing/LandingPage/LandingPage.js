@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../AnimationStyles.css";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import {
-  Appointments,
-  Book,
-  Deserve,
-  LeftImg,
-  Logo,
-  MainContainer,
-  MainImg,
-  More,
-  Name,
-  Page,
-  Policy,
-  Protocol,
-  RightImg,
-  Session,
-  SlidingImg,
-  Span,
-  Statement,
-} from "./LandingStyles";
+
+  Appointments, Book, Deserve, LeftImg, Logo, MainContainer,
+  MainImg, More, Name, Page, Policy, Protocol, RightImg,
+  Session, SlidingImg, Span, Statement
+} 
+from "./LandingStyles";
 import Addresss from "../Address/Addresss";
 import Gallery from "../../Gallery/Gallery";
-const LandingPage = ({ animate, visible }) => {
+
+const LandingPage = ({ animate, visible, setVisible }) => {
+  const [visibleStatus] = useSearchParams();
+
+  useEffect(() => {
+    if (visibleStatus.get("visible")) {
+      setVisible(true)
+      const animatedImg = document.querySelector(".rightImg");
+      animatedImg.classList.add("rightBox");
+      animatedImg.classList.remove("rightBoxes");
+      animatedImg.style.marginRight = "50%";
+    };
+  }, [visibleStatus, setVisible]);
+
+
   return (
     <Page>
       <MainContainer>
@@ -71,7 +73,6 @@ const LandingPage = ({ animate, visible }) => {
           </Name>
         </Logo>
       </MainContainer>
-      {/* <Addresss /> */}
       {visible ? <Gallery /> : <Addresss />}
     </Page>
   );
