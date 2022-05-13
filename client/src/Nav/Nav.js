@@ -10,20 +10,20 @@ import {
   P,
   Span,
 } from "./NavStyles";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
 import { useSelector } from "react-redux";
 
 import Badge from "@mui/material/Badge";
 
-const Nav = ({ animateImg, visible }) => {
+const Nav = ({ animateImg, close, visible }) => {
   const cartQuantity = useSelector((state) => state.cart.cartTotalQuantity);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const closeThenRedirect = (navi) => {
-    return visible ? animateImg().then(() => navigate(navi)) : navigate(navi);
-  };
+  // const closeThenRedirect = (navi) => {
+  //   return visible ? animateImg().then(() => navigate(navi)) : navigate(navi);
+  // };
 
   return (
     <NavContainer>
@@ -41,7 +41,7 @@ const Nav = ({ animateImg, visible }) => {
           <Icon>
             <Badge badgeContent={cartQuantity} color="primary">
               <BsCart3
-                onClick={() => closeThenRedirect("/cart")}
+                onClick={() => close("/cart")}
                 style={{ marginLeft: "10px" }}
                 size={30}
               />
@@ -53,11 +53,11 @@ const Nav = ({ animateImg, visible }) => {
         </form> */}
       </Header>
       <Navi>
-        <P onClick={() => closeThenRedirect("/services")}>Salon Service</P>
+        <P onClick={() => close("/services")}>Salon Service</P>
 
-        <P onClick={() => closeThenRedirect("/products")}>Buy Products</P>
+        <P onClick={() => close("/products")}>Buy Products</P>
 
-        <P onClick={() => closeThenRedirect("/contact")}>Contact Us</P>
+        <P onClick={() => close("/contact")}>Contact Us</P>
       </Navi>
     </NavContainer>
   );

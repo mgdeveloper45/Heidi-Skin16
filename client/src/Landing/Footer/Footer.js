@@ -16,7 +16,7 @@ import {
 import { AiOutlineGoogle } from "react-icons/ai";
 import { FaFacebook, FaTwitter, FaYelp } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({close}) => {
   const styles = {
     icons: {
       height: "55px",
@@ -42,9 +42,9 @@ const Footer = () => {
           <Link to="about" style={styles.links}>
             <LI>About Us</LI>
           </Link>
-          <Link to="/?visible=true" style={styles.links}>
+          <div onClick={() => close("/?visible=true")} style={styles.links}>
             <LI>Gallery</LI>
-          </Link>
+          </div>
           <Link to="contact" style={styles.links}>
             <LI>Contact Us</LI>
           </Link>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Contact from "./Contact/Contact";
 import Footer from "./Landing/Footer/Footer";
 import LandingPage from "./Landing/LandingPage/LandingPage";
@@ -25,6 +25,9 @@ function App() {
 
   const [visible, setVisible] = useState(false);
 
+  const navigate = useNavigate();
+
+  
   // animate open if closed, redirects if open
   const animateImg = () => {
     if (visible === true) {
@@ -37,7 +40,7 @@ function App() {
       setVisible(true);
     }
   };
-
+  
   const animateRevImg = () => {
     return new Promise((resolve, reject) => {
       if (visible === true) {
@@ -52,9 +55,13 @@ function App() {
       }
     });
   };
+
+  const closeThenRedirect = (links) => {
+    return visible ? animateRevImg().then(() => navigate(links)) : navigate(links);
+  };
   return (
     <>
-      <Nav visible={visible} animateImg={animateRevImg} />
+      <Nav visible={visible} animateImg={animateRevImg} close={closeThenRedirect}/>
       <Routes>
         <Route path="/" element={<LandingPage animate={animateImg} visible={visible} setVisible={setVisible} />}   />
         {/* <Route path="/gallery" element={<Gallery visible={visible} />} /> */}
@@ -67,7 +74,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
-      <Footer />
+      <Footer close={closeThenRedirect}/>
     </>
   );
 }
