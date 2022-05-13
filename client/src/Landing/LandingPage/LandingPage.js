@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../AnimationStyles.css";
 import { Link, useSearchParams } from "react-router-dom";
 import {
+
   Appointments, Book, Deserve, LeftImg, Logo, MainContainer,
   MainImg, More, Name, Page, Policy, Protocol, RightImg,
   Session, SlidingImg, Span, Statement
@@ -22,6 +23,7 @@ const LandingPage = ({ animate, visible, setVisible }) => {
       animatedImg.style.marginRight = "50%";
     };
   }, [visibleStatus, setVisible]);
+
 
   return (
     <Page>
