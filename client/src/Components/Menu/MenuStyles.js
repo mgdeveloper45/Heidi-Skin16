@@ -10,12 +10,20 @@ export const CategoryContainer = styled.div`
 export const Categories = styled.div`
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const TitleContainer = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    justify-content: center;
+  }
 `;
 export const Title = styled.p`
   align-self: center;
@@ -26,6 +34,13 @@ export const Title = styled.p`
   font-style: normal;
   font-size: 80px;
   margin-bottom: 5rem;
+  @media screen and (max-width: 600px) {
+    font-size: 65px;
+    margin-bottom: 3rem;
+    width: 100%;
+    justify-self: center;
+    margin-top: 2rem;
+  }
 `;
 export const Image = styled.div`
   /* align-self: center; */
@@ -38,6 +53,9 @@ export const Image = styled.div`
   background-color: red;
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
+  @media screen and (max-width: 600px) {
+    transform: translateY(0rem);
+  }
 `;
 export const DescriptionContainer = styled.div`
   display: flex;
@@ -55,6 +73,10 @@ export const Description = styled.p`
   line-height: 50px;
   @media screen and (max-width: 1200px) {
     font-size: 1.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 1.3rem;
+    line-height: 40px;
   }
 `;
 export const ToTopButton = styled.button`
