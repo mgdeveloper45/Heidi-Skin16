@@ -61,8 +61,12 @@ const ProductDropDown = () => {
       {value === true ? (
         <MenuPosition>
           <Menu>
-            <CategoryLinks>My</CategoryLinks>
-            <CategoryLinks>Boys</CategoryLinks>
+            <CategoryLinks>Modvellum Clinical Skincare</CategoryLinks>
+            <CategoryLinks>Société Clinical Skincare</CategoryLinks>
+            <CategoryLinks>Incellderm</CategoryLinks>
+            <CategoryLinks>Sculplla H2</CategoryLinks>  
+            <CategoryLinks>Esthemax</CategoryLinks>
+            <CategoryLinks>Farm House Fresh</CategoryLinks>
           </Menu>
         </MenuPosition>
       ) : null}
