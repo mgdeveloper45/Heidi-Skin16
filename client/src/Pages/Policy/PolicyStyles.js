@@ -14,4 +14,5 @@ export const Statement = styled.p`
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
+    margin: 100px;
 `;

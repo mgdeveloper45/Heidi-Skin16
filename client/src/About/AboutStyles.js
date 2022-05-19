@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import aboutImg from "../SlideImages/about_us_cropped.jpeg"
 
 export const AboutContainer = styled.div`
   /* border: 2px solid green; */
@@ -21,7 +22,10 @@ export const AboutImageContainer = styled.div`
 `;
 
 export const AboutImage = styled.img`
-  background-color: blue;
+  background-image: url("${aboutImg}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: blue; */
   height: 54em;
   width: 38em;
   border-radius: 10px;

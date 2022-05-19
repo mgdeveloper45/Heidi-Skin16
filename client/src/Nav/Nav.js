@@ -1,18 +1,27 @@
-import {
-  Head, Header, Heading, Icon, Icons,
-  Logo, NavContainer, Navi, P, Span
+import { 
+  CategoryLinks, DropContainer,
+  Head, Header, Heading, Icon, Icons, Logo, Menu,
+  MenuBtn, MenuPosition, NavContainer, Navi, P, Span
 } 
 from "./NavStyles";
 import { Link } from "react-router-dom";
-import { BsCart3, BsSearch } from "react-icons/bs";
+import { BsCart3, BsSearch, BsCaretDownSquare } from "react-icons/bs";
 import { useSelector } from "react-redux";
-
+import { useState } from 'react';
+import { allCategories } from "../utils/rawData";
 import Badge from "@mui/material/Badge";
+import { useEffect } from "react";
 
 const Nav = ({ animateImg, close, visible }) => {
+  const [services, setService] = useState(false);
+  const [dropDown, setDropDown] = useState([]); 
+
   const cartQuantity = useSelector(
     (state) => state.cart.cartTotalQuantity
   );
+  useEffect(() => {
+    setDropDown(allCategories); 
+  }, [])
 
   return (
     <NavContainer>
@@ -39,8 +48,24 @@ const Nav = ({ animateImg, close, visible }) => {
         </Icons>
       </Header>
       <Navi>
-        <P onClick={() => close("/services")}>Salon Service</P>
+        <P style={{display:"flex"}} onClick={() => close("/services")}>Salon Service
+          
+        <DropContainer>
+      <MenuBtn onClick={() => setService(!services)}>
+        <BsCaretDownSquare />
+      </MenuBtn>
+      {services === true ? (
+        <MenuPosition>
+          <Menu >
+            {dropDown.map((service, idx) => (
+              <CategoryLinks key={idx}>{service.title}</CategoryLinks>
 
+            ))}
+          </Menu>
+        </MenuPosition>
+      ) : null}
+    </DropContainer>
+    </P>
         <P onClick={() => close("/products")}>Buy Products</P>
 
         <P onClick={() => close("/contact")}>Contact Us</P>
