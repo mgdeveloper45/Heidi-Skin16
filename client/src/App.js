@@ -66,7 +66,7 @@ function App() {
           <LandingPage animate={animateImg} visible={visible} setVisible={setVisible} close={closeThenRedirect}/>
         } />
         <Route path="/services" element={<SalonServices />} />
-        <Route path="/products" element={<ProductsPage />}/>
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
