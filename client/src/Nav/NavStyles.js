@@ -74,7 +74,7 @@ export const P = styled.p`
 // drop down styles
 
 export const DropContainer = styled.div`
-  margin-left: 10px;
+  margin: 0
 `;
 
 export const MenuBtn = styled.button`
@@ -89,9 +89,9 @@ export const MenuBtn = styled.button`
   border: none;
   font-size: 40px;
   
-  :hover {
+  /* :hover {
     color: rgba(13, 104, 120, 0.75);
-  }
+  } */
 `;
 
 export const MenuPosition = styled.div`
@@ -106,7 +106,7 @@ export const Menu = styled.div`
   justify-content: space-around;
   height: 300px;
   width: 270px;
-  background-color: rgba(13, 104, 120, 0.75);
+  background-color: rgba(13, 104, 120);
   position: absolute;
   padding: 1rem;
   letter-spacing: 0.05rem;

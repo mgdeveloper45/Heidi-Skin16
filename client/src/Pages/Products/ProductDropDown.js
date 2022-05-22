@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { BsCaretDownSquare } from "react-icons/bs";
+// import { BsCaretDownSquare } from "react-icons/bs";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const DropContainer = styled.div``;
 
@@ -10,15 +11,15 @@ const MenuBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(13, 104, 120, 0.75);
+  /* color: rgba(13, 104, 120, 0.75); */
 
   background: none;
   border: none;
   font-size: 40px;
 
-  :hover {
+  /* :hover { */
     color: rgba(216, 155, 166, 0.75);
-  }
+  /* } */
 `;
 
 const MenuPosition = styled.div`
@@ -56,7 +57,8 @@ const ProductDropDown = () => {
   return (
     <DropContainer>
       <MenuBtn onClick={() => setValue(!value)}>
-        <BsCaretDownSquare />
+        {/* <BsCaretDownSquare /> */}
+        <MdOutlineArrowDropDown/>
       </MenuBtn>
       {value === true ? (
         <MenuPosition>

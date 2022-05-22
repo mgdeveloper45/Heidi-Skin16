@@ -5,7 +5,8 @@ import {
 } 
 from "./NavStyles";
 import { Link } from "react-router-dom";
-import { BsCart3, BsSearch, BsCaretDownSquare } from "react-icons/bs";
+import { BsCart3, BsSearch } from "react-icons/bs";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { useState } from 'react';
 import { allCategories } from "../utils/rawData";
@@ -52,7 +53,8 @@ const Nav = ({ animateImg, close, visible }) => {
           
         <DropContainer>
       <MenuBtn onClick={() => setService(!services)}>
-        <BsCaretDownSquare />
+        <MdOutlineArrowDropDown/>
+        {/* <BsCaretDownSquare /> */}
       </MenuBtn>
       {services === true ? (
         <MenuPosition>
