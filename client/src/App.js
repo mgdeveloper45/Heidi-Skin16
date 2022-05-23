@@ -64,7 +64,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <LandingPage animate={animateImg} visible={visible} setVisible={setVisible} close={closeThenRedirect}/>
-        } />
+        }/>
         <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/booking" element={<Booking />} />
