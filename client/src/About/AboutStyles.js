@@ -25,12 +25,10 @@ export const AboutImage = styled.img`
   background-image: url("${aboutImg}");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: blue; */
   height: 54em;
   width: 38em;
   border-radius: 10px;
   position: relative;
-  /* z-index:1 ; */
 `;
 
 export const Heading = styled.p`
