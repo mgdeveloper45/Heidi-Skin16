@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../AnimationStyles.css";
-import { Link, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import {
 
   Appointments, Book, Deserve, LeftImg, Logo, MainContainer,
@@ -8,10 +8,11 @@ import {
   Session, SlidingImg, Span, Statement
 } 
 from "./LandingStyles";
+import About from "../../About/About"
 import Addresss from "../Address/Addresss";
 import Gallery from "../../Gallery/Gallery";
 
-const LandingPage = ({ animate, visible, setVisible }) => {
+const LandingPage = ({ animate, close, setVisible, visible }) => {
   const [visibleStatus] = useSearchParams();
 
   useEffect(() => {
@@ -46,26 +47,19 @@ const LandingPage = ({ animate, visible, setVisible }) => {
             </Session>
             <Appointments>Live Beautifully</Appointments>
             <Policy>
-              <Link
-                to="policy"
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  visibility: visible ? "visible" : "hidden",
-                }}
-              >
-                <Protocol>Appointment Policy</Protocol>
-              </Link>
-              <Link
-                to="covid"
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  visibility: visible ? "visible" : "hidden",
-                }}
-              >
-                <Protocol>Covid Protocols</Protocol>
-              </Link>
+                <Protocol 
+                  onClick={() => close("/policy")}
+                  style={{
+                    visibility: visible ? "visible" : "hidden",
+                  }}>Appointment Policy
+                </Protocol>
+
+                <Protocol 
+                  onClick={() => close("/covid")}
+                  style={{
+                    visibility: visible ? "visible" : "hidden",
+                  }}>Covid Protocols
+                </Protocol>
             </Policy>
           </Statement>
           <Name visible={visible}>
@@ -73,7 +67,7 @@ const LandingPage = ({ animate, visible, setVisible }) => {
           </Name>
         </Logo>
       </MainContainer>
-      {visible ? <Gallery /> : <Addresss />}
+      {visible ? <><Gallery /> <About /></> : <Addresss />}
     </Page>
   );
 };
