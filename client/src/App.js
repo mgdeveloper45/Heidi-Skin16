@@ -14,6 +14,7 @@ import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
+import ScrollToTop from "./utils/ScrollToTop.js";
 
 function App() {
   const dispatch = useDispatch();
@@ -25,7 +26,6 @@ function App() {
 
   const navigate = useNavigate();
 
-  
   // animate open if closed, redirects if open
   const animateImg = () => {
     if (visible === true) {
@@ -38,7 +38,7 @@ function App() {
       setVisible(true);
     }
   };
-  
+
   const animateRevImg = () => {
     return new Promise((resolve, reject) => {
       if (visible === true) {
@@ -55,16 +55,31 @@ function App() {
   };
 
   const closeThenRedirect = (links) => {
-    return visible ? animateRevImg().then(() => navigate(links)) : navigate(links);
+    return visible
+      ? animateRevImg().then(() => navigate(links))
+      : navigate(links);
   };
-  
+
   return (
     <>
-      <Nav visible={visible} animateImg={animateRevImg} close={closeThenRedirect}/>
+      <ScrollToTop />
+      <Nav
+        visible={visible}
+        animateImg={animateRevImg}
+        close={closeThenRedirect}
+      />
       <Routes>
-        <Route path="/" element={
-          <LandingPage animate={animateImg} visible={visible} setVisible={setVisible} close={closeThenRedirect}/>
-        }/>
+        <Route
+          path="/"
+          element={
+            <LandingPage
+              animate={animateImg}
+              visible={visible}
+              setVisible={setVisible}
+              close={closeThenRedirect}
+            />
+          }
+        />
         <Route path="/services" element={<SalonServices />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/booking" element={<Booking />} />
@@ -74,7 +89,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
-      <Footer close={closeThenRedirect}/>
+      <Footer close={closeThenRedirect} />
     </>
   );
 }
