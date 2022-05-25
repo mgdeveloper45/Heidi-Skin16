@@ -1,13 +1,9 @@
 import SubMenu from "../SubMenu/SubMenu";
 import {
-  Categories,
-  CategoryContainer,
-  Description,
-  DescriptionContainer,
-  Image,
-  Title,
-  TitleContainer,
-} from "./MenuStyles";
+  Categories, CategoryContainer, Description,
+  DescriptionContainer, Image, Title, TitleContainer,
+} 
+from "./MenuStyles";
 
 const Menu = ({ category }) => {
   return (

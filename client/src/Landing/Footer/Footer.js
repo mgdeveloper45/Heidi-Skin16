@@ -1,22 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
-  Declaration,
-  Foot,
-  FooterWrapper,
-  HR,
-  LI,
-  NAME,
-  Policy,
-  Rights,
-  Span,
-  Social,
-  UL,
+  Declaration, Foot, FooterWrapper, HR, LI, 
+  NAME, Policy, Rights, Span, Social, UL,
 } from "./FooterStyles";
 import { AiOutlineGoogle } from "react-icons/ai";
+import ScrollIntoView from 'react-scroll-into-view'
 import { FaFacebook, FaTwitter, FaYelp } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({close}) => {
+  const setToTrue = () => {
+    close("/?visible=true")
+    window.scrollIntoView({behavior:"smooth", block:"start"})
+    // window.scrollTo({top:1000,behavior:"smooth"})
+  }
+  
   const styles = {
     icons: {
       height: "55px",
@@ -39,26 +36,26 @@ const Footer = () => {
     <FooterWrapper>
       <Declaration>
         <UL>
-          <Link to="about" style={styles.links}>
+          <ScrollIntoView selector="about" onClick={() => setToTrue()} style={styles.links}>
             <LI>About Us</LI>
-          </Link>
-          <Link to="gallery" style={styles.links}>
+          </ScrollIntoView>
+          <div onClick={() => setToTrue()} style={styles.links}>
             <LI>Gallery</LI>
-          </Link>
-          <Link to="contact" style={styles.links}>
+          </div>
+          <div onClick={() => close("contact")} style={styles.links}>
             <LI>Contact Us</LI>
-          </Link>
+          </div>
         </UL>
         <Policy>
-          <Link to="bookings" style={styles.links}>
-            <LI>Bookings</LI>
-          </Link>
-          <Link to="policy" style={styles.links}>
-            <LI>Policy</LI>
-          </Link>
-          <Link to="covid" style={styles.links}>
+          <div onClick={() => close("booking")} style={styles.links}>
+            <LI>Booking</LI>
+          </div>
+          <div onClick={() => close("policy")} style={styles.links}>
+            <LI>Policies</LI>
+          </div>
+          <div onClick={() => close("covid")} style={styles.links}>
             <LI>Covid Protocols</LI>
-          </Link>
+          </div>
         </Policy>
       </Declaration>
       <HR />

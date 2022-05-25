@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Button,
   Content,
@@ -10,6 +10,7 @@ import {
   Price,
   SndPrice,
   SubMenuContainer,
+  ButtonContainer,
   Title,
 } from "./SubMenuStyles";
 
@@ -17,22 +18,48 @@ const SubMenu = ({ item, idx }) => {
   return (
     <SubMenuContainer>
       <ContentContainer key={idx}>
-        <Image>{item.image}</Image>
-        <Content>
-          <Title>
-            <Listing>
-              {item.title}
-              {/* <Price>{item.price}</Price> */}
-            </Listing>
-          </Title>
-          <Price>{item.price}</Price>
-          <SndPrice>{item.sndPrice}</SndPrice>
-          <Description>{item.description}</Description>
-        </Content>
+        {window.innerWidth > 600 ? (
+          <>
+            <Image>{item.image}</Image>
+            <Content>
+              <Title>
+                <Listing>
+                  {item.title}
+                  {/* <Price>{item.price}</Price> */}
+                </Listing>
+              </Title>
+              <Price>{item.price}</Price>
+              <SndPrice>{item.sndPrice}</SndPrice>
+              <Description>{item.description}</Description>
+              <ButtonContainer>
+                <Button>
+                  <P>{item.button}</P>
+                </Button>
+              </ButtonContainer>
+            </Content>
+          </>
+        ) : (
+          <>
+            <Content>
+              <Title>
+                <Listing>
+                  {item.title}
+                  {/* <Price>{item.price}</Price> */}
+                </Listing>
+              </Title>
+              <Price>{item.price}</Price>
+              <SndPrice>{item.sndPrice}</SndPrice>
+              <Image>{item.image}</Image>
+              <Description>{item.description}</Description>
+              <ButtonContainer>
+                <Button>
+                  <P>{item.button}</P>
+                </Button>
+              </ButtonContainer>
+            </Content>
+          </>
+        )}
       </ContentContainer>
-      <Button>
-        <P>{item.button}</P>
-      </Button>
     </SubMenuContainer>
   );
 };
