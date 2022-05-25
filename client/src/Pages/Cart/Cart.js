@@ -1,15 +1,10 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  Break,
-  CartPage,
-  Title,
-  ImgContainer,
-  CartImg,
-  ProductDetails,
-} from "./CartStyles";
-import { emptyCart, removeFromCart } from "../../Redux/cartSlicer.js";
+import { Break, CartPage, Title } from "./CartStyles";
+import CartItem from "./CartItem.js";
+import { emptyCart } from "../../Redux/cartSlicer.js";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -35,29 +30,30 @@ const Cart = () => {
   return (
     <CartPage>
       <Title>Your Cart</Title>
-      <div>
-        {cart.cartItems.map((item, index) => (
-          <div key={index} item={item}>
-            <ImgContainer>
-              <CartImg />
-            </ImgContainer>
-            <ProductDetails>
-              <h2>{item.data.name}</h2>
-              <h3>{item.data.metadata.price}</h3>
-              <h3>{item.data.metadata.size}</h3>
-              <h3>{item.data.description}</h3>
-              <button onClick={() => dispatch(removeFromCart(item))}>
-                Remove Item
-              </button>
-            </ProductDetails>
+      {cart.cartItems.length === 0 ? (
+        <>
+          <div>cart is empty...</div>
+          <Link to="/products">
+            <button>Return to products</button>
+          </Link>
+        </>
+      ) : (
+        <>
+          <div>
+            {cart.cartItems.map((item, index) => (
+              <CartItem item={item} index={index} />
+            ))}
           </div>
-        ))}
-      </div>
-      <Break></Break>
-      <div>{cart.cartTotalQuantity}</div>
-      <div>{cart.cartTotalAmount}</div>
-      <button onClick={() => dispatch(emptyCart())}>empty cart</button>
-      <button onClick={onClick}>Checkout</button>
+          <Break></Break>
+          <div>{cart.cartTotalQuantity}</div>
+          <div>{cart.cartTotalAmount}</div>
+          <button onClick={() => dispatch(emptyCart())}>empty cart</button>
+          <button onClick={onClick}>Checkout</button>
+          <Link to="/products">
+            <button>Return to products</button>
+          </Link>
+        </>
+      )}
     </CartPage>
   );
 };
