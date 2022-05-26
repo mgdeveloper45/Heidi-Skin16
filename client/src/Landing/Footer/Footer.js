@@ -4,14 +4,14 @@ import {
   NAME, Policy, Rights, Span, Social, UL,
 } from "./FooterStyles";
 import { AiOutlineGoogle } from "react-icons/ai";
-import ScrollIntoView from 'react-scroll-into-view'
+// import ScrollIntoView from 'react-scroll-into-view'
 import { FaFacebook, FaTwitter, FaYelp } from "react-icons/fa";
 
 const Footer = ({close}) => {
   const setToTrue = () => {
     close("/?visible=true")
-    window.scrollIntoView({behavior:"smooth", block:"start"})
-    // window.scrollTo({top:1000,behavior:"smooth"})
+    // window.scrollIntoView({behavior:"smooth", block:"start"})
+    window.scrollTo({top:1000,behavior:"smooth"})
   }
   
   const styles = {
@@ -36,9 +36,9 @@ const Footer = ({close}) => {
     <FooterWrapper>
       <Declaration>
         <UL>
-          <ScrollIntoView selector="about" onClick={() => setToTrue()} style={styles.links}>
+          <div onClick={() => setToTrue()} style={styles.links}>
             <LI>About Us</LI>
-          </ScrollIntoView>
+          </div>
           <div onClick={() => setToTrue()} style={styles.links}>
             <LI>Gallery</LI>
           </div>

@@ -14,9 +14,9 @@ import "./About.css";
 const About = () => {
   return (
     <AboutContainer >
-      <div class="arrow">
-        <div class="line"></div>
-        <div class="point"></div>
+      <div className="arrow">
+        <div className="line"></div>
+        <div className="point"></div>
       </div>
       <AboutHeader id="about">About Us</AboutHeader>
       <AboutImageContainer>

@@ -14,7 +14,6 @@ import Confirmation from "./Pages/Booking/Confirmation";
 import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
-
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {

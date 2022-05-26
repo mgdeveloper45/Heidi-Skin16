@@ -9,9 +9,9 @@ import owl2 from "../SlideImages/owl_slide_396_cropped.jpeg";
 import owl3 from "../SlideImages/owl_slide_691_cropped.jpeg";
 import ynga from "../SlideImages/ynga_slide_320_cropped.jpeg";
 import yngblk1 from "../SlideImages/yngblk_slide_859_cropped.jpeg";
-import yngblk2 from "../SlideImages/yngblk2_slide_cropped.jpeg"
+// import yngblk2 from "../SlideImages/yngblk2_slide_cropped.jpeg"
 import yngh from "../SlideImages/yngh_slide_200_cropped.jpeg";
-import yngw1 from "../SlideImages/yngw_slide_080_cropped.jpeg";
+// import yngw1 from "../SlideImages/yngw_slide_080_cropped.jpeg";
 import yngw2 from "../SlideImages/yngw_slide_327_cropped.jpeg";
 import yngw3 from "../SlideImages/yngw_slide_741_cropped.jpeg";
 import yngw4 from "../SlideImages/yngw_slide_934_cropped.jpeg";
@@ -20,6 +20,6 @@ import yngred from "../SlideImages/yngwred_slide_798_cropped.jpeg";
 
 export const data = [
     mida2, yngw3,  midw1, owl1, midblk1, midw2, 
-    yngh, ola, yngw5, yngblk2, mida1, yngw4, yngw2, owl2, 
-    ynga, yngred, yngblk1, yngw1, owl3
+    yngh, ola, mida1, owl2, 
+    ynga, yngred, yngblk1, owl3
 ];
