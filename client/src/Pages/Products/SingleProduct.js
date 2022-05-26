@@ -41,11 +41,11 @@ const ProductPrice = styled.div`
   display: flex;
 `;
 
-const ArrowContainer = styled.div`
+export const ArrowContainer = styled.div`
   display: flex;
 `;
 
-const Input = styled.input`
+export const Input = styled.input`
   text-align: center;
   width: 30px;
   height: 25px;
@@ -56,7 +56,7 @@ const Input = styled.input`
   background-color: #e5e5e5;
 `;
 
-const Arrows = styled.div`
+export const Arrows = styled.div`
   display: flex;
   flex-flow: column;
   /* font-size: 18px; */
@@ -101,28 +101,28 @@ const SingleProduct = ({ item, index }) => {
   let incNum = () => {
     setNum(num + 1);
   };
-  let decNum = () => {
-    if (num <= 1) {
-      setNum(1);
-    } else {
-      setNum(num - 1);
-    }
-  };
-  let handleChange = e => {
+   let decNum = () => {
+     if (num === 0) {
+       return;
+     } else if (num >= 1) {
+       setNum(num - 1);
+     }
+   };
+  let handleChange = (e) => {
     setNum(parseInt(e.target.value));
   };
 
   return (
     <ProductCard key={index}>
       <ImgContainer>
-        <ProductImg src="https://picsum.photos/400" alt="Product" />
+        <ProductImg src={item.data.images} alt="Product" />
       </ImgContainer>
       <ProductDescription>
         <ProductName>{item.data.name}</ProductName>
         <ProductPrice>
           <div>${item.data.metadata.price}</div>
           <ArrowContainer>
-            <Input type="number" value={num} onChange={handleChange} />
+            <Input type="string" value={num} onChange={handleChange} />
             <Arrows>
               <TiArrowSortedUp onClick={incNum} />
               <TiArrowSortedDown onClick={decNum} />
