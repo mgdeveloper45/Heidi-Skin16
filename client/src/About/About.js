@@ -18,7 +18,7 @@ const About = () => {
         <div className="line"></div>
         <div className="point"></div>
       </div>
-      <AboutHeader id="about">About Us</AboutHeader>
+      <AboutHeader>About Us</AboutHeader>
       <AboutImageContainer>
         <h3 className="about-live">Live</h3>
         <AboutImage></AboutImage>

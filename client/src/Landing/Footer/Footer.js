@@ -1,19 +1,27 @@
 import React from "react";
 import {
-  Declaration, Foot, FooterWrapper, HR, LI, 
-  NAME, Policy, Rights, Span, Social, UL,
+  Declaration,
+  Foot,
+  FooterWrapper,
+  HR,
+  LI,
+  NAME,
+  Policy,
+  Rights,
+  Span,
+  Social,
+  UL,
 } from "./FooterStyles";
 import { AiOutlineGoogle } from "react-icons/ai";
-// import ScrollIntoView from 'react-scroll-into-view'
 import { FaFacebook, FaTwitter, FaYelp } from "react-icons/fa";
 
-const Footer = ({close}) => {
+const Footer = ({ close }) => {
   const setToTrue = () => {
-    close("/?visible=true")
+    close("/?visible=true");
     // window.scrollIntoView({behavior:"smooth", block:"start"})
-    window.scrollTo({top:1000,behavior:"smooth"})
-  }
-  
+    // window.scrollTo({top:1000,behavior:"smooth"})
+  };
+
   const styles = {
     icons: {
       height: "55px",
@@ -30,6 +38,7 @@ const Footer = ({close}) => {
     links: {
       textDecoration: "none",
       color: "black",
+      margin: "0 10px",
     },
   };
   return (
