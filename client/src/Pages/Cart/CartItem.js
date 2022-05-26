@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { removeFromCart, updateCart } from "../../Redux/cartSlicer.js";
 import { ArrowContainer, Arrows, Input } from "../Products/SingleProduct.js";
+import { Break, CartPage, Title, CartButton } from "./CartStyles";
 
 import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 
@@ -9,6 +10,20 @@ const styled = {
   flexRow: {
     display: "flex",
     flexDirection: "row",
+    maxWidth: "700px",
+    maxHeight: "500px",
+    marginBottom: "20px",
+  },
+  imgItem: {
+    border: "1px solid #E2B4BD",
+    borderRadius: "5px",
+    minWidth: "250px",
+    maxWidth: "250px",
+    minHeight: "250px",
+    maxHeight: "250px",
+  },
+  paddingBottom: {
+    paddingBottom: "10px",
   },
 };
 
@@ -41,16 +56,23 @@ const CartItem = ({ index, item }) => {
 
   return (
     <div style={styled.flexRow} key={index} item={item}>
-      <div>
-        <img style={{ width: "200px" }} src={item.data.images} alt="..." />
-      </div>
-      <div>
-        <h2>{item.data.name}</h2>
+      <img style={styled.imgItem} src={item.data.images} alt="..." />
+      <div
+        className="cart-item-details"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          padding: "20px",
+          // borderRight: "1px solid pink",
+        }}
+      >
+        <h3>{item.data.name}</h3>
         <div style={styled.flexRow}>
-          <h3>{item.data.metadata.price}</h3>
+          <h3>${item.data.metadata.price}</h3>
           <ArrowContainer>
             <Input
-              type="number"
+              type="string"
               value={num}
               onChange={() => dispatch(updateCart(num))}
             />
@@ -60,11 +82,11 @@ const CartItem = ({ index, item }) => {
             </Arrows>
           </ArrowContainer>
         </div>
-        <h3>{item.data.metadata.size}</h3>
-        <h3>[{item.data.metadata.skinType}]</h3>
-        <button onClick={() => dispatch(removeFromCart(item))}>
+        <p style={styled.paddingBottom}>{item.data.metadata.size}</p>
+        <p style={styled.paddingBottom}>[{item.data.metadata.skinType}]</p>
+        <CartButton onClick={() => dispatch(removeFromCart(item))}>
           Remove Item
-        </button>
+        </CartButton>
       </div>
     </div>
   );

@@ -101,13 +101,13 @@ const SingleProduct = ({ item, index }) => {
   let incNum = () => {
     setNum(num + 1);
   };
-  let decNum = () => {
-    if (num <= 1) {
-      setNum(1);
-    } else {
-      setNum(num - 1);
-    }
-  };
+   let decNum = () => {
+     if (num === 0) {
+       return;
+     } else if (num >= 1) {
+       setNum(num - 1);
+     }
+   };
   let handleChange = (e) => {
     setNum(parseInt(e.target.value));
   };
@@ -122,7 +122,7 @@ const SingleProduct = ({ item, index }) => {
         <ProductPrice>
           <div>${item.data.metadata.price}</div>
           <ArrowContainer>
-            <Input type="number" value={num} onChange={handleChange} />
+            <Input type="string" value={num} onChange={handleChange} />
             <Arrows>
               <TiArrowSortedUp onClick={incNum} />
               <TiArrowSortedDown onClick={decNum} />

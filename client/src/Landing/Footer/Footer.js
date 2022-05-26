@@ -38,6 +38,7 @@ const Footer = ({ close }) => {
     links: {
       textDecoration: "none",
       color: "black",
+      margin: "0 10px",
     },
   };
   return (

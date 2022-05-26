@@ -5,6 +5,7 @@ export const CartPage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 50px;
 `;
 
 export const Title = styled.p`
@@ -46,3 +47,39 @@ export const ProductDetails = styled.div`
   display: flex;
   flex-flow: column;
 `;
+
+export const CartButton = styled.button`
+  height: 50px;
+  width: 150px;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: rgba(216, 155, 166, 0.75);
+  border: none;
+  font-weight: bold;
+
+  // margin-left: 25px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(1.5px) translateX(1.5px);
+  }
+`;
+
+export const styledObj = {
+  cartTotalCheckoutContainer: {
+    maxHeight: "240px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-evenly",
+    position: "sticky",
+    top: "50px",
+    border: "1px solid #E2B4BD",
+    borderRadius: "5px",
+    padding: "0 20px",
+    backgroundColor: "#EFEAD8",
+  },
+};

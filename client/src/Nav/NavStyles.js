@@ -30,6 +30,9 @@ export const Span = styled.span`
   font-family: Helvetica Neue;
   font-style: normal;
   font-size: 60px;
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 export const Icons = styled.div`
   display: flex;
@@ -74,7 +77,7 @@ export const P = styled.p`
 // drop down styles
 
 export const DropContainer = styled.div`
-  margin: 0
+  margin: 0;
 `;
 
 export const MenuBtn = styled.button`
@@ -84,11 +87,11 @@ export const MenuBtn = styled.button`
   justify-content: center;
   align-items: center;
   color: rgba(216, 155, 166, 0.75);
-  
+
   background: none;
   border: none;
   font-size: 40px;
-  
+
   /* :hover {
     color: rgba(13, 104, 120, 0.75);
   } */
@@ -125,5 +128,5 @@ export const Menu = styled.div`
 `;
 
 export const CategoryLinks = styled.div`
-  color: #FFF;
+  color: #fff;
 `;
