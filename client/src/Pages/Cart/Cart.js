@@ -2,10 +2,10 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Break, CartPage, Title, CartButton, styledObj } from "./CartStyles";
 import CartItem from "./CartItem.js";
-import { emptyCart } from "../../Redux/cartSlicer.js";
+// import { emptyCart } from "../../Redux/cartSlicer.js";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import emptyCartPng from "../../images/emptyCart.png";
+// import emptyCartPng from "../../images/emptyCart.png";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -44,7 +44,7 @@ const Cart = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <img style={{ maxHeight: "350px" }} src={emptyCartPng} alt="..." />
+          {/* <img style={{ maxHeight: "350px" }} src={emptyCartPng} alt="..." /> */}
           <h2>Your cart is empty...</h2>
           <Link to="/products">
             <CartButton>RETURN TO PRODUCTS</CartButton>

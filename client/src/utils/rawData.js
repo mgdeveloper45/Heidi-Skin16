@@ -1,13 +1,15 @@
+import { facialImgs } from "./rawDataImages";
+
 export const galleryImg = [];
 export const allCategories = [
   {
     title: "Facials",
-    image: ``,
+    image: `${facialImgs.facials}`,
     description: `Facial treatments can help
         slow down the aging process and prevent the appearance of wrinkles. 
         Massaging your face with an anti-aging moisture will immediately increase 
         the blood circulation and oxygen flow, which promotes collagen production 
-        and enhances the elasticity of your skin. (Organic when possible). (Vegetarian always). 
+        and enhance the elasticity of your skin. (Organic when possible). (Vegetarian always). 
         (Vegan when possible). Chirally Correct (purified) Skincare.`,
     // services: null,
     subcategories: [
@@ -101,7 +103,7 @@ export const allCategories = [
   },
   {
     title: "Peels",
-    image: ``,
+    image: `${facialImgs.peels}`,
     description: `Restore a youthful, vibrant appearance to wrinkly, 
         blotchy, sun-damaged skin. Each peel has unique benefits for the skin. Peels also improves acne 
         scars, skin texture, and reduces the effects of sun damage. (Must use pre-post home care 

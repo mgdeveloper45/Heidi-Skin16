@@ -6,6 +6,7 @@ import {
 from "./MenuStyles";
 
 const Menu = ({ category }) => {
+
   return (
     <div>
       <CategoryContainer backgroundColor={category.color}>
@@ -14,7 +15,8 @@ const Menu = ({ category }) => {
             <Title title={category.secondaryColor}>{category.title}</Title>
           </TitleContainer>
           <TitleContainer>
-            <Image src={category.image} />
+            <Image image={category.image}/>
+            {/* <Image src={category.backgroundImage} /> */}
           </TitleContainer>
         </Categories>
         <DescriptionContainer>
