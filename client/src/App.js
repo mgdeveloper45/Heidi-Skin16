@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Contact from "./Contact/Contact";
 import Footer from "./Landing/Footer/Footer";
 import LandingPage from "./Landing/LandingPage/LandingPage";
-import SalonServices from "./Pages/SalonServices";
+import SalonServices from "./Pages/SalonServices/SalonServices";
 import Nav from "./Nav/Nav";
 import Policy from "./Pages/Policy/Policy";
 import Covid from "./Pages/Covid/Covid";

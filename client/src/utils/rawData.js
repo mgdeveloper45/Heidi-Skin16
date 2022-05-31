@@ -1,13 +1,15 @@
+import { facialImgs } from "./rawDataImages";
+
 export const galleryImg = [];
 export const allCategories = [
   {
     title: "Facials",
-    image: ``,
+    image: `${facialImgs.facials}`,
     description: `Facial treatments can help
         slow down the aging process and prevent the appearance of wrinkles. 
         Massaging your face with an anti-aging moisture will immediately increase 
         the blood circulation and oxygen flow, which promotes collagen production 
-        and enhances the elasticity of your skin. (Organic when possible). (Vegetarian always). 
+        and enhance the elasticity of your skin. (Organic when possible). (Vegetarian always). 
         (Vegan when possible). Chirally Correct (purified) Skincare.`,
     // services: null,
     subcategories: [
@@ -101,7 +103,7 @@ export const allCategories = [
   },
   {
     title: "Peels",
-    image: ``,
+    image: `${facialImgs.peels}`,
     description: `Restore a youthful, vibrant appearance to wrinkly, 
         blotchy, sun-damaged skin. Each peel has unique benefits for the skin. Peels also improves acne 
         scars, skin texture, and reduces the effects of sun damage. (Must use pre-post home care 
@@ -171,8 +173,8 @@ export const allCategories = [
   },
   {
     title: "LED Therapy",
-    image: ``,
-    description: `LED Therapy low-light theraphy is safe, effective and a
+    image: `${facialImgs.led}`,
+    description: `LED Therapy low-light therapy is safe, effective and a
         convenient way to achieve a healthy, youthful glow in a natural, non-toxic, non-invasive manner. 
         Reduce the appearance of fine lines and wrinkles while experiencing an improvement in skin texture,
         quality and smoothness.`,
@@ -212,7 +214,7 @@ export const allCategories = [
   // },
   {
     title: "Scalp Treatments",
-    image: ``,
+    image: `${facialImgs.scalp}`,
     description: `Clogged hair follicles, can cause hair thinning. Releasing 
         natural conditioning oils can help relieve dry scalp and remove flakes, stimulate blood flow in the head and 
         neck area so nutrients can better reach the scalp and nourish your hair. Taking care of your skin and scalp 
@@ -257,7 +259,7 @@ export const allCategories = [
 export const addOn = [
   {
     title: "Add-On Services",
-    image: ``,
+    image: `${facialImgs.add}`,
     services: [
       { title: "LED Light", price: "$40", br: true },
       { title: "Dermaplaning", price: "$40", br: true },

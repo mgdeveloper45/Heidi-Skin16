@@ -1,9 +1,16 @@
 import styled from "styled-components";
+// import { facialImgs } from "./MenuData";
+// import facials from "../../images/facials_cropped.jpeg"
+// import peels from "../../images/peels_cropped.jpeg"
+// const facials = facialImgs.map((facialImg) => facialImg)
+// import { facialImages } from "./MenuData";
+// console.log(facialImages)
+
 
 export const CategoryContainer = styled.div`
   /* background-color: blue; */
   background-color: ${(props) =>
-    props.backgroundColor ? props.backgroundColor : "white"};
+  props.backgroundColor ? props.backgroundColor : "white"};
   padding-bottom: 4rem;
   margin-bottom: 4rem;
 `;
@@ -43,14 +50,17 @@ export const Title = styled.p`
   }
 `;
 export const Image = styled.div`
-  /* align-self: center; */
   width: 80%;
+  height: 650px;
   position: relative;
-  height: 0;
-  padding-bottom: 80%;
-  z-index: 10;
+  z-index: 100;
   transform: translateY(-1rem);
-  background-color: red;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  background-image: url(${(props) => props.image});
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid ${(props) =>
+  props.border ? props.border : "white"};
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   @media screen and (max-width: 600px) {
@@ -86,8 +96,6 @@ export const ToTopButton = styled.button`
   -webkit-backdrop-filter: blur(4px);
   z-index: 20;
   position: fixed;
-  /* position: sticky; */
-  /* z-index: -10; */
   margin-left: 10px;
   background: rgba(13, 104, 120, 0.75);
   border-radius: 50%;

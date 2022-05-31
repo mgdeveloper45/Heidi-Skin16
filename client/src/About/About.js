@@ -13,10 +13,10 @@ import "./About.css";
 
 const About = () => {
   return (
-    <AboutContainer>
-      <div class="arrow">
-        <div class="line"></div>
-        <div class="point"></div>
+    <AboutContainer >
+      <div className="arrow">
+        <div className="line"></div>
+        <div className="point"></div>
       </div>
       <AboutHeader>About Us</AboutHeader>
       <AboutImageContainer>

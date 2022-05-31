@@ -49,8 +49,8 @@ const Nav = ({ animateImg, close, visible }) => {
         </Icons>
       </Header>
       <Navi>
-        <P style={{display:"flex"}} onClick={() => close("/services")}>Salon Service
-          
+        <div style={{display:"flex"}}>
+        <P style={{display:"flex"}} onClick={() => close("/services")}>Salon Service</P>
         <DropContainer>
       <MenuBtn onClick={() => setService(!services)}>
         <MdOutlineArrowDropDown/>
@@ -67,7 +67,7 @@ const Nav = ({ animateImg, close, visible }) => {
         </MenuPosition>
       ) : null}
     </DropContainer>
-    </P>
+    </div>
         <P onClick={() => close("/products")}>Buy Products</P>
 
         <P onClick={() => close("/contact")}>Contact Us</P>

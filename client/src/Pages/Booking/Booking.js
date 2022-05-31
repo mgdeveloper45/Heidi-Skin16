@@ -1,22 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PopupModal } from "react-calendly";
+
 import {
-  BookingButton,
-  BookingContainer,
-  BookingContent,
-  BookingForm,
-  // BookingInput,
-  BookingLabel,
-  BookingOption,
-  BookingSelect,
-  BookingTitle,
-  BookingWrapper,
-  LinkStyles,
+  Availability,BookingButton,BookingContainer,
+  BookingContent,BookingForm,BookingLabel,BookingOption,
+  BookingSelect,BookingTitle,BookingWrapper,LinkStyles,
 } from "./BookingStyles";
+import { useState } from "react";
 
 // Booking Input might be used going forward
 
 const Booking = () => {
+  const [calendar, setCalendar] = useState(false)
+  const styles = {
+    link: {
+      textDecoration: "none",
+      color: "black",
+    }
+  }
   return (
     <div>
       <BookingWrapper>
@@ -72,26 +74,28 @@ const Booking = () => {
                 <BookingOption>Hard Wax</BookingOption>
               </BookingSelect>
             </BookingForm>
-            <BookingForm>
+            <Availability>
               <BookingLabel>Availability</BookingLabel>
-              <BookingSelect>
-                <BookingOption>Cars</BookingOption>
-                <BookingOption>Volvo</BookingOption>
-                <BookingOption>Saab</BookingOption>
-                <BookingOption>Fiat</BookingOption>
-              </BookingSelect>
-            </BookingForm>
+              <BookingButton onClick={() => setCalendar(true)}>
+                Book a Session
+              </BookingButton>
+              <PopupModal url="https://calendly.com/heidiskin16"
+                target="_blank" rel="noreferrer"
+                onModalClose={() => setCalendar(false)}
+                open={calendar} 
+                rootElement={document.getElementById("root")}/>
+            </Availability>
 
             {/* <BookingForm>
               <BookingLabel>Promo Code</BookingLabel>
               <BookingInput />
             </BookingForm> */}
-            <BookingButton>Book a Session</BookingButton>
+
             <LinkStyles>
               <p>In salon appointments only</p> <br />
-              <Link to="/policy">Appointment Policy</Link>
+              <Link style={styles.link} to="/policy">Appointment Policy</Link>
               <br />
-              <Link to="/covid">Covid 19 Protocols</Link>
+              <Link style={styles.link} to="/covid">Covid 19 Protocols</Link>
             </LinkStyles>
           </BookingContent>
         </BookingContainer>

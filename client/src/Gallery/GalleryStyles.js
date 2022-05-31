@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const GalleryContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: pink;
+  /* background-color: pink; */
+  margin-top: 100px;
 `;
 export const GalleryHead = styled.div`
   background-color: white;
@@ -28,7 +29,7 @@ export const GalleryImageContainer = styled.div`
   background-color: white;
   overflow-x: scroll;
   overflow-y: hidden;
-
+  margin: 0 10px 0 30px;
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
@@ -36,13 +37,16 @@ export const GalleryImageContainer = styled.div`
 `;
 
 
-export const GalleryImage = styled.img`
-
+export const GalleryImage = styled.div`
+  background-image: url(${(props) => props.image});
+  /* box-shadow: 4px 4px 4px rgba(92, 36, 46, 0.75); */
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: white;
   margin: 0 10px 0 10px;
-  height: 567px;
-  width: 500px;
-  border-radius: 5px;
+  height: 550px;
+  width: 375px;
+  border-radius: 8px;
   scroll-behavior: smooth;
 
   /* height: 456px;
