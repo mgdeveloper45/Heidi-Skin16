@@ -173,8 +173,8 @@ export const allCategories = [
   },
   {
     title: "LED Therapy",
-    image: ``,
-    description: `LED Therapy low-light theraphy is safe, effective and a
+    image: `${facialImgs.led}`,
+    description: `LED Therapy low-light therapy is safe, effective and a
         convenient way to achieve a healthy, youthful glow in a natural, non-toxic, non-invasive manner. 
         Reduce the appearance of fine lines and wrinkles while experiencing an improvement in skin texture,
         quality and smoothness.`,
@@ -214,7 +214,7 @@ export const allCategories = [
   // },
   {
     title: "Scalp Treatments",
-    image: ``,
+    image: `${facialImgs.scalp}`,
     description: `Clogged hair follicles, can cause hair thinning. Releasing 
         natural conditioning oils can help relieve dry scalp and remove flakes, stimulate blood flow in the head and 
         neck area so nutrients can better reach the scalp and nourish your hair. Taking care of your skin and scalp 
@@ -259,7 +259,7 @@ export const allCategories = [
 export const addOn = [
   {
     title: "Add-On Services",
-    image: ``,
+    image: `${facialImgs.add}`,
     services: [
       { title: "LED Light", price: "$40", br: true },
       { title: "Dermaplaning", price: "$40", br: true },

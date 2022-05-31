@@ -35,7 +35,7 @@ const AddOn = () => {
           </ServiceTitleWrap>
         ))}
       </AddON>
-      <Image>{service.image}</Image>
+      <Image border={service.color} image={service.image}/>
     </AddOnContainer>
   );
 };

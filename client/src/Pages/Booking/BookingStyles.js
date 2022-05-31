@@ -6,7 +6,6 @@ export const BookingWrapper = styled.div`
   width: 100vw;
   padding-bottom: 50px;
 `;
-
 export const BookingContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -21,7 +20,6 @@ export const BookingTitle = styled.div`
   height: 5%;
   width: 100%;
 `;
-
 export const BookingContent = styled.div`
   display: flex;
   height: 100%;

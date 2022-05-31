@@ -57,9 +57,14 @@ export const Image = styled.div`
   padding-bottom: 40%;
   z-index: 10;
   transform: translateY(-1rem);
-  background-color: red;
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
+  background-image: url(${(props) => props.image});
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid ${(props) =>
+  props.border ? props.border : "white"};
   @media screen and (max-width: 600px) {
     width: 80%;
     padding-bottom: 80%;

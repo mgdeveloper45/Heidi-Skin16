@@ -10,7 +10,7 @@ import styled from "styled-components";
 export const CategoryContainer = styled.div`
   /* background-color: blue; */
   background-color: ${(props) =>
-    props.backgroundColor ? props.backgroundColor : "white"};
+  props.backgroundColor ? props.backgroundColor : "white"};
   padding-bottom: 4rem;
   margin-bottom: 4rem;
 `;
@@ -55,11 +55,12 @@ export const Image = styled.div`
   position: relative;
   z-index: 100;
   transform: translateY(-1rem);
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  ;
-  /* background-color: red; */
+  border: 1px solid ${(props) =>
+  props.border ? props.border : "white"};
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   @media screen and (max-width: 600px) {

@@ -15,7 +15,7 @@ const Menu = ({ category }) => {
             <Title title={category.secondaryColor}>{category.title}</Title>
           </TitleContainer>
           <TitleContainer>
-            <Image image={category.image}/>
+            <Image border={category.color} image={category.image}/>
             {/* <Image src={category.backgroundImage} /> */}
           </TitleContainer>
         </Categories>

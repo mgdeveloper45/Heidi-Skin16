@@ -39,7 +39,7 @@ export const GalleryImageContainer = styled.div`
 
 export const GalleryImage = styled.div`
   background-image: url(${(props) => props.image});
-  box-shadow: 4px 4px 4px rgba(92, 36, 46, 0.75);
+  /* box-shadow: 4px 4px 4px rgba(92, 36, 46, 0.75); */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;

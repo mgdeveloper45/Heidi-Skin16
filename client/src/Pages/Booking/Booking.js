@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { PopupModal } from "react-calendly";
-// import { InlineWidget } from "react-calendly";
 
 import {
   Availability,BookingButton,BookingContainer,
   BookingContent,BookingForm,BookingLabel,BookingOption,
   BookingSelect,BookingTitle,BookingWrapper,LinkStyles,
-  // BookingType,// BookingInput
 } from "./BookingStyles";
 import { useState } from "react";
 
@@ -15,6 +13,12 @@ import { useState } from "react";
 
 const Booking = () => {
   const [calendar, setCalendar] = useState(false)
+  const styles = {
+    link: {
+      textDecoration: "none",
+      color: "black",
+    }
+  }
   return (
     <div>
       <BookingWrapper>
@@ -89,9 +93,9 @@ const Booking = () => {
 
             <LinkStyles>
               <p>In salon appointments only</p> <br />
-              <Link to="/policy">Appointment Policy</Link>
+              <Link style={styles.link} to="/policy">Appointment Policy</Link>
               <br />
-              <Link to="/covid">Covid 19 Protocols</Link>
+              <Link style={styles.link} to="/covid">Covid 19 Protocols</Link>
             </LinkStyles>
           </BookingContent>
         </BookingContainer>
