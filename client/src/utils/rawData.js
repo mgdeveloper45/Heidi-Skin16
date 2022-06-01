@@ -15,7 +15,7 @@ export const allCategories = [
     subcategories: [
       {
         title: "SKIN16 Facial",
-        image: `${facialImgs.steam}`,
+        image: `${facialImgs.steamer}`,
         price: "$145",
         description: (
           <p>

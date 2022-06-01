@@ -5,7 +5,8 @@ import scalp from "../images/scalp_cropped.jpeg"
 import pure from "../images/pure_cropped.jpeg"
 import urban from "../images/urban_detox_cropped.jpeg"
 import add from "../images/add_cropped.jpeg"
-import steam from "../images/steam_cropped.jpeg"
+// import steam from "../images/steam_cropped.jpeg"
+import steamer from "../images/steamer.jpeg"
 import nano from "../images/nano_cropped.jpeg"
 import oxygen from "../images/oxygen_cropped.jpeg"
 import gold from "../images/gold_cropped.jpeg"
@@ -18,7 +19,7 @@ import porcelain from "../images/porcelain.jpeg"
 
 export const facialImgs = {
     facials, peels, scalp, led,
-    add,steam,nano,oxygen,gold,
+    add,steamer,nano,oxygen,gold,
     good,rough,porce,porcelain,
     sculplla,pure,urban,sculpllaLight,
 }

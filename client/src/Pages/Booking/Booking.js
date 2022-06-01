@@ -13,6 +13,13 @@ import { useState } from "react";
 
 const Booking = () => {
   const [calendar, setCalendar] = useState(false)
+  // const isValidPayment = () => {
+  //   if(payment){
+  //     setCalendar(true)
+  //   } else {
+
+  //   }
+  // }
   const styles = {
     link: {
       textDecoration: "none",

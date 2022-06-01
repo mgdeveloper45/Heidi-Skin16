@@ -2,11 +2,14 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import {
   removeFromCart,
-  updateCart,
+  // updateCart,
   updateQuantity,
 } from "../../Redux/cartSlicer.js";
-import { ArrowContainer, Arrows, Input } from "../Products/SingleProduct.js";
-import { Break, CartPage, Title, CartButton } from "./CartStyles";
+import { ArrowContainer, Arrows, Input } from "../Products/ProductsStyles";
+import { 
+  // Break, CartPage, Title, 
+  CartButton 
+} from "./CartStyles";
 
 import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 
