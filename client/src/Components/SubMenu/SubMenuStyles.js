@@ -43,8 +43,8 @@ export const Image = styled.div`
   background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: 1px solid ${(props) =>
-  props.border ? props.border : "white"}; */
+  border: 3px solid ${(props) =>
+  props.border ? props.border : "white"};
 
   @media screen and (max-width: 600px) {
     align-self: center;

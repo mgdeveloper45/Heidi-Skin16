@@ -32,6 +32,7 @@ export const allCategories = [
         ),
 
         button: "Book",
+        color: "rgba(216, 155, 166, 0.75)",
       },
       {
         title: "Porcelain Nano-fill Facial",
@@ -54,6 +55,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(216, 155, 166, 0.75)",
       },
       {
         title: "The Modern Facial - 75 min Facial",
@@ -74,6 +76,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(216, 155, 166, 0.75)",
       },
       {
         title: "Grow Gorgeous Gold",
@@ -96,6 +99,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(216, 155, 166, 0.75)",
       },
     ],
     color: "rgba(216, 155, 166, 0.75)",
@@ -126,6 +130,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(13, 104, 120, 0.75)",
       },
       {
         title: "Rough Peel",
@@ -143,6 +148,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(13, 104, 120, 0.75)",
       },
       {
         title: "The Good Peel",
@@ -166,6 +172,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(13, 104, 120, 0.75)",
       },
     ],
     color: "rgba(13, 104, 120, 0.75)",
@@ -182,7 +189,7 @@ export const allCategories = [
     subcategories: [
       {
         title: "Sculplla + H2 + LED Light",
-        image: `${facialImgs.sculplla}`,
+        image: `${facialImgs.sculpllaLight}`,
         price: "$245",
         sndPrice: "$275 (With customize HydroJelly Mask)",
         description: (
@@ -197,6 +204,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(216, 155, 166, 0.75)",
       },
     ],
     color: "rgba(216, 155, 166, 0.75)",
@@ -237,6 +245,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(13, 104, 120, 0.75)",
       },
       {
         title: "Urban Detox Fair",
@@ -250,6 +259,7 @@ export const allCategories = [
           </p>
         ),
         button: "Book",
+        color: "rgba(13, 104, 120, 0.75)",
       },
     ],
     color: "rgba(13, 104, 120, 0.75)",

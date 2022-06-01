@@ -1,17 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
-  Button,
-  Content,
-  ContentContainer,
-  Description,
-  Image,
-  Listing,
-  P,
-  Price,
-  SndPrice,
-  SubMenuContainer,
-  ButtonContainer,
-  Title,
+  Button, Content, ContentContainer, Description, 
+  Image, Listing, P, Price, SndPrice,
+  SubMenuContainer, ButtonContainer, Title,
 } from "./SubMenuStyles";
 
 const SubMenu = ({ item, idx }) => {
@@ -20,7 +11,7 @@ const SubMenu = ({ item, idx }) => {
       <ContentContainer key={idx}>
         {window.innerWidth > 600 ? (
           <>
-            <Image image={item.image}/>
+            <Image border={item.color} image={item.image}/>
             <Content>
               <Title>
                 <Listing>
@@ -49,7 +40,7 @@ const SubMenu = ({ item, idx }) => {
               </Title>
               <Price>{item.price}</Price>
               <SndPrice>{item.sndPrice}</SndPrice>
-              <Image>{item.image}</Image>
+              <Image border={item.color} image={item.image}/>
               <Description>{item.description}</Description>
               <ButtonContainer>
                 <Button>

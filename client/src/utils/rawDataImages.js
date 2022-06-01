@@ -10,6 +10,7 @@ import nano from "../images/nano_cropped.jpeg"
 import oxygen from "../images/oxygen_cropped.jpeg"
 import gold from "../images/gold_cropped.jpeg"
 import sculplla from "../images/sculplla_cropped.jpeg"
+import sculpllaLight from "../images/sculpllaLight_cropped.jpeg"
 import good from "../images/goodPeel_cropped.jpeg"
 import rough from "../images/roughPeel_cropped.jpeg"
 import porce from "../images/porce_cropped.jpeg"
@@ -19,5 +20,5 @@ export const facialImgs = {
     facials, peels, scalp, led,
     add,steam,nano,oxygen,gold,
     good,rough,porce,porcelain,
-    sculplla,pure,urban,
+    sculplla,pure,urban,sculpllaLight,
 }
