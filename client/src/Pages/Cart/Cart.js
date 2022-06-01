@@ -75,9 +75,9 @@ const Cart = () => {
               <div style={{ textAlign: "center" }}>
                 Total: ${cart.cartTotalAmount.toFixed(2)}
               </div>
-              <CartButton onClick={onClick}>Checkout</CartButton>
+              <CartButton onClick={onClick}>CHECKOUT</CartButton>
               <Link to="/products">
-                <CartButton>Continue Shopping</CartButton>
+                <CartButton>CONTINUE SHOPPING</CartButton>
               </Link>
             </div>
           </div>
