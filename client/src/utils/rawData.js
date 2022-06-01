@@ -146,7 +146,7 @@ export const allCategories = [
       },
       {
         title: "The Good Peel",
-        image: ``,
+        image: `${facialImgs.good}`,
         price: "$265",
         description: (
           <p>
@@ -182,7 +182,7 @@ export const allCategories = [
     subcategories: [
       {
         title: "Sculplla + H2 + LED Light",
-        image: `${facialImgs.good}`,
+        image: `${facialImgs.sculplla}`,
         price: "$245",
         sndPrice: "$275 (With customize HydroJelly Mask)",
         description: (
@@ -213,7 +213,7 @@ export const allCategories = [
   // secondaryColor: "#fff",
   // },
   {
-    title: "Scalp Treatments",
+    title: "Scalp Treatments Coming Soon!" ,
     image: `${facialImgs.scalp}`,
     description: `Clogged hair follicles, can cause hair thinning. Releasing 
         natural conditioning oils can help relieve dry scalp and remove flakes, stimulate blood flow in the head and 
@@ -225,7 +225,7 @@ export const allCategories = [
     subcategories: [
       {
         title: "Pure Flash",
-        image: ``,
+        image: `${facialImgs.pure}`,
         price: "$100",
         description: (
           <p>
@@ -240,7 +240,7 @@ export const allCategories = [
       },
       {
         title: "Urban Detox Fair",
-        image: ``,
+        image: `${facialImgs.urban}`,
         price: "$185",
         description: (
           <p>
