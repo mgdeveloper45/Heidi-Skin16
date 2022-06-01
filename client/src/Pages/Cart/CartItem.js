@@ -1,6 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { removeFromCart, updateCart } from "../../Redux/cartSlicer.js";
+import {
+  removeFromCart,
+  updateCart,
+  updateQuantity,
+} from "../../Redux/cartSlicer.js";
 import { ArrowContainer, Arrows, Input } from "../Products/SingleProduct.js";
 import { Break, CartPage, Title, CartButton } from "./CartStyles";
 
@@ -10,6 +14,8 @@ const styled = {
   flexRow: {
     display: "flex",
     flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     maxWidth: "700px",
     maxHeight: "500px",
     marginBottom: "20px",
@@ -63,29 +69,32 @@ const CartItem = ({ index, item }) => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "20px",
+          padding: "0 20px",
           // borderRight: "1px solid pink",
         }}
       >
         <h3>{item.data.name}</h3>
+        <br />
         <div style={styled.flexRow}>
           <h3>${item.data.metadata.price}</h3>
           <ArrowContainer>
-            <Input
-              type="string"
-              value={num}
-              onChange={() => dispatch(updateCart(num))}
-            />
+            <Input type="string" value={num} />
+
             <Arrows>
               <TiArrowSortedUp onClick={incNum} />
               <TiArrowSortedDown onClick={decNum} />
             </Arrows>
           </ArrowContainer>
+          <CartButton
+            onClick={() => dispatch(updateQuantity({ ...item, quantity: num }))}
+          >
+            UPDATE
+          </CartButton>
         </div>
         <p style={styled.paddingBottom}>{item.data.metadata.size}</p>
         <p style={styled.paddingBottom}>[{item.data.metadata.skinType}]</p>
         <CartButton onClick={() => dispatch(removeFromCart(item))}>
-          Remove Item
+          REMOVE{" "}
         </CartButton>
       </div>
     </div>

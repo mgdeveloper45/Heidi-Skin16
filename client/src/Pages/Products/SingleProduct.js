@@ -49,7 +49,7 @@ export const Input = styled.input`
   text-align: center;
   width: 30px;
   height: 25px;
-  margin-left: 25px;
+  margin-left: 20px;
   border: 1px solid;
   border-radius: 5px;
 
@@ -101,13 +101,13 @@ const SingleProduct = ({ item, index }) => {
   let incNum = () => {
     setNum(num + 1);
   };
-   let decNum = () => {
-     if (num === 0) {
-       return;
-     } else if (num >= 1) {
-       setNum(num - 1);
-     }
-   };
+  let decNum = () => {
+    if (num === 0) {
+      return;
+    } else if (num >= 1) {
+      setNum(num - 1);
+    }
+  };
   let handleChange = (e) => {
     setNum(parseInt(e.target.value));
   };

@@ -49,8 +49,8 @@ export const ProductDetails = styled.div`
 `;
 
 export const CartButton = styled.button`
-  height: 50px;
-  width: 150px;
+  height: 40px;
+  width: 130px;
   padding: 0 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
