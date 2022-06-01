@@ -20,7 +20,7 @@ const SubMenu = ({ item, idx }) => {
       <ContentContainer key={idx}>
         {window.innerWidth > 600 ? (
           <>
-            <Image>{item.image}</Image>
+            <Image image={item.image}/>
             <Content>
               <Title>
                 <Listing>

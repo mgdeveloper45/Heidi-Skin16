@@ -15,7 +15,7 @@ export const allCategories = [
     subcategories: [
       {
         title: "SKIN16 Facial",
-        image: ``,
+        image: `${facialImgs.steam}`,
         price: "$145",
         description: (
           <p>
@@ -35,7 +35,7 @@ export const allCategories = [
       },
       {
         title: "Porcelain Nano-fill Facial",
-        image: ``,
+        image: `${facialImgs.nano}`,
         price: "$350",
         description: (
           <p>
@@ -56,8 +56,8 @@ export const allCategories = [
         button: "Book",
       },
       {
-        title: "The Modern Facial-75min Facial",
-        image: ``,
+        title: "The Modern Facial - 75 min Facial",
+        image: `${facialImgs.oxygen}`,
         price: "$225",
         description: (
           <p>
@@ -77,12 +77,12 @@ export const allCategories = [
       },
       {
         title: "Grow Gorgeous Gold",
-        image: ``,
+        image: `${facialImgs.gold}`,
         price: "$285",
         description: (
           <p>
             <br />
-            Gold benefits for all skin types, it helps the skin'selimination of
+            Gold benefits for all skin types, it helps the skin's elimination of
             toxins and combats sun damage. Gold patch also reduces tired
             appearance and brightens up the skin by circulating blood and
             oxygen.
@@ -112,7 +112,7 @@ export const allCategories = [
     subcategories: [
       {
         title: "Porcelain Peel",
-        image: ``,
+        image: `${facialImgs.porcelain}`,
         price: "$185",
         description: (
           <p>
@@ -129,7 +129,7 @@ export const allCategories = [
       },
       {
         title: "Rough Peel",
-        image: ``,
+        image: `${facialImgs.rough}`,
         price: "$215",
         description: (
           <p>
@@ -156,7 +156,7 @@ export const allCategories = [
             <strong>Contraindication for dermaplaning:</strong> open skin
             lesions, dermatitis, uncontrolled diabetes, active cold sores, skin
             cancer, inflamed acne lesions, use of topical prescriptions such as
-            Retin A within one week, use of Accutane within 6 months, sunburn,
+            Retin-A within one week, use of Accutane within 6 months, sunburn,
             cancer therapy, blood thinners, had laser treatments within two
             weeks.
             <br />
@@ -182,7 +182,7 @@ export const allCategories = [
     subcategories: [
       {
         title: "Sculplla + H2 + LED Light",
-        image: ``,
+        image: `${facialImgs.good}`,
         price: "$245",
         sndPrice: "$275 (With customize HydroJelly Mask)",
         description: (
