@@ -41,7 +41,7 @@ const ProductGrid = styled.div`
 `;
 
 const ProductsPage = () => {
-  const products = useSelector((state) => state.productData.entities);
+  const products = useSelector(state => state.productData.entities);
 
   return (
     <ProductWrapper>
