@@ -38,7 +38,6 @@ export const Image = styled.div`
   width: 40%;
   height: 0;
   padding-bottom: 40%;
-
   /* box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25); */
   background-image: url(${(props) => props.image});
   background-repeat: no-repeat;

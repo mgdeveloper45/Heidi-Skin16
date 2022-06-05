@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { PopupModal } from "react-calendly";
-
 import {
   Availability,BookingButton,BookingContainer,
   BookingContent,BookingForm,BookingLabel,BookingOption,
@@ -11,15 +10,16 @@ import { useState } from "react";
 
 // Booking Input might be used going forward
 
-const Booking = () => {
+const Booking = ({categories, addOn}) => {
   const [calendar, setCalendar] = useState(false)
-  // const isValidPayment = () => {
-  //   if(payment){
-  //     setCalendar(true)
-  //   } else {
+  const [value, setValue] = useState("")
 
-  //   }
-  // }
+  const onChange = (e) => {
+    e.preventDefault()
+    setValue(e.target.value)
+  }
+  
+  console.log(value)
   const styles = {
     link: {
       textDecoration: "none",
@@ -35,50 +35,34 @@ const Booking = () => {
           </BookingTitle>
           <BookingContent>
             <BookingForm>
-              <BookingLabel>Service</BookingLabel>
-              <BookingSelect>
-                <BookingOption>Facials</BookingOption>
-                <BookingOption>Peels</BookingOption>
-                <BookingOption>LED Therapy</BookingOption>
-                <BookingOption>Scalp Treatments</BookingOption>
+              <BookingLabel>Service</BookingLabel> 
+              <BookingSelect onChange={onChange}>
+                {categories.map((item,idx) => (
+                <>
+                <BookingOption key={idx}>{item.title}</BookingOption>
+                </>
+                ))}
               </BookingSelect>
             </BookingForm>
             <BookingForm>
               <BookingLabel>Type</BookingLabel>
-              <BookingSelect>
-                <BookingOption>SKIN16 Facial</BookingOption>
-                <BookingOption>Porcelain Nano-fil Facial</BookingOption>
-                <BookingOption>The Modern Facial</BookingOption>
-                <BookingOption>Grow Gorgeous Gold</BookingOption>
-                {/* Peels Option */}
-                <BookingOption>Porcelain Peel</BookingOption>
-                <BookingOption>Rough Peel</BookingOption>
-                <BookingOption>Good Peel</BookingOption>
-                {/* LED Therapy Option */}
-                <BookingOption>Sculplla + H2 + LED Light</BookingOption>
-                <BookingOption>
-                  Sculplla + H2 + LED Light w/ HydroJelly Mask
-                </BookingOption>
-                {/* Scalp Treatments */}
-                <BookingOption>Pure Flash</BookingOption>
-                <BookingOption>Urban Detox Fair</BookingOption>
+              <BookingSelect> 
+                {categories.map(type => type.title === value 
+                ? type.subcategories.map((item, index) => (
+                <>
+                <BookingOption key={index}>{item.title} </BookingOption>
+                </>
+                )) : null)}
               </BookingSelect>
             </BookingForm>
             <BookingForm>
               <BookingLabel>Add-ons</BookingLabel>
               <BookingSelect>
-                <BookingOption>LED Light</BookingOption>
-                <BookingOption>Dermaplaning</BookingOption>
-                <BookingOption>Face Peel</BookingOption>
-                <BookingOption>Face & neck Peel</BookingOption>
-                <BookingOption>Face, Neck & Decollete Peel</BookingOption>
-                <BookingOption>Oxygen Therapy</BookingOption>
-                <BookingOption>2 Steps Oxygen</BookingOption>
-                <BookingOption>Hot Oil Hand Treatment</BookingOption>
-                <BookingOption>Hot Oil Hand Treatment w/ Peel</BookingOption>
-                <BookingOption>Brazilian Wax</BookingOption>
-                <BookingOption>Soft Wax</BookingOption>
-                <BookingOption>Hard Wax</BookingOption>
+              {addOn.map(add => add.services.map((item,idx) => (
+                <>
+                <BookingOption key={idx}>{item.title}</BookingOption>
+                </>
+              )))}
               </BookingSelect>
             </BookingForm>
             <Availability>
@@ -92,12 +76,7 @@ const Booking = () => {
                 open={calendar} 
                 rootElement={document.getElementById("root")}/>
             </Availability>
-
-            {/* <BookingForm>
-              <BookingLabel>Promo Code</BookingLabel>
-              <BookingInput />
-            </BookingForm> */}
-
+            {/* Promo Code */}
             <LinkStyles>
               <p>In salon appointments only</p> <br />
               <Link style={styles.link} to="/policy">Appointment Policy</Link>

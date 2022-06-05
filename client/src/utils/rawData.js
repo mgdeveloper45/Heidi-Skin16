@@ -30,7 +30,7 @@ export const allCategories = [
             Recommended every 3-4 week to keep up. Add on and make more special.
           </p>
         ),
-
+        duration: "50",
         button: "Book",
         color: "rgba(216, 155, 166, 0.75)",
       },
@@ -54,6 +54,7 @@ export const allCategories = [
             and Must be on Modvellum protocol and free of contraindications.
           </p>
         ),
+        duration: "120",
         button: "Book",
         color: "rgba(216, 155, 166, 0.75)",
       },
@@ -75,6 +76,7 @@ export const allCategories = [
             having metastasis.
           </p>
         ),
+        duration: "90",
         button: "Book",
         color: "rgba(216, 155, 166, 0.75)",
       },
@@ -98,6 +100,7 @@ export const allCategories = [
             stimulation-gold placentahydrojelly mask.
           </p>
         ),
+        duration: "60",
         button: "Book",
         color: "rgba(216, 155, 166, 0.75)",
       },
@@ -129,6 +132,7 @@ export const allCategories = [
             Aloe/ Chamomile/ Blacktea/ Kombuchka/ L-lactic Acid and More.
           </p>
         ),
+        duration: "45",
         button: "Book",
         color: "rgba(13, 104, 120, 0.75)",
       },
@@ -147,6 +151,7 @@ export const allCategories = [
             and More.
           </p>
         ),
+        duration: "45",
         button: "Book",
         color: "rgba(13, 104, 120, 0.75)",
       },
@@ -171,6 +176,7 @@ export const allCategories = [
             cardiac pacemakers, epilepsy, etc.
           </p>
         ),
+        duration: "75",
         button: "Book",
         color: "rgba(13, 104, 120, 0.75)",
       },
@@ -203,6 +209,7 @@ export const allCategories = [
             optimal results that can last up to 5 months with maintenance.
           </p>
         ),
+        duration: "60",
         button: "Book",
         color: "rgba(216, 155, 166, 0.75)",
       },
@@ -244,6 +251,7 @@ export const allCategories = [
             Relief, Refresh, Restore!
           </p>
         ),
+        duration: "50",
         button: "Book",
         color: "rgba(13, 104, 120, 0.75)",
       },
@@ -258,6 +266,7 @@ export const allCategories = [
             revitalize, youthful scalp care.
           </p>
         ),
+        duration: "90",
         button: "Book",
         color: "rgba(13, 104, 120, 0.75)",
       },
@@ -271,18 +280,18 @@ export const addOn = [
     title: "Add-On Services",
     image: `${facialImgs.add}`,
     services: [
-      { title: "LED Light", price: "$40", br: true },
-      { title: "Dermaplaning", price: "$40", br: true },
-      { title: "Peel (face)", price: "$40" },
-      { title: "Peel (face & neck)", price: "$50" },
-      { title: "Peel (face & neck & decollete)", price: "$60", br: true },
-      { title: "Oxygen therapy", price: "$30" },
-      { title: "2 steps oxygen", price: "$50", br: true },
-      { title: "Hot Oil Hand Treatment", price: "$20" },
-      { title: "Hot Oil Hand Treatment with peel", price: "$30", br: true },
-      { title: "Brazlian waxing - 30min womens only" },
-      { title: "Soft Wax", price: "$65" },
-      { title: "Hard Wax", price: "$75" },
+      { title: "LED Light", price: "$40", duration: "30", br: true },
+      { title: "Dermaplaning", price: "$40", duration: "50", br: true },
+      { title: "Peel (face)", price: "$40", duration: "10", },
+      { title: "Peel (face & neck)", price: "$50", duration: "15", },
+      { title: "Peel (face & neck & decollete)", price: "$60", duration: "20", br: true },
+      { title: "Oxygen therapy", price: "$30", duration: "15", },
+      { title: "2 steps oxygen", price: "$50", duration: "20", br: true },
+      { title: "Hot Oil Hand Treatment", price: "$20", duration: "15" },
+      { title: "Hot Oil Hand Treatment with peel", price: "$30", duration: "20", br: true },
+      { title: "Brazlian waxing (women only)", duration: "30"},
+      { title: "Soft Wax", price: "$65", duration: "15", },
+      { title: "Hard Wax", price: "$75", duration: "15", },
     ],
     color: "rgba(216, 155, 166, 0.75)",
     secondaryColor: "#000",
