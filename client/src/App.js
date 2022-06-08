@@ -68,6 +68,8 @@ function App() {
         visible={visible}
         animateImg={animateRevImg}
         close={closeThenRedirect}
+        addOn={addOn} 
+        categories={allCategories}
       />
       <Routes>
         <Route

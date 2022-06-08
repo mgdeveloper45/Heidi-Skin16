@@ -20,17 +20,16 @@ import { BsCart3, BsSearch } from "react-icons/bs";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import { allCategories } from "../utils/rawData";
 import Badge from "@mui/material/Badge";
 import { useEffect } from "react";
 
-const Nav = ({ animateImg, close, visible }) => {
+const Nav = ({ animateImg, close, visible, categories }) => {
   const [services, setService] = useState(false);
   const [dropDown, setDropDown] = useState([]);
 
   const cartQuantity = useSelector(state => state.cart.cartTotalQuantity);
   useEffect(() => {
-    setDropDown(allCategories);
+    setDropDown(categories);
   }, []);
 
   return (
@@ -65,7 +64,6 @@ const Nav = ({ animateImg, close, visible }) => {
           <DropContainer>
             <MenuBtn onClick={() => setService(!services)}>
               <MdOutlineArrowDropDown />
-              {/* <BsCaretDownSquare /> */}
             </MenuBtn>
             {services === true ? (
               <MenuPosition>
