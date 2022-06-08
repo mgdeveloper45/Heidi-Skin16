@@ -1,23 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../Redux/cartSlicer.js";
-
 import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
-
-//stylesheet
-import {
-  ProductCard,
-  ImgContainer,
-  ProductImg,
-  ProductDescription,
-  ProductName,
-  ProductPrice,
-  ArrowContainer,
-  Input,
-  Arrows,
-  ProductDetails,
-  CartButton,
-} from "./SingleProductStyles";
+import { 
+  Arrows, ArrowContainer, CartButton, ImgContainer, Input,
+  ProductCard, ProductDescription, ProductDetails, ProductImg,
+  ProductName, ProductPrice
+} from "./ProductsStyles.js";
 
 const SingleProduct = ({ item, index }) => {
   const dispatch = useDispatch();

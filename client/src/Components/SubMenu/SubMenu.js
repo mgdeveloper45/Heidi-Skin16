@@ -1,17 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
-  Button,
-  Content,
-  ContentContainer,
-  Description,
-  Image,
-  Listing,
-  P,
-  Price,
-  SndPrice,
-  SubMenuContainer,
-  ButtonContainer,
-  Title,
+  Button, Content, ContentContainer, Description, 
+  Image, Listing, P, Price, SndPrice,
+  SubMenuContainer, ButtonContainer, Title,
 } from "./SubMenuStyles";
 
 const SubMenu = ({ item, idx }) => {
@@ -20,15 +11,15 @@ const SubMenu = ({ item, idx }) => {
       <ContentContainer key={idx}>
         {window.innerWidth > 600 ? (
           <>
-            <Image image={item.image}/>
+            <Image border={item.color} image={item.image}/>
             <Content>
               <Title>
                 <Listing>
                   {item.title}
-                  {/* <Price>{item.price}</Price> */}
                 </Listing>
               </Title>
               <Price>{item.price}</Price>
+              <div>time: {item.duration} mins</div>
               <SndPrice>{item.sndPrice}</SndPrice>
               <Description>{item.description}</Description>
               <ButtonContainer>
@@ -44,12 +35,11 @@ const SubMenu = ({ item, idx }) => {
               <Title>
                 <Listing>
                   {item.title}
-                  {/* <Price>{item.price}</Price> */}
                 </Listing>
               </Title>
               <Price>{item.price}</Price>
               <SndPrice>{item.sndPrice}</SndPrice>
-              <Image>{item.image}</Image>
+              <Image border={item.color} image={item.image}/>
               <Description>{item.description}</Description>
               <ButtonContainer>
                 <Button>

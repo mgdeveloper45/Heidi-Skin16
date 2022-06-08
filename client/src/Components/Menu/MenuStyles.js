@@ -1,11 +1,4 @@
-import styled from "styled-components";
-// import { facialImgs } from "./MenuData";
-// import facials from "../../images/facials_cropped.jpeg"
-// import peels from "../../images/peels_cropped.jpeg"
-// const facials = facialImgs.map((facialImg) => facialImg)
-// import { facialImages } from "./MenuData";
-// console.log(facialImages)
-
+import styled from "styled-components"; 
 
 export const CategoryContainer = styled.div`
   /* background-color: blue; */

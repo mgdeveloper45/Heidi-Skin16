@@ -15,6 +15,7 @@ import "./appstyles.css";
 import { useDispatch } from "react-redux";
 import { fetchProducts } from "./Redux/productSlice";
 import ScrollToTop from "./utils/ScrollToTop.js";
+import { allCategories, addOn } from "./utils/rawData";
 
 function App() {
   const dispatch = useDispatch();
@@ -67,6 +68,8 @@ function App() {
         visible={visible}
         animateImg={animateRevImg}
         close={closeThenRedirect}
+        addOn={addOn} 
+        categories={allCategories}
       />
       <Routes>
         <Route
@@ -80,9 +83,9 @@ function App() {
             />
           }
         />
-        <Route path="/services" element={<SalonServices />} />
+        <Route path="/services" element={<SalonServices addOn={addOn} categories={allCategories}/>} />
         <Route path="/products" element={<ProductsPage />} />
-        <Route path="/booking" element={<Booking />} />
+        <Route path="/booking" element={<Booking addOn={addOn} categories={allCategories}/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/covid" element={<Covid />} />

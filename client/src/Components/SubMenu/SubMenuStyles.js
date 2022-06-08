@@ -38,13 +38,12 @@ export const Image = styled.div`
   width: 40%;
   height: 0;
   padding-bottom: 40%;
-
   /* box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25); */
   background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: 1px solid ${(props) =>
-  props.border ? props.border : "white"}; */
+  border: 3px solid ${(props) =>
+  props.border ? props.border : "white"};
 
   @media screen and (max-width: 600px) {
     align-self: center;

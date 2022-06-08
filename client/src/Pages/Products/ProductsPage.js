@@ -1,18 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import { useSelector } from "react-redux";
-
+import { 
+  DropDown,ProductBody,ProductGrid,ProductWrapper 
+} from "./ProductsStyles";
 //components
 import SingleProduct from "./SingleProduct";
 import ProductDropDown from "./ProductDropDown";
-
-//stylesheet
-import {
-  ProductWrapper,
-  ProductBody,
-  DropDown,
-  ProductGrid,
-} from "./ProductsPageStyles";
 
 const ProductsPage = () => {
   const products = useSelector(state => state.productData.entities);

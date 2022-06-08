@@ -14,7 +14,6 @@ export const Title = styled.p`
   font-weight: normal;
   font-size: 45px;
   display: flex;
-  justify-content
 `;
 
 export const CartContainer = styled.div`
@@ -37,7 +36,7 @@ export const ImgContainer = styled.div`
 export const CartImg = styled.img`
   height: 100%;
   width: 100%;
-  background-image: url(https://picsum.photos/400);
+  background-image: url("https://picsum.photos/400");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

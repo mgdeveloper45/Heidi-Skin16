@@ -1,16 +1,8 @@
 import { useState } from "react";
-import styled from "styled-components";
-// import { BsCaretDownSquare } from "react-icons/bs";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-
-//stylesheet
-import {
-  DropContainer,
-  MenuBtn,
-  MenuPosition,
-  Menu,
-  CategoryLinks,
-} from "./ProductDropDownStyles";
+import { 
+  CategoryLinks, DropContainer, Menu, MenuBtn, MenuPosition 
+} from "./ProductsStyles";
 
 const ProductDropDown = () => {
   const [value, setValue] = useState(false);
@@ -18,8 +10,7 @@ const ProductDropDown = () => {
   return (
     <DropContainer>
       <MenuBtn onClick={() => setValue(!value)}>
-        {/* <BsCaretDownSquare /> */}
-        <MdOutlineArrowDropDown />
+        <MdOutlineArrowDropDown/>
       </MenuBtn>
       {value === true ? (
         <MenuPosition>
