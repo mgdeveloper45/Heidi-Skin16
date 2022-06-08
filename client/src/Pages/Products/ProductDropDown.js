@@ -18,7 +18,7 @@ const ProductDropDown = () => {
             <CategoryLinks>Modvellum Clinical Skincare</CategoryLinks>
             <CategoryLinks>Société Clinical Skincare</CategoryLinks>
             <CategoryLinks>Incellderm</CategoryLinks>
-            <CategoryLinks>Sculplla H2</CategoryLinks>  
+            <CategoryLinks>Sculplla H2</CategoryLinks>
             <CategoryLinks>Esthemax</CategoryLinks>
             <CategoryLinks>Farm House Fresh</CategoryLinks>
           </Menu>

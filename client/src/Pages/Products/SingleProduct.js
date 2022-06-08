@@ -22,14 +22,15 @@ const SingleProduct = ({ item, index }) => {
       setNum(num - 1);
     }
   };
-  let handleChange = (e) => {
+  let handleChange = e => {
     setNum(parseInt(e.target.value));
   };
 
   return (
     <ProductCard key={index}>
       <ImgContainer>
-        <ProductImg src={item.data.images} alt="Product" />
+        {/* <ProductImg src={item.data.images} alt="Product" /> */}
+        <ProductImg />
       </ImgContainer>
       <ProductDescription>
         <ProductName>{item.data.name}</ProductName>
@@ -49,8 +50,7 @@ const SingleProduct = ({ item, index }) => {
         </ProductDetails>
       </ProductDescription>
       <CartButton
-        onClick={() => dispatch(addToCart({ ...item, quantity: num }))}
-      >
+        onClick={() => dispatch(addToCart({ ...item, quantity: num }))}>
         ADD TO CART
       </CartButton>
     </ProductCard>
