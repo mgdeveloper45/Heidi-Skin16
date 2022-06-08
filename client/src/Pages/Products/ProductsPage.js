@@ -6,39 +6,13 @@ import { useSelector } from "react-redux";
 import SingleProduct from "./SingleProduct";
 import ProductDropDown from "./ProductDropDown";
 
-const ProductWrapper = styled.div`
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-`;
-const ProductBody = styled.div`
-  width: 100%;
-  max-width: 960px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const DropDown = styled.h1`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-
-  margin-top: 100px;
-  margin-bottom: 100px;
-`;
-const ProductGrid = styled.div`
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto auto auto;
-  column-gap: 30px;
-  row-gap: 30px;
-`;
+//stylesheet
+import {
+  ProductWrapper,
+  ProductBody,
+  DropDown,
+  ProductGrid,
+} from "./ProductsPageStyles";
 
 const ProductsPage = () => {
   const products = useSelector(state => state.productData.entities);
