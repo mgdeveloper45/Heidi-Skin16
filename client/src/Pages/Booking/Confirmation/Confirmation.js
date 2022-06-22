@@ -6,7 +6,7 @@ import {
   ConfirmationRowReverse,
   Directions,
 } from "./ConfirmationStyles";
-import location from "../../images/navigation-32.png";
+import location from "../../../images/navigation-32.png";
 const Confirmation = () => {
   const styles = {
     location: {
