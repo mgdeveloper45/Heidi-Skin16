@@ -13,7 +13,7 @@ import {
   BookingTitle,
   BookingWrapper,
   LinkStyles,
-} from "./BookingStyles";
+} from "../Bookings/BookingStyles";
 import { useState } from "react";
 
 // Booking Input might be used going forward
