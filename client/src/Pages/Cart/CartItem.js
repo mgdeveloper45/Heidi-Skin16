@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import {
   removeFromCart,
   updateCart,
+  updateCartItemQuantity,
+  updateCartItem,
   updateQuantity,
 } from "../../Redux/cartSlicer.js";
 import { ArrowContainer, Arrows, Input } from "../Products/SingleProduct.js";
@@ -43,7 +45,7 @@ const CartItem = ({ index, item }) => {
 
   let decNum = () => {
     if (num === 0) {
-      return;
+      setNum(0);
     } else if (num >= 1) {
       setNum(num - 1);
     }
@@ -59,6 +61,14 @@ const CartItem = ({ index, item }) => {
   //   setNum(parseInt(e.target.value));
   //   dispatch(updateCart(index, num));
   // };
+
+  const handleChange = () => {
+    if (num === 0) {
+      dispatch(removeFromCart(item));
+    } else {
+      dispatch(updateCartItem({ ...item, quantity: num }));
+    }
+  };
 
   return (
     <div style={styled.flexRow} key={index} item={item}>
@@ -78,15 +88,15 @@ const CartItem = ({ index, item }) => {
         <div style={styled.flexRow}>
           <h3>${item.data.metadata.price}</h3>
           <ArrowContainer>
-            <Input type="string" value={num} />
-
+            <Input type="string" value={num} onChange={handleChange} />
             <Arrows>
               <TiArrowSortedUp onClick={incNum} />
               <TiArrowSortedDown onClick={decNum} />
             </Arrows>
           </ArrowContainer>
           <CartButton
-            onClick={() => dispatch(updateQuantity({ ...item, quantity: num }))}
+            onClick={() => dispatch(updateCartItem({ ...item, quantity: num }))}
+            // onClick={() => handleClick()}
           >
             UPDATE
           </CartButton>
