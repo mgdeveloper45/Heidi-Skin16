@@ -12,8 +12,13 @@ import {
 } from "./NavStyles";
 import { Link, useNavigate } from "react-router-dom";
 import { BsCart3, BsSearch } from "react-icons/bs";
+import { useSelector } from "react-redux";
+
+import Badge from "@mui/material/Badge";
 
 const Nav = ({ animateImg, visible }) => {
+  const cartQuantity = useSelector((state) => state.cart.cartTotalQuantity);
+
   const navigate = useNavigate();
 
   const closeThenRedirect = (navi) => {
@@ -34,11 +39,13 @@ const Nav = ({ animateImg, visible }) => {
         <Icons>
           <BsSearch size={25} />
           <Icon>
-            <BsCart3
-              onClick={() => closeThenRedirect("/cart")}
-              style={{ marginLeft: "10px" }}
-              size={30}
-            />
+            <Badge badgeContent={cartQuantity} color="primary">
+              <BsCart3
+                onClick={() => closeThenRedirect("/cart")}
+                style={{ marginLeft: "10px" }}
+                size={30}
+              />
+            </Badge>
           </Icon>
         </Icons>
         {/* <form action="/create-checkout-session" method="POST">
