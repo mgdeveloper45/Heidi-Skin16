@@ -1,13 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { removeFromCart, updateCartItem } from "../../Redux/cartSlicer.js";
+import { ArrowContainer, Arrows, Input } from "../Products/SingleProductStyles";
 import {
-  removeFromCart,
-  updateCartItem,
-} from "../../Redux/cartSlicer.js";
-import { ArrowContainer, Arrows, Input } from "../Products/ProductsStyles";
-import { 
-  // Break, CartPage, Title, 
-  CartButton 
+  // Break, CartPage, Title,
+  CartButton,
 } from "./CartStyles";
 
 import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
@@ -81,8 +78,7 @@ const CartItem = ({ index, item }) => {
           justifyContent: "center",
           padding: "0 20px",
           // borderRight: "1px solid pink",
-        }}
-      >
+        }}>
         <h3>{item.data.name}</h3>
         <br />
         <div style={styled.flexRow}>

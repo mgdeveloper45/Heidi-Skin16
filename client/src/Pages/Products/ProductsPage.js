@@ -1,8 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { 
-  DropDown,ProductBody,ProductGrid,ProductWrapper 
-} from "./ProductsStyles";
+import {
+  DropDown,
+  ProductBody,
+  ProductGrid,
+  ProductWrapper,
+} from "./ProductsPageStyles.js";
 //components
 import SingleProduct from "./SingleProduct";
 import ProductDropDown from "./ProductDropDown";

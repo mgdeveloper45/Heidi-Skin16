@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import { 
-  CategoryLinks, DropContainer, Menu, MenuBtn, MenuPosition 
-} from "./ProductsStyles";
+import {
+  CategoryLinks,
+  DropContainer,
+  Menu,
+  MenuBtn,
+  MenuPosition,
+} from "./ProductDropDownStyles";
 
 const ProductDropDown = () => {
   const [value, setValue] = useState(false);
@@ -10,7 +14,7 @@ const ProductDropDown = () => {
   return (
     <DropContainer>
       <MenuBtn onClick={() => setValue(!value)}>
-        <MdOutlineArrowDropDown/>
+        <MdOutlineArrowDropDown />
       </MenuBtn>
       {value === true ? (
         <MenuPosition>
