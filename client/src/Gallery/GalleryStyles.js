@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const GalleryContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* background-color: pink; */
   margin-top: 100px;
 `;
 export const GalleryHead = styled.div`
@@ -11,7 +10,6 @@ export const GalleryHead = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
 `;
 export const GalleryHeader = styled.h1`
   font-family: Helvetica Neue;
@@ -23,8 +21,6 @@ export const GalleryHeader = styled.h1`
 export const GalleryImageContainer = styled.div`
   display: flex;
   width: 100vw;
-  /* width: auto; */
-  /* height: 610px; */
   height: 710px;
   background-color: white;
   overflow-x: scroll;
@@ -32,14 +28,12 @@ export const GalleryImageContainer = styled.div`
   margin: 0 10px 0 30px;
   ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
   }
 `;
 
-
 export const GalleryImage = styled.div`
   background-image: url(${(props) => props.image});
-  /* box-shadow: 4px 4px 4px rgba(92, 36, 46, 0.75); */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
@@ -48,8 +42,4 @@ export const GalleryImage = styled.div`
   width: 375px;
   border-radius: 8px;
   scroll-behavior: smooth;
-
-  /* height: 456px;
-    width: 379px;
-    suggested size */
 `;

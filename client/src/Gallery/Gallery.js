@@ -7,23 +7,23 @@ import {
   GalleryImage,
 } from "./GalleryStyles";
 
-  import { data } from "./GalleryData";
-  const Gallery = () => {
-    return (
-      <>
-        <GalleryContainer>
-          <GalleryHead>
-            <GalleryHeader>Gallery</GalleryHeader>
-          </GalleryHead>
-          <GalleryImageContainer>
-            {data.map((img, index) => (
-              <div key={index}>
-                <GalleryImage image={img} />
-              </div>
-              ))}
-              </GalleryImageContainer>
-        </GalleryContainer>
-      </>
+import { galleryData } from "./GalleryData";
+const Gallery = () => {
+  return (
+    <>
+      <GalleryContainer>
+        <GalleryHead>
+          <GalleryHeader>Gallery</GalleryHeader>
+        </GalleryHead>
+        <GalleryImageContainer>
+          {galleryData.map((img, index) => (
+            <div key={index}>
+              <GalleryImage image={img.image} />
+            </div>
+          ))}
+        </GalleryImageContainer>
+      </GalleryContainer>
+    </>
   );
 };
 

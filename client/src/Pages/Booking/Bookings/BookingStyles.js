@@ -51,23 +51,13 @@ export const BookingLabel = styled.label`
   line-height: 26px;
   margin-right: 10px;
 `;
-// export const BookingType = styled.select`
-//   height: 40px;
-//   width: 45%;
-//   margin-left: 10px;
-//   border-radius: 5px;
-//   background-color: rgba(13, 104, 120, 0.75);
-//   color: #fff;
-//   /* background-color: #dfd5b180; */
-//   border: 1px solid black;
-// `;
+
 export const BookingSelect = styled.select`
   height: 40px;
   width: 45%;
   margin-left: 10px;
   border-radius: 5px;
-  background-color: rgb(226,180,188);
-  /* background-color: #dfd5b180; */
+  background-color: rgb(226, 180, 188);
   border: 1px solid black;
 `;
 export const BookingOption = styled.option``;
@@ -79,7 +69,6 @@ export const BookingButton = styled.button`
   border-radius: 5px;
   color: #fff;
   background-color: rgba(13, 104, 120, 0.75);
-  /* background-color: #dfd5b180; */
   border: 1px solid black;
   &:hover {
     cursor: pointer;

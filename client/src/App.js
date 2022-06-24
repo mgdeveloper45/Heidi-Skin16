@@ -27,10 +27,8 @@ function App() {
 
   const navigate = useNavigate();
 
-  // animate open if closed, redirects if open
   const animateImg = () => {
     if (visible === true) {
-      console.log("This is when I go to another page");
     } else {
       const animatedImg = document.querySelector(".rightImg");
       animatedImg.classList.add("rightBox");
@@ -68,7 +66,7 @@ function App() {
         visible={visible}
         animateImg={animateRevImg}
         close={closeThenRedirect}
-        addOn={addOn} 
+        addOn={addOn}
         categories={allCategories}
       />
       <Routes>
@@ -83,9 +81,15 @@ function App() {
             />
           }
         />
-        <Route path="/services" element={<SalonServices addOn={addOn} categories={allCategories}/>} />
+        <Route
+          path="/services"
+          element={<SalonServices addOn={addOn} categories={allCategories} />}
+        />
         <Route path="/products" element={<ProductsPage />} />
-        <Route path="/booking" element={<Booking addOn={addOn} categories={allCategories}/>} />
+        <Route
+          path="/booking"
+          element={<Booking addOn={addOn} categories={allCategories} />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/covid" element={<Covid />} />

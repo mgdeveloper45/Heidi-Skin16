@@ -43,14 +43,29 @@ const cartSlice = createSlice({
       localStorage.setItem("cart", JSON.stringify(state));
     },
 
-    updateQuantity(state, action) {
+    updateCartItem(state, action) {
       const existingIndex = state.cartItems.findIndex(
         (item) => item.data.id === action.payload.data.id
       );
+
       state.cartItems[existingIndex].quantity = action.payload.quantity;
-      state.cartTotalQuantity = action.payload.quantity;
-      state.cartTotalAmount =
-        action.payload.quantity * action.payload.data.metadata.price;
+
+      let cartQuantity = 0;
+
+      state.cartItems.forEach((item) => {
+        cartQuantity += item.quantity;
+      });
+
+      state.cartTotalQuantity = cartQuantity;
+
+      let cartTotal = 0;
+      state.cartItems.forEach((item) => {
+        cartTotal += parseFloat(item.data.metadata.price) * item.quantity;
+      });
+
+      console.log("cart total amount ==>", cartTotal);
+
+      state.cartTotalAmount = cartTotal;
 
       localStorage.setItem("cart", JSON.stringify(state));
     },
@@ -69,7 +84,7 @@ const cartSlice = createSlice({
 export const {
   addToCart,
   removeFromCart,
-  updateQuantity,
+  updateCartItem,
   cartTotalAmount,
   emptyCart,
 } = cartSlice.actions;
