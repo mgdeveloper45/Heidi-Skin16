@@ -6,7 +6,6 @@ import {
   ConfirmationRowReverse,
   Directions,
 } from "./ConfirmationStyles";
-import location from "../../../images/navigation-32.png";
 const Confirmation = () => {
   const styles = {
     location: {
@@ -49,7 +48,11 @@ const Confirmation = () => {
           >
             <h4>
               Get Directions
-              <img src={location} alt="gps" style={styles.location} />
+              <img
+                src={`https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934393/heidi-skin16/navigation-32_m872py.png`}
+                alt="gps"
+                style={styles.location}
+              />
             </h4>
           </Directions>
           <p>Service by Appointment only.</p>

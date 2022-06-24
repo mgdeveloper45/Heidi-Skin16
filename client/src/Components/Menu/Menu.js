@@ -1,12 +1,15 @@
 import SubMenu from "../SubMenu/SubMenu";
 import {
-  Categories, CategoryContainer, Description,
-  DescriptionContainer, Image, Title, TitleContainer,
-} 
-from "./MenuStyles";
+  Categories,
+  CategoryContainer,
+  Description,
+  DescriptionContainer,
+  Image,
+  Title,
+  TitleContainer,
+} from "./MenuStyles";
 
 const Menu = ({ category }) => {
-
   return (
     <div>
       <CategoryContainer backgroundColor={category.color}>
@@ -15,7 +18,7 @@ const Menu = ({ category }) => {
             <Title title={category.secondaryColor}>{category.title}</Title>
           </TitleContainer>
           <TitleContainer>
-            <Image border={category.color} image={category.image}/>
+            <Image border={category.color} image={category.image} />
           </TitleContainer>
         </Categories>
         <DescriptionContainer>

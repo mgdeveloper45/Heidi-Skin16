@@ -1,10 +1,10 @@
-import { facialImgs } from "./rawDataImages";
-
 export const galleryImg = [];
 export const allCategories = [
   {
     title: "Facials",
-    image: `${facialImgs.facials}`,
+    image: new URL(
+      `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935227/heidi-skin16/facials_cropped_2_lpgzyr.jpg"}`
+    ),
     description: `Facial treatments can help
         slow down the aging process and prevent the appearance of wrinkles. 
         Massaging your face with an anti-aging moisture will immediately increase 
@@ -15,7 +15,9 @@ export const allCategories = [
     subcategories: [
       {
         title: "SKIN16 Facial",
-        image: `${facialImgs.steamer}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934394/heidi-skin16/steamer_eo37hj.jpg"}`
+        ),
         price: "$145",
         description: (
           <p>
@@ -36,7 +38,9 @@ export const allCategories = [
       },
       {
         title: "Porcelain Nano-fill Facial",
-        image: `${facialImgs.nano}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934397/heidi-skin16/nano_cropped_d6nwxc.jpg"}`
+        ),
         price: "$350",
         description: (
           <p>
@@ -60,7 +64,9 @@ export const allCategories = [
       },
       {
         title: "The Modern Facial - 75 min Facial",
-        image: `${facialImgs.oxygen}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934400/heidi-skin16/oxygen_cropped_tsy07y.jpg"}`
+        ),
         price: "$225",
         description: (
           <p>
@@ -82,7 +88,9 @@ export const allCategories = [
       },
       {
         title: "Grow Gorgeous Gold",
-        image: `${facialImgs.gold}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934984/heidi-skin16/gold_2_y5p3co.jpg"}`
+        ),
         price: "$285",
         description: (
           <p>
@@ -110,7 +118,9 @@ export const allCategories = [
   },
   {
     title: "Peels",
-    image: `${facialImgs.peels}`,
+    image: new URL(
+      `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934393/heidi-skin16/peels2_cropped_yihrga.jpg"}`
+    ),
     description: `Restore a youthful, vibrant appearance to wrinkly, 
         blotchy, sun-damaged skin. Each peel has unique benefits for the skin. Peels also improves acne 
         scars, skin texture, and reduces the effects of sun damage. (Must use pre-post home care 
@@ -119,7 +129,9 @@ export const allCategories = [
     subcategories: [
       {
         title: "Porcelain Peel",
-        image: `${facialImgs.porcelain}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935229/heidi-skin16/porcelain_2_ljucnh.jpg"}`
+        ),
         price: "$185",
         description: (
           <p>
@@ -138,7 +150,9 @@ export const allCategories = [
       },
       {
         title: "Rough Peel",
-        image: `${facialImgs.rough}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935229/heidi-skin16/roughPeel_cropped_2_jbtdcx.jpg"}`
+        ),
         price: "$215",
         description: (
           <p>
@@ -157,7 +171,9 @@ export const allCategories = [
       },
       {
         title: "The Good Peel",
-        image: `${facialImgs.good}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934396/heidi-skin16/goodPeel_cropped_h0idry.jpg"}`
+        ),
         price: "$265",
         description: (
           <p>
@@ -186,7 +202,9 @@ export const allCategories = [
   },
   {
     title: "LED Therapy",
-    image: `${facialImgs.led}`,
+    image: new URL(
+      `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935228/heidi-skin16/led_cropped_2_hsh8jb.jpg"}`
+    ),
     description: `LED Therapy low-light therapy is safe, effective and a
         convenient way to achieve a healthy, youthful glow in a natural, non-toxic, non-invasive manner. 
         Reduce the appearance of fine lines and wrinkles while experiencing an improvement in skin texture,
@@ -195,7 +213,9 @@ export const allCategories = [
     subcategories: [
       {
         title: "Sculplla + H2 + LED Light",
-        image: `${facialImgs.sculpllaLight}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935228/heidi-skin16/sculpllaLight_cropped_2_bm83yj.jpg"}`
+        ),
         price: "$245",
         sndPrice: "$275 (With customize HydroJelly Mask)",
         description: (
@@ -228,8 +248,10 @@ export const allCategories = [
   // secondaryColor: "#fff",
   // },
   {
-    title: "Scalp Treatments Coming Soon!" ,
-    image: `${facialImgs.scalp}`,
+    title: "Scalp Treatments Coming Soon!",
+    image: new URL(
+      `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935230/heidi-skin16/scalp_cropped_2_bxg7pq.jpg"}`
+    ),
     description: `Clogged hair follicles, can cause hair thinning. Releasing 
         natural conditioning oils can help relieve dry scalp and remove flakes, stimulate blood flow in the head and 
         neck area so nutrients can better reach the scalp and nourish your hair. Taking care of your skin and scalp 
@@ -240,7 +262,9 @@ export const allCategories = [
     subcategories: [
       {
         title: "Pure Flash",
-        image: `${facialImgs.pure}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935228/heidi-skin16/pure_cropped_2_ryyj8s.jpg"}`
+        ),
         price: "$100",
         description: (
           <p>
@@ -257,7 +281,9 @@ export const allCategories = [
       },
       {
         title: "Urban Detox Fair",
-        image: `${facialImgs.urban}`,
+        image: new URL(
+          `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934403/heidi-skin16/urban_detox_cropped_zsuojd.jpg"}`
+        ),
         price: "$185",
         description: (
           <p>
@@ -278,20 +304,32 @@ export const allCategories = [
 export const addOn = [
   {
     title: "Add-On Services",
-    image: `${facialImgs.add}`,
+    image: new URL(
+      `${"https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655935228/heidi-skin16/add_cropped_2_fpzjqi.jpg"}`
+    ),
     services: [
       { title: "LED Light", price: "$40", duration: "30", br: true },
       { title: "Dermaplaning", price: "$40", duration: "50", br: true },
-      { title: "Peel (face)", price: "$40", duration: "10", },
-      { title: "Peel (face & neck)", price: "$50", duration: "15", },
-      { title: "Peel (face & neck & decollete)", price: "$60", duration: "20", br: true },
-      { title: "Oxygen therapy", price: "$30", duration: "15", },
+      { title: "Peel (face)", price: "$40", duration: "10" },
+      { title: "Peel (face & neck)", price: "$50", duration: "15" },
+      {
+        title: "Peel (face & neck & decollete)",
+        price: "$60",
+        duration: "20",
+        br: true,
+      },
+      { title: "Oxygen therapy", price: "$30", duration: "15" },
       { title: "2 steps oxygen", price: "$50", duration: "20", br: true },
       { title: "Hot Oil Hand Treatment", price: "$20", duration: "15" },
-      { title: "Hot Oil Hand Treatment with peel", price: "$30", duration: "20", br: true },
-      { title: "Brazlian waxing (women only)", duration: "30"},
-      { title: "Soft Wax", price: "$65", duration: "15", },
-      { title: "Hard Wax", price: "$75", duration: "15", },
+      {
+        title: "Hot Oil Hand Treatment with peel",
+        price: "$30",
+        duration: "20",
+        br: true,
+      },
+      { title: "Brazlian waxing (women only)", duration: "30" },
+      { title: "Soft Wax", price: "$65", duration: "15" },
+      { title: "Hard Wax", price: "$75", duration: "15" },
     ],
     color: "rgba(216, 155, 166, 0.75)",
     secondaryColor: "#000",
