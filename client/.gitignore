@@ -29,4 +29,5 @@ yarn-error.log*
 /src/SlideImages
 images/
 SlideImages/
+AllImages
 .env
