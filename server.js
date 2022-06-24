@@ -5,12 +5,15 @@ const app = express();
 const apiRoutes = require("./routes/api-routes");
 const stripeRoutes = require("./routes/stripe-routes");
 const directionsRoutes = require("./routes/directions-routes");
+const cors = require("cors");
+
 const PORT = process.env.PORT;
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

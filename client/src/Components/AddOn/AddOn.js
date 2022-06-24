@@ -1,4 +1,4 @@
-import { addOn } from "../../utils/rawData";
+
 import {
   AddON,
   AddOnContainer,
@@ -9,7 +9,7 @@ import {
   Title,
 } from "./AddOnStyles";
 
-const AddOn = () => {
+const AddOn = ({addOn}) => {
   let service = {
     title: addOn[0].title,
     service: addOn[0].services,
@@ -25,6 +25,7 @@ const AddOn = () => {
             <ServiceTitle>
               <Price>{service.title}</Price>
               <Price>{service.price}</Price>
+              <Price>- {service.duration} mins</Price>
               {service.br && (
                 <>
                   <br />
@@ -35,7 +36,7 @@ const AddOn = () => {
           </ServiceTitleWrap>
         ))}
       </AddON>
-      <Image>{service.image}</Image>
+      <Image border={service.color} image={service.image}/>
     </AddOnContainer>
   );
 };

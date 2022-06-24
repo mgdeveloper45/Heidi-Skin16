@@ -6,24 +6,50 @@ export const SubMenuContainer = styled.div`
   justify-content: center;
   padding: 2rem 1rem 2rem 7%;
   /* height: 796px; */
+  @media screen and (max-width: 600px) {
+    padding: 2rem;
+  }
 `;
 export const ContentContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  margin-bottom: 75px;
+  @media screen and (max-width: 769px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 500px;
+  height: 100%;
+  /* height: 500px; */
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 export const Image = styled.div`
-  background-color: blue;
   border-radius: 20px;
   position: relative;
   width: 40%;
   height: 0;
   padding-bottom: 40%;
+  /* box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25); */
+  background-image: url(${(props) => props.image});
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid ${(props) => (props.border ? props.border : "white")};
+
+  @media screen and (max-width: 600px) {
+    align-self: center;
+    width: 80%;
+    padding-bottom: 80%;
+    margin: 2rem;
+  }
 `;
 export const Listing = styled.div`
   display: flex;
@@ -58,9 +84,19 @@ export const Description = styled.div`
   font-style: normal;
   font-weight: 250;
   font-size: 1.5rem;
+  margin-bottom: 30px;
   @media screen and (max-width: 1200px) {
     font-size: 1.2rem;
   }
+`;
+
+export const ButtonContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const P = styled.p`
   font-family: Helvetica Neue;
@@ -73,21 +109,18 @@ export const P = styled.p`
   }
 `;
 export const Button = styled.div`
-  align-self: flex-end;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 275px;
   height: 75px;
-  margin-right: 10%;
-  margin-bottom: 7%;
   background: #0d6878;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  cursor: pointer;
   @media screen and (max-width: 1200px) {
     width: 220px;
     height: 60px;
-    margin-bottom: 4%;
-    /* transform: translateY(-100px); */
   }
 `;

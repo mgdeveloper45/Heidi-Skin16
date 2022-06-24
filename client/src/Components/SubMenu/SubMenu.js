@@ -10,6 +10,7 @@ import {
   Price,
   SndPrice,
   SubMenuContainer,
+  ButtonContainer,
   Title,
 } from "./SubMenuStyles";
 
@@ -17,22 +18,43 @@ const SubMenu = ({ item, idx }) => {
   return (
     <SubMenuContainer>
       <ContentContainer key={idx}>
-        <Image>{item.image}</Image>
-        <Content>
-          <Title>
-            <Listing>
-              {item.title}
-              {/* <Price>{item.price}</Price> */}
-            </Listing>
-          </Title>
-          <Price>{item.price}</Price>
-          <SndPrice>{item.sndPrice}</SndPrice>
-          <Description>{item.description}</Description>
-        </Content>
+        {window.innerWidth > 600 ? (
+          <>
+            <Image border={item.color} image={item.image} />
+            <Content>
+              <Title>
+                <Listing>{item.title}</Listing>
+              </Title>
+              <Price>{item.price}</Price>
+              <div>time: {item.duration} mins</div>
+              <SndPrice>{item.sndPrice}</SndPrice>
+              <Description>{item.description}</Description>
+              <ButtonContainer>
+                <Button>
+                  <P>{item.button}</P>
+                </Button>
+              </ButtonContainer>
+            </Content>
+          </>
+        ) : (
+          <>
+            <Content>
+              <Title>
+                <Listing>{item.title}</Listing>
+              </Title>
+              <Price>{item.price}</Price>
+              <SndPrice>{item.sndPrice}</SndPrice>
+              <Image border={item.color} image={item.image} />
+              <Description>{item.description}</Description>
+              <ButtonContainer>
+                <Button>
+                  <P>{item.button}</P>
+                </Button>
+              </ButtonContainer>
+            </Content>
+          </>
+        )}
       </ContentContainer>
-      <Button>
-        <P>{item.button}</P>
-      </Button>
     </SubMenuContainer>
   );
 };

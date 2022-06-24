@@ -7,10 +7,8 @@ import {
   GalleryImage,
 } from "./GalleryStyles";
 
-import { data } from "./GalleryData";
+import { galleryData } from "./GalleryData";
 const Gallery = () => {
-  console.log(data);
-
   return (
     <>
       <GalleryContainer>
@@ -18,8 +16,10 @@ const Gallery = () => {
           <GalleryHeader>Gallery</GalleryHeader>
         </GalleryHead>
         <GalleryImageContainer>
-          {data.map((img, index) => (
-            <GalleryImage key={index} src={img} />
+          {galleryData.map((img, index) => (
+            <div key={index}>
+              <GalleryImage image={img.image} />
+            </div>
           ))}
         </GalleryImageContainer>
       </GalleryContainer>

@@ -30,6 +30,9 @@ export const Span = styled.span`
   font-family: Helvetica Neue;
   font-style: normal;
   font-size: 60px;
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 export const Icons = styled.div`
   display: flex;
@@ -69,4 +72,61 @@ export const P = styled.p`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+// drop down styles
+
+export const DropContainer = styled.div`
+  margin: 0;
+`;
+
+export const MenuBtn = styled.button`
+  /* position: relative; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(216, 155, 166, 0.75);
+
+  background: none;
+  border: none;
+  font-size: 40px;
+
+  /* :hover {
+    color: rgba(13, 104, 120, 0.75);
+  } */
+`;
+
+export const MenuPosition = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const Menu = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 300px;
+  width: 270px;
+  background-color: rgba(13, 104, 120);
+  position: absolute;
+  padding: 1rem;
+  letter-spacing: 0.05rem;
+  border-radius: 5px;
+  z-index: 1;
+
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none;
+    color: black;
+    :hover {
+      color: gray;
+    }
+  }
+`;
+
+export const CategoryLinks = styled.div`
+  color: #fff;
 `;

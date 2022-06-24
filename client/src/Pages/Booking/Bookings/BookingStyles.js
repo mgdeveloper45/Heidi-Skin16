@@ -6,7 +6,6 @@ export const BookingWrapper = styled.div`
   width: 100vw;
   padding-bottom: 50px;
 `;
-
 export const BookingContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -21,7 +20,6 @@ export const BookingTitle = styled.div`
   height: 5%;
   width: 100%;
 `;
-
 export const BookingContent = styled.div`
   display: flex;
   height: 100%;
@@ -41,32 +39,44 @@ export const BookingForm = styled.form`
   width: 90%;
   margin-left: 20%;
 `;
+export const Availability = styled.div`
+  display: flex;
+  height: 10%;
+  width: 90%;
+  margin-left: 20%;
+`;
 export const BookingLabel = styled.label`
   display: flex;
   width: 100px;
   line-height: 26px;
   margin-right: 10px;
 `;
+
 export const BookingSelect = styled.select`
   height: 40px;
   width: 45%;
   margin-left: 10px;
   border-radius: 5px;
-  background-color: #dfd5b180;
+  background-color: rgb(226, 180, 188);
   border: 1px solid black;
 `;
 export const BookingOption = styled.option``;
 
 export const BookingButton = styled.button`
-  width: 40%;
-  height: 7%;
-  border-radius: 8px;
-  border: none;
-  background-color: #0d6878bf;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-  font-weight: 600;
-  font-size: x-large;
-  color: white;
+  height: 40px;
+  width: 45%;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(13, 104, 120, 0.75);
+  border: 1px solid black;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(1.5px) translateX(1.5px);
+  }
 `;
 
 export const LinkStyles = styled.div`

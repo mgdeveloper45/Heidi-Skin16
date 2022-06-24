@@ -8,7 +8,6 @@ import {
   H3,
   P,
 } from "./AddressStyles";
-import location from "../../images/navigation-32.png";
 const Addresss = () => {
   const styles = {
     location: {
@@ -30,7 +29,11 @@ const Addresss = () => {
         >
           <H3>
             Get Directions
-            <img src={location} alt="gps" style={styles.location} />
+            <img
+              src={`https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934393/heidi-skin16/navigation-32_m872py.png`}
+              alt="gps"
+              style={styles.location}
+            />
           </H3>
         </GetDirections>
       </Directions>
