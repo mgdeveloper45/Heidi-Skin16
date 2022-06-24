@@ -1,16 +1,8 @@
 import styled from "styled-components";
-// import { facialImgs } from "./MenuData";
-// import facials from "../../images/facials_cropped.jpeg"
-// import peels from "../../images/peels_cropped.jpeg"
-// const facials = facialImgs.map((facialImg) => facialImg)
-// import { facialImages } from "./MenuData";
-// console.log(facialImages)
-
 
 export const CategoryContainer = styled.div`
-  /* background-color: blue; */
   background-color: ${(props) =>
-  props.backgroundColor ? props.backgroundColor : "white"};
+    props.backgroundColor ? props.backgroundColor : "white"};
   padding-bottom: 4rem;
   margin-bottom: 4rem;
 `;
@@ -59,8 +51,7 @@ export const Image = styled.div`
   background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid ${(props) =>
-  props.border ? props.border : "white"};
+  border: 1px solid ${(props) => (props.border ? props.border : "white")};
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   @media screen and (max-width: 600px) {
@@ -71,7 +62,6 @@ export const DescriptionContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 5rem 2rem;
-  /* padding: 7%; */
 `;
 export const Description = styled.p`
   color: ${(props) => (props.description ? props.description : "white")};

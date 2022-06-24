@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import aboutImg from "../SlideImages/about_us_cropped.jpeg"
+// import aboutImg from "../SlideImages/about_us_cropped.jpeg";
 
 export const AboutContainer = styled.div`
   /* border: 2px solid green; */
@@ -10,8 +10,6 @@ export const AboutHeader = styled.h1`
   margin-bottom: 20px;
   font-size: 4rem;
   margin-top: 10px;
-  /* width: 552px;
-  height: 98px; */
 `;
 
 export const AboutImageContainer = styled.div`
@@ -22,7 +20,7 @@ export const AboutImageContainer = styled.div`
 `;
 
 export const AboutImage = styled.img`
-  background-image: url("${aboutImg}");
+  background-image: url(https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655936588/heidi-skin16/about_us_iw8fh0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 54em;
