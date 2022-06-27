@@ -8,23 +8,23 @@ import { Link } from "react-router-dom";
 // import emptyCartPng from "../../images/emptyCart.png";
 
 const Cart = () => {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector(state => state.cart);
   // toFixed() cart
 
   const dispatch = useDispatch();
 
-  const onClick = (e) => {
+  const onClick = e => {
     e.preventDefault();
     axios
       .post("/create-checkout-session", {
-        lineItems: cart.cartItems.map((item) => {
+        lineItems: cart.cartItems.map(item => {
           return {
             price: item.price.priceId,
             quantity: item.quantity,
           };
         }),
       })
-      .then((res) => {
+      .then(res => {
         console.log(res.data);
         window.location = res.data;
       });
@@ -44,7 +44,6 @@ const Cart = () => {
             justifyContent: "space-evenly",
           }}
         >
-          {/* <img style={{ maxHeight: "350px" }} src={emptyCartPng} alt="..." /> */}
           <h2>Your cart is empty...</h2>
           <Link to="/products">
             <CartButton>RETURN TO PRODUCTS</CartButton>
@@ -69,9 +68,6 @@ const Cart = () => {
               className="cart-total-checkout-container"
               style={styledObj.cartTotalCheckoutContainer}
             >
-              {/* <div style={{ textAlign: "center" }}>
-                Total Items: {cart.cartTotalQuantity}
-              </div> */}
               <div style={{ textAlign: "center" }}>
                 Total: ${cart.cartTotalAmount.toFixed(2)}
               </div>
@@ -81,7 +77,6 @@ const Cart = () => {
               </Link>
             </div>
           </div>
-          {/* <Break></Break> */}
         </>
       )}
     </CartPage>

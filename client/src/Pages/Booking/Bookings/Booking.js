@@ -16,13 +16,11 @@ import {
 } from "../Bookings/BookingStyles";
 import { useState } from "react";
 
-// Booking Input might be used going forward
-
 const Booking = ({ categories, addOn }) => {
   const [calendar, setCalendar] = useState(false);
   const [value, setValue] = useState("Facials");
 
-  const onChange = (e) => {
+  const onChange = e => {
     e.preventDefault();
     setValue(e.target.value);
   };
@@ -53,12 +51,18 @@ const Booking = ({ categories, addOn }) => {
             </BookingForm>
             <BookingForm>
               <BookingLabel>Type</BookingLabel>
-              <BookingSelect onChange={(e)=>{console.log(e.target.value)}}>
-                {categories.map((type) =>
+              <BookingSelect
+                onChange={e => {
+                  console.log(e.target.value);
+                }}
+              >
+                {categories.map(type =>
                   type.title === value
                     ? type.subcategories.map((item, index) => (
-                        <BookingOption value={item.duration} key={index}>{item.title} </BookingOption>
-                    ))
+                        <BookingOption value={item.duration} key={index}>
+                          {item.title}{" "}
+                        </BookingOption>
+                      ))
                     : null
                 )}
               </BookingSelect>
@@ -66,7 +70,7 @@ const Booking = ({ categories, addOn }) => {
             <BookingForm>
               <BookingLabel>Add-ons</BookingLabel>
               <BookingSelect>
-                {addOn.map((add) =>
+                {addOn.map(add =>
                   add.services.map((item, idx) => (
                     <>
                       <BookingOption key={idx}>{item.title}</BookingOption>
@@ -88,8 +92,7 @@ const Booking = ({ categories, addOn }) => {
                 open={calendar}
                 rootElement={document.getElementById("root")}
               />
-            </Availability>            
-            {/* Promo Code */}
+            </Availability>
             <LinkStyles>
               <p>In salon appointments only</p> <br />
               <Link style={styles.link} to="/policy">

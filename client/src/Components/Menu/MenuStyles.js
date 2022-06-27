@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CategoryContainer = styled.div`
-  background-color: ${(props) =>
+  background-color: ${props =>
     props.backgroundColor ? props.backgroundColor : "white"};
   padding-bottom: 4rem;
   margin-bottom: 4rem;
@@ -26,9 +26,9 @@ export const TitleContainer = styled.div`
 `;
 export const Title = styled.p`
   align-self: center;
-  color: ${(props) => (props.title ? props.title : "white")};
+  color: ${props => (props.title ? props.title : "white")};
   width: 62%;
-  font-family: Helvetica Neue;
+
   font-weight: 345;
   font-style: normal;
   font-size: 80px;
@@ -48,10 +48,10 @@ export const Image = styled.div`
   z-index: 100;
   transform: translateY(-1rem);
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
-  background-image: url(${(props) => props.image});
+  background-image: url(${props => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid ${(props) => (props.border ? props.border : "white")};
+  border: 1px solid ${props => (props.border ? props.border : "white")};
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   @media screen and (max-width: 600px) {
@@ -64,9 +64,9 @@ export const DescriptionContainer = styled.div`
   padding: 5rem 2rem;
 `;
 export const Description = styled.p`
-  color: ${(props) => (props.description ? props.description : "white")};
+  color: ${props => (props.description ? props.description : "white")};
   width: 83.5%;
-  font-family: Helvetica Neue;
+
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -89,13 +89,12 @@ export const ToTopButton = styled.button`
   margin-left: 10px;
   background: rgba(13, 104, 120, 0.75);
   border-radius: 50%;
-  border: ${(props) => (props.color ? "none" : "5px solid #FFFFFF")};
+  border: ${props => (props.color ? "none" : "5px solid #FFFFFF")};
   height: 100px;
   width: 100px;
   cursor: pointer;
 `;
 export const Top = styled.span`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;

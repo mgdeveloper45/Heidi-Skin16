@@ -28,7 +28,6 @@ export const Info = styled.div`
 export const H2 = styled.h2`
   width: 551px;
   height: 198px;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
@@ -40,7 +39,6 @@ export const H2 = styled.h2`
 export const Label = styled.label`
   width: 88px;
   height: 64px;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -90,7 +88,6 @@ export const Button = styled.button`
   background: rgba(13, 104, 120, 0.75);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: bold;
   font-size: 55px;
@@ -99,7 +96,6 @@ export const Button = styled.button`
 `;
 export const P = styled.p`
   text-align: center;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;

@@ -9,7 +9,6 @@ export const CartPage = styled.div`
 `;
 
 export const Title = styled.p`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
   font-size: 45px;
@@ -27,7 +26,6 @@ export const Break = styled.div`
 
 export const ImgContainer = styled.div`
   min-width: 150px;
-  /* min-height: 215px; */
   max-width: 200px;
   max-height: 200px;
   height: 100%;
@@ -56,8 +54,6 @@ export const CartButton = styled.button`
   background-color: rgba(216, 155, 166, 0.75);
   border: none;
   font-weight: bold;
-
-  // margin-left: 25px;
 
   &:hover {
     cursor: pointer;

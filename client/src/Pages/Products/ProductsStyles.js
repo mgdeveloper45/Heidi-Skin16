@@ -8,13 +8,10 @@ export const MenuBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: rgba(13, 104, 120, 0.75); */
+
   background: none;
   border: none;
   font-size: 40px;
-  /* :hover { */
-    color: rgba(216, 155, 166, 0.75);
-  /* } */
 `;
 export const MenuPosition = styled.div`
   display: flex;
@@ -84,8 +81,10 @@ export const ProductCard = styled.div`
   flex-flow: column;
   justify-content: space-around;
   margin-bottom: 100px;
-`;export const ImgContainer = styled.div`
-  width: 100%;  display: flex;
+`;
+export const ImgContainer = styled.div`
+  width: 100%;
+  display: flex;
   justify-content: center;
 `;
 export const ProductImg = styled.img`
@@ -120,7 +119,8 @@ export const Arrows = styled.div`
   flex-flow: column;
   /* font-size: 18px; */
   color: #0d6878;
-  margin-left: 10px; &:hover {
+  margin-left: 10px;
+  &:hover {
     cursor: pointer;
   }
 `;

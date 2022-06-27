@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import GlobalStyle from "./globalStyles";
 import Contact from "./Contact/Contact";
 import Footer from "./Landing/Footer/Footer";
 import LandingPage from "./Landing/LandingPage/LandingPage";
@@ -53,14 +54,15 @@ function App() {
     });
   };
 
-  const closeThenRedirect = (links) => {
+  const closeThenRedirect = links => {
     return visible
       ? animateRevImg().then(() => navigate(links))
       : navigate(links);
   };
 
   return (
-    <>
+    <Fragment>
+      <GlobalStyle />
       <ScrollToTop />
       <Nav
         visible={visible}
@@ -97,7 +99,7 @@ function App() {
         <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
       <Footer close={closeThenRedirect} />
-    </>
+    </Fragment>
   );
 }
 

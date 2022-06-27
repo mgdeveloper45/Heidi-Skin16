@@ -21,13 +21,11 @@ export const Logo = styled.div`
 export const Heading = styled.p`
   align-items: center;
   font-weight: 700;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-size: 60px;
 `;
 export const Span = styled.span`
   font-weight: 200;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-size: 60px;
   @media (max-width: 768px) {
@@ -38,7 +36,6 @@ export const Icons = styled.div`
   display: flex;
   align-items: center;
   justify-self: flex-end;
-  /* margin-right: 20px; */
 `;
 
 export const Icon = styled.div`
@@ -51,7 +48,6 @@ export const Navi = styled.div`
   height: 150px;
   background-color: white;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -65,7 +61,7 @@ export const List = styled.div`
 `;
 
 export const P = styled.p`
-  font-family: Helvetica Neue;
+  width: 250px;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
@@ -73,8 +69,6 @@ export const P = styled.p`
     text-decoration: underline;
   }
 `;
-
-// drop down styles
 
 export const DropContainer = styled.div`
   margin: 0;
@@ -91,10 +85,6 @@ export const MenuBtn = styled.button`
   background: none;
   border: none;
   font-size: 40px;
-
-  /* :hover {
-    color: rgba(13, 104, 120, 0.75);
-  } */
 `;
 
 export const MenuPosition = styled.div`

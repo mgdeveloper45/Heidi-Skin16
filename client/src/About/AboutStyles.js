@@ -33,14 +33,14 @@ export const Heading = styled.p`
   margin: 1em 0 1em 0;
   text-align: center;
   font-weight: 700;
-  font-family: Helvetica Neue;
+
   font-style: normal;
   font-size: 60px;
 `;
 
 export const Span = styled.span`
   font-weight: 200;
-  font-family: Helvetica Neue;
+
   font-style: normal;
   font-size: 60px;
 `;
@@ -51,5 +51,4 @@ export const Paragraph = styled.p`
   padding: 10px;
   font-size: 2em;
   line-height: 60px;
-  font-family: "HelveticaNeue-Light", sans-serif;
 `;

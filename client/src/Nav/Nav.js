@@ -57,10 +57,8 @@ const Nav = ({ animateImg, close, visible, categories }) => {
         </Icons>
       </Header>
       <Navi>
-        <div style={{ display: "flex" }}>
-          <P style={{ display: "flex" }} onClick={() => close("/services")}>
-            Salon Service
-          </P>
+        <div style={{ display: "flex", width: "250px" }}>
+          <P onClick={() => close("/services")}>Salon Service</P>
           <DropContainer>
             <MenuBtn onClick={() => setService(!services)}>
               <MdOutlineArrowDropDown />

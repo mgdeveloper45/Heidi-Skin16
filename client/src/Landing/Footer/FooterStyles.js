@@ -21,7 +21,7 @@ export const UL = styled.div`
 `;
 export const LI = styled.h1`
   list-style: none;
-  font-family: Helvetica Neue;
+
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -46,35 +46,32 @@ export const Foot = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     flex-direction: column;
-  }
+  } */
 `;
 export const NAME = styled.div`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
-  @media (max-width: 768px) {
+  font-size: 40px;
+  /* @media (max-width: 768px) {
     font-size: 40px;
     font-weight: 700;
-  }
+  } */
 `;
 export const Rights = styled.div`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
 `;
 export const Social = styled.div`
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     margin: 20px;
-  }
+  } */
 `;
 export const Span = styled.span`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 200;
-  font-size: 100px;
+  /* font-size: 40px; */
 `;

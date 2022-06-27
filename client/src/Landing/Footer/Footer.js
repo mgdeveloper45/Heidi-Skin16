@@ -33,7 +33,7 @@ const Footer = ({ close }) => {
       paddingBottom: "5px",
     },
     span: {
-      fontSize: "72px",
+      fontSize: "42px",
     },
     links: {
       textDecoration: "none",
@@ -69,7 +69,9 @@ const Footer = ({ close }) => {
       <HR />
       <Foot>
         <NAME>
-          <Span style={styles.span}>Heidi</Span>Skin16
+          <Span style={styles.span}>
+            Heidi<b>Skin16</b>
+          </Span>
         </NAME>
         <Rights>&copy; 2022 All Rights Reserved HeidiSkin16</Rights>
         <Social>

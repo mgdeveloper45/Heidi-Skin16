@@ -1,13 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import {
-  removeFromCart,
-  updateCartItem,
-} from "../../Redux/cartSlicer.js";
+import { removeFromCart, updateCartItem } from "../../Redux/cartSlicer.js";
 import { ArrowContainer, Arrows, Input } from "../Products/ProductsStyles";
-import { 
-  // Break, CartPage, Title, 
-  CartButton 
+import {
+  // Break, CartPage, Title,
+  CartButton,
 } from "./CartStyles";
 
 import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
@@ -51,17 +48,6 @@ const CartItem = ({ index, item }) => {
     }
   };
 
-  // let zeroHandler = () => {
-  //   if ( num === 0) {
-
-  //   }
-  // }
-
-  // let handleChange = async (e) => {
-  //   setNum(parseInt(e.target.value));
-  //   dispatch(updateCart(index, num));
-  // };
-
   const handleChange = () => {
     if (num === 0) {
       dispatch(removeFromCart(item));
@@ -80,7 +66,6 @@ const CartItem = ({ index, item }) => {
           flexDirection: "column",
           justifyContent: "center",
           padding: "0 20px",
-          // borderRight: "1px solid pink",
         }}
       >
         <h3>{item.data.name}</h3>
@@ -96,7 +81,6 @@ const CartItem = ({ index, item }) => {
           </ArrowContainer>
           <CartButton
             onClick={() => dispatch(updateCartItem({ ...item, quantity: num }))}
-            // onClick={() => handleClick()}
           >
             UPDATE
           </CartButton>

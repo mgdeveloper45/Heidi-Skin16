@@ -13,7 +13,7 @@ export const AddON = styled.div`
 export const AddOnContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  background-color: ${(props) =>
+  background-color: ${props =>
     props.bgColor ? "rgba(216, 155, 166, 0.75)" : "rgba(13, 104, 120, 0.75)"};
   @media screen and (max-width: 600px) {
     flex-direction: column;
@@ -21,7 +21,6 @@ export const AddOnContainer = styled.div`
   }
 `;
 export const Price = styled.span`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -32,11 +31,11 @@ export const Price = styled.span`
 `;
 
 export const Title = styled.div`
-  color: ${(props) => (props.color ? "black" : "#fff")};
+  color: ${props => (props.color ? "black" : "#fff")};
   margin-top: 200px;
   margin-bottom: 40%;
   width: 50%;
-  font-family: Helvetica Neue;
+
   font-weight: 350;
   font-style: normal;
   font-size: 80px;
@@ -59,12 +58,11 @@ export const Image = styled.div`
   transform: translateY(-1rem);
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
-  background-image: url(${(props) => props.image});
+  background-image: url(${props => props.image});
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid ${(props) =>
-  props.border ? props.border : "white"};
+  border: 1px solid ${props => (props.border ? props.border : "white")};
   @media screen and (max-width: 600px) {
     width: 80%;
     padding-bottom: 80%;
