@@ -111,9 +111,10 @@ export const Menu = styled.div`
   flex-flow: column;
   align-items: flex-end;
   justify-content: space-around;
+  color: black;
   height: 300px;
   width: 270px;
-  background-color: rgba(13, 104, 120);
+  /* background-color: rgba(13, 104, 120); */
   /* position: absolute; */
   padding: 1rem;
   letter-spacing: 0.05rem;
@@ -131,5 +132,5 @@ export const Menu = styled.div`
 `;
 
 export const CategoryLinks = styled.div`
-  color: #fff;
+  color: black;
 `;
