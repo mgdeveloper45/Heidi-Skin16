@@ -24,13 +24,14 @@ const Footer = ({ close }) => {
 
   const styles = {
     icons: {
-      height: "55px",
-      width: "55px",
+      height: "35px",
+      width: "35px",
+      margin: "0 10px 0 10px ",
     },
     yelp: {
-      height: "45px",
-      width: "45px",
-      paddingBottom: "5px",
+      height: "35px",
+      width: "35px",
+      margin: "0 10px 0 10px ",
     },
     span: {
       fontSize: "42px",

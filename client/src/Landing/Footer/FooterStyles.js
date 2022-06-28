@@ -4,7 +4,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  height: 500px;
+  height: 200px;
   background: rgba(223, 213, 177, 0.5);
 `;
 export const Declaration = styled.div`
@@ -24,7 +24,7 @@ export const LI = styled.h1`
 
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
   &:hover {
     text-decoration: underline;
   }
@@ -66,6 +66,7 @@ export const Rights = styled.div`
   text-align: center;
 `;
 export const Social = styled.div`
+  width: 231px;
   /* @media (max-width: 768px) {
     margin: 20px;
   } */
