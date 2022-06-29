@@ -15,7 +15,6 @@ export const Address = styled.div`
   margin-top: 100px;
 `;
 export const H3 = styled.h3`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -52,7 +51,6 @@ export const Code = styled.div`
   width: 335px;
 `;
 export const P = styled.p`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;

@@ -36,7 +36,6 @@ export const Name = styled.div`
   visibility: ${(props) => (props.visible ? "hidden" : "visible")};
   display: flex;
   align-items: flex-start;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 700;
   font-size: 90px;
@@ -44,13 +43,11 @@ export const Name = styled.div`
   z-index: ${(props) => (props.visible ? "-1" : "1")};
 `;
 export const Span = styled.span`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 200;
   font-size: 90px;
 `;
 export const Book = styled.p`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: bold;
   font-size: 55px;
@@ -103,13 +100,11 @@ export const RightImg = styled.div`
 `;
 export const Covid = styled.div``;
 export const Deserve = styled.span`
-  font-family: Helvetica Neue;
   font-weight: 700;
   font-style: normal;
   font-size: 120px;
 `;
 export const More = styled.div`
-  font-family: Helvetica Neue;
   font-weight: 300;
   font-style: normal;
   font-size: 70px;
@@ -124,13 +119,11 @@ export const Policy = styled.div`
   z-index: ${(props) => (props.visible ? "10" : "0")};
 `;
 export const Appointments = styled.p`
-  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
 `;
 export const Protocol = styled.p`
-  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 300;
   font-size: 30px;

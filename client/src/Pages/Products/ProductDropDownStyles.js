@@ -8,15 +8,10 @@ export const MenuBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: rgba(13, 104, 120, 0.75); */
 
   background: none;
   border: none;
   font-size: 40px;
-
-  /* :hover { */
-  color: rgba(216, 155, 166, 0.75);
-  /* } */
 `;
 
 export const MenuPosition = styled.div`

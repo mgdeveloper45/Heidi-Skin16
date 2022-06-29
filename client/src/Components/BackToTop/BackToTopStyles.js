@@ -15,7 +15,6 @@ export const ToTopBox = styled.div`
   height: 100px;
 `;
 export const Title = styled.h1`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;

@@ -5,7 +5,7 @@ import BackToTop from "../../Components/BackToTop/BackToTop";
 import Menu from "../../Components/Menu/Menu";
 import { Top, ToTopButton } from "../../Components/Menu/MenuStyles";
 
-const SalonServices = ({categories, addOn}) => {
+const SalonServices = ({ categories, addOn }) => {
   const [category, setCategory] = useState([]);
   useEffect(() => {
     setCategory(categories);
@@ -23,7 +23,7 @@ const SalonServices = ({categories, addOn}) => {
           <Menu category={category} />
         </div>
       ))}
-      <AddOn addOn={addOn}/>
+      <AddOn addOn={addOn} />
       <BackToTop onClick={() => scrollTop()} />
     </div>
   );

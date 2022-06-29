@@ -48,17 +48,6 @@ const CartItem = ({ index, item }) => {
     }
   };
 
-  // let zeroHandler = () => {
-  //   if ( num === 0) {
-
-  //   }
-  // }
-
-  // let handleChange = async (e) => {
-  //   setNum(parseInt(e.target.value));
-  //   dispatch(updateCart(index, num));
-  // };
-
   const handleChange = () => {
     if (num === 0) {
       dispatch(removeFromCart(item));
@@ -78,7 +67,8 @@ const CartItem = ({ index, item }) => {
           justifyContent: "center",
           padding: "0 20px",
           // borderRight: "1px solid pink",
-        }}>
+        }}
+      >
         <h3>{item.data.name}</h3>
         <br />
         <div style={styled.flexRow}>
@@ -92,7 +82,6 @@ const CartItem = ({ index, item }) => {
           </ArrowContainer>
           <CartButton
             onClick={() => dispatch(updateCartItem({ ...item, quantity: num }))}
-            // onClick={() => handleClick()}
           >
             UPDATE
           </CartButton>

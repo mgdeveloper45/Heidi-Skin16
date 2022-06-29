@@ -28,7 +28,7 @@ const Nav = ({ animateImg, close, visible, categories }) => {
   const [services, setService] = useState(false);
   const [dropDown, setDropDown] = useState([]);
 
-  const cartQuantity = useSelector(state => state.cart.cartTotalQuantity);
+  const cartQuantity = useSelector((state) => state.cart.cartTotalQuantity);
   useEffect(() => {
     setDropDown(categories);
   }, []);
@@ -62,10 +62,8 @@ const Nav = ({ animateImg, close, visible, categories }) => {
         </Icons>
       </Header>
       <Navi>
-        <div style={{ display: "flex" }}>
-          <P style={{ display: "flex" }} onClick={() => close("/services")}>
-            Salon Service
-          </P>
+        <div style={{ display: "flex", width: "250px" }}>
+          <P onClick={() => close("/services")}>Salon Service</P>
           <MenuBtn onClick={() => setService(!services)}>
             <MdOutlineArrowDropDown style={{ fontSize: "40px" }} />
             <DropContainer style={services ? dropDownStyle : null}>

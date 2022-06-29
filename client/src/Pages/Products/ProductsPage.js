@@ -11,7 +11,7 @@ import SingleProduct from "./SingleProduct";
 import ProductDropDown from "./ProductDropDown";
 
 const ProductsPage = () => {
-  const products = useSelector(state => state.productData.entities);
+  const products = useSelector((state) => state.productData.entities);
 
   return (
     <ProductWrapper>

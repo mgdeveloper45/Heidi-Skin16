@@ -44,7 +44,6 @@ const Cart = () => {
             justifyContent: "space-evenly",
           }}
         >
-          {/* <img style={{ maxHeight: "350px" }} src={emptyCartPng} alt="..." /> */}
           <h2>Your cart is empty...</h2>
           <Link to="/products">
             <CartButton>RETURN TO PRODUCTS</CartButton>
@@ -69,9 +68,6 @@ const Cart = () => {
               className="cart-total-checkout-container"
               style={styledObj.cartTotalCheckoutContainer}
             >
-              {/* <div style={{ textAlign: "center" }}>
-                Total Items: {cart.cartTotalQuantity}
-              </div> */}
               <div style={{ textAlign: "center" }}>
                 Total: ${cart.cartTotalAmount.toFixed(2)}
               </div>
@@ -81,7 +77,6 @@ const Cart = () => {
               </Link>
             </div>
           </div>
-          {/* <Break></Break> */}
         </>
       )}
     </CartPage>

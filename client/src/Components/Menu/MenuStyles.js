@@ -28,7 +28,7 @@ export const Title = styled.p`
   align-self: center;
   color: ${(props) => (props.title ? props.title : "white")};
   width: 62%;
-  font-family: Helvetica Neue;
+
   font-weight: 345;
   font-style: normal;
   font-size: 80px;
@@ -66,7 +66,7 @@ export const DescriptionContainer = styled.div`
 export const Description = styled.p`
   color: ${(props) => (props.description ? props.description : "white")};
   width: 83.5%;
-  font-family: Helvetica Neue;
+
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -95,7 +95,6 @@ export const ToTopButton = styled.button`
   cursor: pointer;
 `;
 export const Top = styled.span`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;

@@ -24,16 +24,17 @@ const Footer = ({ close }) => {
 
   const styles = {
     icons: {
-      height: "55px",
-      width: "55px",
+      height: "35px",
+      width: "35px",
+      margin: "0 10px 0 10px ",
     },
     yelp: {
-      height: "45px",
-      width: "45px",
-      paddingBottom: "5px",
+      height: "35px",
+      width: "35px",
+      margin: "0 10px 0 10px ",
     },
     span: {
-      fontSize: "72px",
+      fontSize: "42px",
     },
     links: {
       textDecoration: "none",
@@ -69,7 +70,9 @@ const Footer = ({ close }) => {
       <HR />
       <Foot>
         <NAME>
-          <Span style={styles.span}>Heidi</Span>Skin16
+          <Span style={styles.span}>
+            Heidi<b>Skin16</b>
+          </Span>
         </NAME>
         <Rights>&copy; 2022 All Rights Reserved HeidiSkin16</Rights>
         <Social>

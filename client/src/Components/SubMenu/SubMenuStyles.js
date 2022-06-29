@@ -56,7 +56,6 @@ export const Listing = styled.div`
   justify-content: space-between;
 `;
 export const Title = styled.div`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -65,7 +64,6 @@ export const Title = styled.div`
   }
 `;
 export const Price = styled.span`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -74,13 +72,11 @@ export const Price = styled.span`
   }
 `;
 export const SndPrice = styled.p`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
 `;
 export const Description = styled.div`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 250;
   font-size: 1.5rem;
@@ -99,7 +95,6 @@ export const ButtonContainer = styled.div`
   align-items: center;
 `;
 export const P = styled.p`
-  font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
