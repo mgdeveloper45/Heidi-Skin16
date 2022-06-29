@@ -62,10 +62,12 @@ export const List = styled.div`
 
 export const P = styled.p`
   display: flex;
+  justify-content: center;
   width: 250px;
+  height: 40px;
   font-style: normal;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 24px;
   &:hover {
     text-decoration: underline;
   }
