@@ -30,6 +30,8 @@ function App() {
 
   const animateImg = () => {
     if (visible === true) {
+      closeThenRedirect();
+      navigate("/booking");
     } else {
       const animatedImg = document.querySelector(".rightImg");
       animatedImg.classList.add("rightBox");
@@ -54,7 +56,7 @@ function App() {
     });
   };
 
-  const closeThenRedirect = (links) => {
+  const closeThenRedirect = links => {
     return visible
       ? animateRevImg().then(() => navigate(links))
       : navigate(links);
