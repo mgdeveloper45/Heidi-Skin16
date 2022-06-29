@@ -4,13 +4,11 @@ export const BookingWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
-  padding-bottom: 50px;
 `;
 export const BookingContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   width: 70%;
 `;
 export const BookingTitle = styled.div`
@@ -22,7 +20,7 @@ export const BookingTitle = styled.div`
 `;
 export const BookingContent = styled.div`
   display: flex;
-  height: 100%;
+  height: 600px;
   width: 780px;
   align-items: center;
   flex-direction: column;
