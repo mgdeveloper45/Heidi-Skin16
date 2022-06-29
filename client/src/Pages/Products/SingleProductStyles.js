@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductCard = styled.div`
   /* height: 400px;
   width: 100%; */
-
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: space-around;

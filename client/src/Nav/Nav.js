@@ -22,15 +22,20 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import Badge from "@mui/material/Badge";
 import { useEffect } from "react";
+import "./DropDownStyle.css";
 
 const Nav = ({ animateImg, close, visible, categories }) => {
   const [services, setService] = useState(false);
   const [dropDown, setDropDown] = useState([]);
 
-  const cartQuantity = useSelector(state => state.cart.cartTotalQuantity);
+  const cartQuantity = useSelector((state) => state.cart.cartTotalQuantity);
   useEffect(() => {
     setDropDown(categories);
   }, []);
+
+  const dropDownStyle = {
+    animation: "inAnimation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+  };
 
   return (
     <NavContainer>
@@ -59,20 +64,20 @@ const Nav = ({ animateImg, close, visible, categories }) => {
       <Navi>
         <div style={{ display: "flex", width: "250px" }}>
           <P onClick={() => close("/services")}>Salon Service</P>
-          <DropContainer>
-            <MenuBtn onClick={() => setService(!services)}>
-              <MdOutlineArrowDropDown />
-            </MenuBtn>
-            {services === true ? (
-              <MenuPosition>
-                <Menu>
-                  {dropDown.map((service, idx) => (
-                    <CategoryLinks key={idx}>{service.title}</CategoryLinks>
-                  ))}
-                </Menu>
-              </MenuPosition>
-            ) : null}
-          </DropContainer>
+          <MenuBtn onClick={() => setService(!services)}>
+            <MdOutlineArrowDropDown style={{ fontSize: "40px" }} />
+            <DropContainer style={services ? dropDownStyle : null}>
+              {services === true ? (
+                <MenuPosition>
+                  <Menu>
+                    {dropDown.map((service, idx) => (
+                      <CategoryLinks key={idx}>{service.title}</CategoryLinks>
+                    ))}
+                  </Menu>
+                </MenuPosition>
+              ) : null}
+            </DropContainer>
+          </MenuBtn>
         </div>
         <P onClick={() => close("/products")}>Buy Products</P>
 

@@ -8,23 +8,23 @@ import { Link } from "react-router-dom";
 // import emptyCartPng from "../../images/emptyCart.png";
 
 const Cart = () => {
-  const cart = useSelector(state => state.cart);
+  const cart = useSelector((state) => state.cart);
   // toFixed() cart
 
   const dispatch = useDispatch();
 
-  const onClick = e => {
+  const onClick = (e) => {
     e.preventDefault();
     axios
       .post("/create-checkout-session", {
-        lineItems: cart.cartItems.map(item => {
+        lineItems: cart.cartItems.map((item) => {
           return {
             price: item.price.priceId,
             quantity: item.quantity,
           };
         }),
       })
-      .then(res => {
+      .then((res) => {
         console.log(res.data);
         window.location = res.data;
       });

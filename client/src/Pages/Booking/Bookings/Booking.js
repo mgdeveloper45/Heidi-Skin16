@@ -20,7 +20,7 @@ const Booking = ({ categories, addOn }) => {
   const [calendar, setCalendar] = useState(false);
   const [value, setValue] = useState("Facials");
 
-  const onChange = e => {
+  const onChange = (e) => {
     e.preventDefault();
     setValue(e.target.value);
   };
@@ -52,11 +52,11 @@ const Booking = ({ categories, addOn }) => {
             <BookingForm>
               <BookingLabel>Type</BookingLabel>
               <BookingSelect
-                onChange={e => {
+                onChange={(e) => {
                   console.log(e.target.value);
                 }}
               >
-                {categories.map(type =>
+                {categories.map((type) =>
                   type.title === value
                     ? type.subcategories.map((item, index) => (
                         <BookingOption value={item.duration} key={index}>
@@ -70,7 +70,7 @@ const Booking = ({ categories, addOn }) => {
             <BookingForm>
               <BookingLabel>Add-ons</BookingLabel>
               <BookingSelect>
-                {addOn.map(add =>
+                {addOn.map((add) =>
                   add.services.map((item, idx) => (
                     <>
                       <BookingOption key={idx}>{item.title}</BookingOption>

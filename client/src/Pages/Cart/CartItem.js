@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { removeFromCart, updateCartItem } from "../../Redux/cartSlicer.js";
-import { ArrowContainer, Arrows, Input } from "../Products/ProductsStyles";
+import { ArrowContainer, Arrows, Input } from "../Products/SingleProductStyles";
 import {
   // Break, CartPage, Title,
   CartButton,
@@ -66,6 +66,7 @@ const CartItem = ({ index, item }) => {
           flexDirection: "column",
           justifyContent: "center",
           padding: "0 20px",
+          // borderRight: "1px solid pink",
         }}
       >
         <h3>{item.data.name}</h3>

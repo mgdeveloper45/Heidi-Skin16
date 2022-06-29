@@ -15,7 +15,7 @@ export const MainContainer = styled.div`
   justify-content: center;
 `;
 export const MainImg = styled.div`
-  visibility: ${props => (props.visible ? "hidden" : "visible")};
+  visibility: ${(props) => (props.visible ? "hidden" : "visible")};
   background-repeat: no-repeat;
   background-size: cover;
   width: 850px;
@@ -33,14 +33,14 @@ export const Logo = styled.div`
   align-items: center;
 `;
 export const Name = styled.div`
-  visibility: ${props => (props.visible ? "hidden" : "visible")};
+  visibility: ${(props) => (props.visible ? "hidden" : "visible")};
   display: flex;
   align-items: flex-start;
   font-style: normal;
   font-weight: 700;
   font-size: 90px;
   height: 90px;
-  z-index: ${props => (props.visible ? "-1" : "1")};
+  z-index: ${(props) => (props.visible ? "-1" : "1")};
 `;
 export const Span = styled.span`
   font-style: normal;
@@ -67,12 +67,12 @@ export const Session = styled.div`
   border-radius: 20px;
   left: 589px;
   top: 732px;
-  z-index: ${props => (props.visible ? "-1" : "1")};
+  z-index: ${(props) => (props.visible ? "-1" : "1")};
   background-color: rgba(13, 104, 120, 0.75);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 `;
 export const SlidingImg = styled.div`
-  visibility: ${props => (props.visible ? "visible" : "hidden")};
+  visibility: ${(props) => (props.visible ? "visible" : "hidden")};
   width: 100%;
   height: 825px;
   margin-top: 10px;
@@ -116,7 +116,7 @@ export const Policy = styled.div`
   align-items: center;
   justify-content: flex-end;
   height: 100px;
-  z-index: ${props => (props.visible ? "10" : "0")};
+  z-index: ${(props) => (props.visible ? "10" : "0")};
 `;
 export const Appointments = styled.p`
   font-style: normal;

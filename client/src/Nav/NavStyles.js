@@ -45,11 +45,11 @@ export const Icon = styled.div`
 `;
 
 export const Navi = styled.div`
-  height: 150px;
+  padding: 75px 0;
   background-color: white;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
 `;
 
@@ -61,6 +61,7 @@ export const List = styled.div`
 `;
 
 export const P = styled.p`
+  display: flex;
   width: 250px;
   font-style: normal;
   font-weight: normal;
@@ -71,25 +72,32 @@ export const P = styled.p`
 `;
 
 export const DropContainer = styled.div`
-  margin: 0;
+  /* margin: 0; */
 `;
 
 export const MenuBtn = styled.button`
   /* position: relative; */
-
-  display: flex;
+  width: 40px;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
   color: rgba(216, 155, 166, 0.75);
 
   background: none;
   border: none;
-  font-size: 40px;
+  /* font-size: 40px; */
+
+  /* :hover {
+    color: rgba(13, 104, 120, 0.75);
+  } */
 `;
 
 export const MenuPosition = styled.div`
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  justify-content: flex-end; */
 `;
 
 export const Menu = styled.div`
@@ -97,14 +105,14 @@ export const Menu = styled.div`
   flex-flow: column;
   align-items: flex-end;
   justify-content: space-around;
+  color: black;
   height: 300px;
   width: 270px;
-  background-color: rgba(13, 104, 120);
-  position: absolute;
+  /* background-color: rgba(13, 104, 120); */
+  /* position: absolute; */
   padding: 1rem;
   letter-spacing: 0.05rem;
   border-radius: 5px;
-  z-index: 1;
 
   a:visited,
   a:link,
@@ -118,5 +126,5 @@ export const Menu = styled.div`
 `;
 
 export const CategoryLinks = styled.div`
-  color: #fff;
+  color: black;
 `;

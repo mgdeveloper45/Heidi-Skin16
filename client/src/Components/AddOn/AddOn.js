@@ -1,4 +1,3 @@
-
 import {
   AddON,
   AddOnContainer,
@@ -9,7 +8,7 @@ import {
   Title,
 } from "./AddOnStyles";
 
-const AddOn = ({addOn}) => {
+const AddOn = ({ addOn }) => {
   let service = {
     title: addOn[0].title,
     service: addOn[0].services,
@@ -36,7 +35,7 @@ const AddOn = ({addOn}) => {
           </ServiceTitleWrap>
         ))}
       </AddON>
-      <Image border={service.color} image={service.image}/>
+      <Image border={service.color} image={service.image} />
     </AddOnContainer>
   );
 };
