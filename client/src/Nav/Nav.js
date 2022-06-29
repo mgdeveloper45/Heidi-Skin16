@@ -13,6 +13,7 @@ import {
   NavContainer,
   Navi,
   P,
+  LinkContainer,
   Span,
 } from "./NavStyles";
 import { Link } from "react-router-dom";
@@ -28,7 +29,7 @@ const Nav = ({ animateImg, close, visible, categories }) => {
   const [services, setService] = useState(false);
   const [dropDown, setDropDown] = useState([]);
 
-  const cartQuantity = useSelector((state) => state.cart.cartTotalQuantity);
+  const cartQuantity = useSelector(state => state.cart.cartTotalQuantity);
   useEffect(() => {
     setDropDown(categories);
   }, []);
@@ -43,7 +44,11 @@ const Nav = ({ animateImg, close, visible, categories }) => {
         <Head />
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            <Heading onClick={() => animateImg()}>
+            <Heading
+              onClick={() => {
+                animateImg();
+                setService(false);
+              }}>
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
@@ -79,9 +84,20 @@ const Nav = ({ animateImg, close, visible, categories }) => {
             </DropContainer>
           </MenuBtn>
         </div>
-        <P onClick={() => close("/products")}>Buy Products</P>
-
-        <P onClick={() => close("/contact")}>Contact Us</P>
+        <P
+          onClick={() => {
+            close("/products");
+            setService(false);
+          }}>
+          Buy Products
+        </P>
+        <P
+          onClick={() => {
+            close("/contact");
+            setService(false);
+          }}>
+          Contact Us
+        </P>
       </Navi>
     </NavContainer>
   );
