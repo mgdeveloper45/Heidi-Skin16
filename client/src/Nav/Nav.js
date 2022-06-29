@@ -13,7 +13,6 @@ import {
   NavContainer,
   Navi,
   P,
-  LinkContainer,
   Span,
 } from "./NavStyles";
 import { Link } from "react-router-dom";
@@ -68,7 +67,13 @@ const Nav = ({ animateImg, close, visible, categories }) => {
       </Header>
       <Navi>
         <div style={{ display: "flex", width: "250px" }}>
-          <P onClick={() => close("/services")}>Salon Service</P>
+          <P
+            onClick={() => {
+              close("/services");
+              setService(false);
+            }}>
+            Salon Service
+          </P>
           <MenuBtn onClick={() => setService(!services)}>
             <MdOutlineArrowDropDown style={{ fontSize: "40px" }} />
             <DropContainer style={services ? dropDownStyle : null}>
