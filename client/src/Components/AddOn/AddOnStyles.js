@@ -50,7 +50,7 @@ export const Title = styled.div`
   }
 `;
 export const Image = styled.div`
-  width: 40%;s
+  width: 40%;
   position: relative;
   height: 0;
   padding-bottom: 40%;
