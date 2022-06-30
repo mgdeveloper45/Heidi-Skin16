@@ -30,7 +30,7 @@ const About = () => {
       <ParagraphContainer>
         <Paragraph>
           Enter Owner bio and the mission statement of the company. Can use a
-          picture of estetician at work with real clients above, just make sure
+          picture of esthetician at work with real clients above, just make sure
           it’s a singular picture that represents your company or products well.
           State your expertise in the field, the products and services you are
           known for.
@@ -44,7 +44,7 @@ const About = () => {
         </Paragraph>
         <hr />
         <Paragraph>
-          Other esteticians who work at the salon, if any, can be mentioned
+          Other estheticians who work at the salon, if any, can be mentioned
           here. Any Additional info.
         </Paragraph>
         <hr />
