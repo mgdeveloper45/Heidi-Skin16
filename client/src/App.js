@@ -56,7 +56,7 @@ function App() {
     });
   };
 
-  const closeThenRedirect = links => {
+  const closeThenRedirect = (links) => {
     return visible
       ? animateRevImg().then(() => navigate(links))
       : navigate(links);

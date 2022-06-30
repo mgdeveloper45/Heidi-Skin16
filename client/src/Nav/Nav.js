@@ -28,7 +28,7 @@ const Nav = ({ animateImg, close, visible, categories }) => {
   const [services, setService] = useState(false);
   const [dropDown, setDropDown] = useState([]);
 
-  const cartQuantity = useSelector(state => state.cart.cartTotalQuantity);
+  const cartQuantity = useSelector((state) => state.cart.cartTotalQuantity);
   useEffect(() => {
     setDropDown(categories);
   }, []);

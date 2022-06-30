@@ -13,7 +13,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <AboutContainer >
+    <AboutContainer id="about-us">
       <div className="arrow">
         <div className="line"></div>
         <div className="point"></div>
