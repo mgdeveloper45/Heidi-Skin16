@@ -32,7 +32,7 @@ export const GalleryImageContainer = styled.div`
 `;
 
 export const GalleryImage = styled.div`
-  background-image: url(${(props) => props.image});
+  background-image: url(${props => props.image});
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;

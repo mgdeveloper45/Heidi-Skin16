@@ -22,6 +22,14 @@ const Footer = ({ close }) => {
     // window.scrollTo({top:1000,behavior:"smooth"})
   };
 
+  const scrollToAbout = () => {
+    const timer = setTimeout(() => {
+      const aboutScroll = document.getElementById("about-us");
+      aboutScroll.scrollIntoView({ behavior: "smooth" });
+      clearTimeout(timer);
+    }, 1000);
+  };
+
   const styles = {
     icons: {
       height: "35px",
@@ -45,7 +53,12 @@ const Footer = ({ close }) => {
     <FooterWrapper>
       <Declaration>
         <UL>
-          <div onClick={() => setToTrue()} style={styles.links}>
+          <div
+            onClick={() => {
+              setToTrue();
+              scrollToAbout();
+            }}
+            style={styles.links}>
             <LI>About Us</LI>
           </div>
           <div onClick={() => setToTrue()} style={styles.links}>
