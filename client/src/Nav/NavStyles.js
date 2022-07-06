@@ -49,7 +49,6 @@ export const Navi = styled.div`
   background-color: white;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: space-around;
 `;
 
@@ -73,16 +72,10 @@ export const P = styled.p`
   }
 `;
 
-export const DropContainer = styled.div`
-  /* margin: 0; */
-`;
+export const DropContainer = styled.div``;
 
 export const MenuBtn = styled.button`
-  /* position: relative; */
   width: 40px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   display: flex;
   flex-flow: column;
   align-items: flex-end;
@@ -90,17 +83,13 @@ export const MenuBtn = styled.button`
 
   background: none;
   border: none;
-  /* font-size: 40px; */
 
-  /* :hover {
-    color: rgba(13, 104, 120, 0.75);
-  } */
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
-export const MenuPosition = styled.div`
-  /* display: flex;
-  justify-content: flex-end; */
-`;
+export const MenuPosition = styled.div``;
 
 export const Menu = styled.div`
   display: flex;
@@ -110,23 +99,14 @@ export const Menu = styled.div`
   color: black;
   height: 300px;
   width: 270px;
-  /* background-color: rgba(13, 104, 120); */
-  /* position: absolute; */
   padding: 1rem;
   letter-spacing: 0.05rem;
   border-radius: 5px;
-
-  a:visited,
-  a:link,
-  a:active {
-    text-decoration: none;
-    color: black;
-    :hover {
-      color: gray;
-    }
-  }
 `;
 
 export const CategoryLinks = styled.div`
-  color: black;
+  &:hover {
+    color: rgba(216, 155, 166, 0.75);
+    cursor: pointer;
+  }
 `;
