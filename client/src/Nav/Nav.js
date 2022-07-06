@@ -33,6 +33,14 @@ const Nav = ({ animateImg, close, visible, categories }) => {
     setDropDown(categories);
   }, []);
 
+  const scrollTo = (title) => {
+    const timer = setTimeout(() => {
+      const aboutScroll = document.getElementById(`${title}`);
+      aboutScroll.scrollIntoView({ behavior: "smooth" });
+      clearTimeout(timer);
+    }, 1);
+  };
+
   const dropDownStyle = {
     animation: "inAnimation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
   };
@@ -81,7 +89,13 @@ const Nav = ({ animateImg, close, visible, categories }) => {
                 <MenuPosition>
                   <Menu>
                     {dropDown.map((service, idx) => (
-                      <CategoryLinks key={idx}>{service.title}</CategoryLinks>
+                      <CategoryLinks
+                        key={idx}
+                        onClick={() => {
+                          scrollTo(service.title);
+                        }}>
+                        {service.title}
+                      </CategoryLinks>
                     ))}
                   </Menu>
                 </MenuPosition>
