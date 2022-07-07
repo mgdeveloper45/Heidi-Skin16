@@ -9,7 +9,7 @@ export const Header = styled.div`
   height: 150px;
   margin-top: 0;
   border: none;
-  background-color: rgba(223, 213, 177, 0.5);
+  background-color: var(--gold);
   width: 100%;
 `;
 export const Head = styled.div``;

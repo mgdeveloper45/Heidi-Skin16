@@ -10,7 +10,7 @@ export const MainContainer = styled.div`
   width: 100%;
   height: 780px;
   position: relative;
-  background: rgba(216, 155, 166, 0.75);
+  background: var(--pink);
   display: flex;
   justify-content: center;
 `;
@@ -68,7 +68,7 @@ export const Session = styled.div`
   left: 589px;
   top: 732px;
   z-index: ${(props) => (props.visible ? "-1" : "1")};
-  background-color: rgba(13, 104, 120, 0.75);
+  background-color: var(--green);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 `;
 export const SlidingImg = styled.div`

@@ -65,14 +65,14 @@ export const Input = styled.input`
   border: 1px solid;
   border-radius: 5px;
 
-  background-color: #e5e5e5;
+  background-color: var(--grey);
 `;
 
 export const Arrows = styled.div`
   display: flex;
   flex-flow: column;
   /* font-size: 18px; */
-  color: #0d6878;
+  color: var(-green);
 
   margin-left: 10px;
 
@@ -91,7 +91,7 @@ export const CartButton = styled.button`
   width: 65%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
-  background-color: rgba(216, 155, 166, 0.75);
+  background-color: var(--pink);
   border: none;
   font-weight: bold;
   margin: 10px 0;

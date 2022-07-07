@@ -55,7 +55,7 @@ export const BookingSelect = styled.select`
   width: 45%;
   margin-left: 10px;
   border-radius: 5px;
-  background-color: rgb(226, 180, 188);
+  background-color: var(--pink);
   border: 1px solid black;
 `;
 export const BookingOption = styled.option``;
@@ -66,7 +66,7 @@ export const BookingButton = styled.button`
   margin-left: 10px;
   border-radius: 5px;
   color: #fff;
-  background-color: rgba(13, 104, 120, 0.75);
+  background-color: var(--green);
   border: 1px solid black;
   &:hover {
     cursor: pointer;

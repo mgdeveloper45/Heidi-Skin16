@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CategoryContainer = styled.div`
   background-color: ${(props) =>
-    props.backgroundColor ? props.backgroundColor : "white"};
+    props.backgroundColor ? props.backgroundColor : "var(--white)"};
   padding-bottom: 4rem;
   margin-bottom: 4rem;
 `;
@@ -26,7 +26,7 @@ export const TitleContainer = styled.div`
 `;
 export const Title = styled.p`
   align-self: center;
-  color: ${(props) => (props.title ? props.title : "white")};
+  color: ${(props) => (props.title ? props.title : "var(--white)")};
   width: 62%;
 
   font-weight: 345;
@@ -51,7 +51,7 @@ export const Image = styled.div`
   background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid ${(props) => (props.border ? props.border : "white")};
+  border: 1px solid ${(props) => (props.border ? props.border : "var(--white)")};
   backdrop-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   @media screen and (max-width: 600px) {
@@ -64,7 +64,7 @@ export const DescriptionContainer = styled.div`
   padding: 5rem 2rem;
 `;
 export const Description = styled.p`
-  color: ${(props) => (props.description ? props.description : "white")};
+  color: ${(props) => (props.description ? props.description : "var(--white)")};
   width: 83.5%;
 
   font-style: normal;
@@ -87,9 +87,9 @@ export const ToTopButton = styled.button`
   z-index: 20;
   position: fixed;
   margin-left: 10px;
-  background: rgba(13, 104, 120, 0.75);
+  background-color: var(--green);
   border-radius: 50%;
-  border: ${(props) => (props.color ? "none" : "5px solid #FFFFFF")};
+  border: ${(props) => (props.color ? "none" : "5px solid var(--white)")};
   height: 100px;
   width: 100px;
   cursor: pointer;

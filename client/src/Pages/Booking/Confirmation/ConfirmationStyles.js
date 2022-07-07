@@ -13,8 +13,8 @@ export const ConfirmationCard = styled.div`
   text-align: center;
   width: 650px;
   padding-bottom: 50px;
-  flex-direction: ${props => props.flexDirection || "column"};
-  line-height: ${props => props.lineHeight || "none"};
+  flex-direction: ${(props) => props.flexDirection || "column"};
+  line-height: ${(props) => props.lineHeight || "none"};
 `;
 
 export const ConfirmationRow = styled.div`
@@ -40,7 +40,7 @@ export const Directions = styled.a`
   width: 125px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
-  background-color: rgba(216, 155, 166, 0.75);
+  background-color: var(--pink);
   border: none;
   font-weight: bold;
   text-decoration: none;

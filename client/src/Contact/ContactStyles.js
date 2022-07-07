@@ -16,7 +16,7 @@ export const FormInput = styled.div`
   align-items: flex-start;
   height: 1192px;
   width: 1397px;
-  background: rgba(216, 155, 166, 0.75);
+  background-color: var(--pink);
   border-radius: 20px 20px 0px 0px;
 `;
 export const Info = styled.div`
@@ -47,7 +47,7 @@ export const Input = styled.input`
   width: 573px;
   height: 64px;
   margin-left: 50px;
-  background: #ffffff;
+  background-color: var(--white);
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
@@ -57,7 +57,7 @@ export const EmailInput = styled.input`
   width: 859px;
   height: 64px;
   margin-left: 50px;
-  background: #ffffff;
+  background-color: var(--white);
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
@@ -67,7 +67,7 @@ export const TextArea = styled.textarea`
   width: 1126px;
   height: 271px;
   margin-left: 50px;
-  background-color: #ffffff;
+  background-color: var(--white);
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
@@ -85,14 +85,14 @@ export const Disclaimer = styled.div`
 export const Button = styled.button`
   width: 307px;
   height: 98px;
-  background: rgba(13, 104, 120, 0.75);
+  background-color: var(--green);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   font-style: normal;
   font-weight: bold;
   font-size: 55px;
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
 `;
 export const P = styled.p`
   text-align: center;
