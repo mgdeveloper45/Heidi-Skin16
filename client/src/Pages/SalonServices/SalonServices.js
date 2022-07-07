@@ -19,7 +19,7 @@ const SalonServices = ({ categories, addOn }) => {
         <Top>Back to Top</Top>
       </ToTopButton>
       {category.map((category, idx) => (
-        <div key={idx}>
+        <div key={idx} id={category.title}>
           <Menu category={category} />
         </div>
       ))}

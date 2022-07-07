@@ -33,6 +33,15 @@ const Nav = ({ animateImg, close, visible, categories }) => {
     setDropDown(categories);
   }, []);
 
+  const scrollTo = (title) => {
+    const timer = setTimeout(() => {
+      document.getElementById(`${title}`).style.paddingTop = "50px";
+      const aboutScroll = document.getElementById(`${title}`);
+      aboutScroll.scrollIntoView({ behavior: "smooth" });
+      clearTimeout(timer);
+    }, 1);
+  };
+
   const dropDownStyle = {
     animation: "inAnimation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
   };
@@ -43,7 +52,11 @@ const Nav = ({ animateImg, close, visible, categories }) => {
         <Head />
         <Logo>
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-            <Heading onClick={() => animateImg()}>
+            <Heading
+              onClick={() => {
+                animateImg();
+                setService(false);
+              }}>
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
@@ -63,7 +76,13 @@ const Nav = ({ animateImg, close, visible, categories }) => {
       </Header>
       <Navi>
         <div style={{ display: "flex", width: "250px" }}>
-          <P onClick={() => close("/services")}>Salon Service</P>
+          <P
+            onClick={() => {
+              close("/services");
+              setService(false);
+            }}>
+            Salon Service
+          </P>
           <MenuBtn onClick={() => setService(!services)}>
             <MdOutlineArrowDropDown style={{ fontSize: "40px" }} />
             <DropContainer style={services ? dropDownStyle : null}>
@@ -71,7 +90,14 @@ const Nav = ({ animateImg, close, visible, categories }) => {
                 <MenuPosition>
                   <Menu>
                     {dropDown.map((service, idx) => (
-                      <CategoryLinks key={idx}>{service.title}</CategoryLinks>
+                      <CategoryLinks
+                        key={idx}
+                        onClick={() => {
+                          close("/services");
+                          scrollTo(service.title);
+                        }}>
+                        {service.title}
+                      </CategoryLinks>
                     ))}
                   </Menu>
                 </MenuPosition>
@@ -79,9 +105,20 @@ const Nav = ({ animateImg, close, visible, categories }) => {
             </DropContainer>
           </MenuBtn>
         </div>
-        <P onClick={() => close("/products")}>Buy Products</P>
-
-        <P onClick={() => close("/contact")}>Contact Us</P>
+        <P
+          onClick={() => {
+            close("/products");
+            setService(false);
+          }}>
+          Buy Products
+        </P>
+        <P
+          onClick={() => {
+            close("/contact");
+            setService(false);
+          }}>
+          Contact Us
+        </P>
       </Navi>
     </NavContainer>
   );
