@@ -133,7 +133,7 @@ export const CartButton = styled.button`
   width: 65%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
-  background-color: rgba(216, 155, 166, 0.75);
+  background-color: var(--pink);
   border: none;
   font-weight: bold;
   margin-left: 25px;

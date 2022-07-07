@@ -51,7 +51,7 @@ export const Book = styled.p`
   font-style: normal;
   font-weight: bold;
   font-size: 55px;
-  color: #fff;
+  color: var(--white);
   &:hover {
     cursor: pointer;
   }

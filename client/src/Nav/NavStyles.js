@@ -79,7 +79,7 @@ export const MenuBtn = styled.button`
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  color: rgba(216, 155, 166, 0.75);
+  color: var(--pink);
 
   background: none;
   border: none;
@@ -106,7 +106,7 @@ export const Menu = styled.div`
 
 export const CategoryLinks = styled.div`
   &:hover {
-    color: rgba(216, 155, 166, 0.75);
+    color: var(--pink);
     cursor: pointer;
   }
 `;
