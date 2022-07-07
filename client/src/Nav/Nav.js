@@ -35,6 +35,7 @@ const Nav = ({ animateImg, close, visible, categories }) => {
 
   const scrollTo = (title) => {
     const timer = setTimeout(() => {
+      document.getElementById(`${title}`).style.paddingTop = "50px";
       const aboutScroll = document.getElementById(`${title}`);
       aboutScroll.scrollIntoView({ behavior: "smooth" });
       clearTimeout(timer);
@@ -92,6 +93,7 @@ const Nav = ({ animateImg, close, visible, categories }) => {
                       <CategoryLinks
                         key={idx}
                         onClick={() => {
+                          close("/services");
                           scrollTo(service.title);
                         }}>
                         {service.title}
