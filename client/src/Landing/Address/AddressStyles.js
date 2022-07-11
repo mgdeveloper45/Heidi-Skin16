@@ -26,11 +26,11 @@ export const Directions = styled.div`
   justify-content: center;
   height: 65px;
   width: 265px;
-  background-color: rgba(216, 155, 166, 0.75);
+  background-color: var(--pink);
   text-decoration: none;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
-  background-color: #e1b4bd;
+  background-color: var(--pink);
   border: none;
   font-weight: bold;
 
@@ -61,6 +61,6 @@ export const GetDirections = styled.a`
   text-decoration: none;
   color: black;
   &:hover {
-    color: rgba(13, 104, 120, 0.75);
+    color: var(--green);
   }
 `;

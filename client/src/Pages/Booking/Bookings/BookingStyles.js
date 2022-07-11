@@ -4,13 +4,11 @@ export const BookingWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
-  padding-bottom: 50px;
 `;
 export const BookingContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   width: 70%;
 `;
 export const BookingTitle = styled.div`
@@ -22,7 +20,7 @@ export const BookingTitle = styled.div`
 `;
 export const BookingContent = styled.div`
   display: flex;
-  height: 100%;
+  height: 600px;
   width: 780px;
   align-items: center;
   flex-direction: column;
@@ -57,7 +55,7 @@ export const BookingSelect = styled.select`
   width: 45%;
   margin-left: 10px;
   border-radius: 5px;
-  background-color: rgb(226, 180, 188);
+  background-color: var(--pink);
   border: 1px solid black;
 `;
 export const BookingOption = styled.option``;
@@ -68,7 +66,7 @@ export const BookingButton = styled.button`
   margin-left: 10px;
   border-radius: 5px;
   color: #fff;
-  background-color: rgba(13, 104, 120, 0.75);
+  background-color: var(--green);
   border: 1px solid black;
   &:hover {
     cursor: pointer;

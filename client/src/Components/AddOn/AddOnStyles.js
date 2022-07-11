@@ -14,7 +14,7 @@ export const AddOnContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   background-color: ${(props) =>
-    props.bgColor ? "rgba(216, 155, 166, 0.75)" : "rgba(13, 104, 120, 0.75)"};
+    props.bgColor ? "var(--pink)" : "var(--green)"};
   @media screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ export const Price = styled.span`
 `;
 
 export const Title = styled.div`
-  color: ${(props) => (props.color ? "black" : "#fff")};
+  color: ${(props) => (props.color ? "var(--black)" : "var(--white)")};
   margin-top: 200px;
   margin-bottom: 40%;
   width: 50%;
@@ -62,7 +62,7 @@ export const Image = styled.div`
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid ${(props) => (props.border ? props.border : "white")};
+  border: 1px solid ${(props) => (props.border ? props.border : "var(--white)")};
   @media screen and (max-width: 600px) {
     width: 80%;
     padding-bottom: 80%;

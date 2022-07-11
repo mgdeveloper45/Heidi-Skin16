@@ -1,9 +1,14 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components/macro";
+import variables from "./variables";
 
 const GlobalStyle = createGlobalStyle`
+
+${variables}
+
 body {
-  margin: 0;
-  padding: 0;
+  color: var(--black);
+  
+
 }
 `;
 

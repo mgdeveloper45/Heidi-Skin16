@@ -20,7 +20,7 @@ const styled = {
     marginBottom: "20px",
   },
   imgItem: {
-    border: "1px solid #E2B4BD",
+    border: "1px solid var(--pink)",
     borderRadius: "5px",
     minWidth: "250px",
     maxWidth: "250px",

@@ -5,7 +5,7 @@ export const FooterWrapper = styled.div`
   justify-content: space-around;
   flex-direction: column;
   height: 200px;
-  background: rgba(223, 213, 177, 0.5);
+  background-color: var(--gold);
 `;
 export const Declaration = styled.div`
   display: flex;

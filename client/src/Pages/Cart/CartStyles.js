@@ -20,7 +20,7 @@ export const CartContainer = styled.div`
 `;
 
 export const Break = styled.div`
-  border: 1px solid #e2b4bc;
+  border: 1px solid var(--pink);
   width: 80%;
 `;
 
@@ -51,7 +51,7 @@ export const CartButton = styled.button`
   padding: 0 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
-  background-color: rgba(216, 155, 166, 0.75);
+  background-color: var(--pink);
   border: none;
   font-weight: bold;
 
@@ -72,9 +72,9 @@ export const styledObj = {
     justifyContent: "space-evenly",
     position: "sticky",
     top: "50px",
-    border: "1px solid #E2B4BD",
+    border: "1px solid var(--pink)",
     borderRadius: "5px",
     padding: "0 20px",
-    backgroundColor: "#EFEAD8",
+    backgroundColor: "var(--gold)",
   },
 };

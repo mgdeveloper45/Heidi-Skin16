@@ -42,7 +42,7 @@ export const Image = styled.div`
   background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid ${(props) => (props.border ? props.border : "white")};
+  border: 3px solid ${(props) => (props.border ? props.border : "var(--white)")};
 
   @media screen and (max-width: 600px) {
     align-self: center;
@@ -98,7 +98,7 @@ export const P = styled.p`
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  color: #ffffff;
+  color: var(--white);
   @media screen and (max-width: 1200px) {
     font-size: 2rem;
   }
@@ -110,7 +110,7 @@ export const Button = styled.div`
   align-items: center;
   width: 275px;
   height: 75px;
-  background: #0d6878;
+  background-color: var(--green);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   cursor: pointer;

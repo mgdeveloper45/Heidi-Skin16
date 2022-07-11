@@ -9,7 +9,7 @@ export const Header = styled.div`
   height: 150px;
   margin-top: 0;
   border: none;
-  background-color: rgba(223, 213, 177, 0.5);
+  background-color: var(--gold);
   width: 100%;
 `;
 export const Head = styled.div``;
@@ -79,7 +79,7 @@ export const MenuBtn = styled.button`
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  color: rgba(216, 155, 166, 0.75);
+  color: var(--pink);
 
   background: none;
   border: none;
@@ -106,7 +106,7 @@ export const Menu = styled.div`
 
 export const CategoryLinks = styled.div`
   &:hover {
-    color: rgba(216, 155, 166, 0.75);
+    color: var(--pink);
     cursor: pointer;
   }
 `;
