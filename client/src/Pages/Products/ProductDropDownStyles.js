@@ -11,7 +11,7 @@ export const MenuBtn = styled.button`
 
   background: none;
   border: none;
-  font-size: 40px;
+  /* font-size: 40px; */
 `;
 
 export const MenuPosition = styled.div`
@@ -21,7 +21,7 @@ export const MenuPosition = styled.div`
 
 export const Menu = styled.div`
   text-align: center;
-  font-size: 20px;
+  /* font-size: 20px; */
 
   background-color: rgba(216, 155, 166, 0.75);
   position: absolute;

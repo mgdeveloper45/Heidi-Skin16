@@ -58,7 +58,7 @@ export const Listing = styled.div`
 export const Title = styled.div`
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  /* font-size: 40px; */
   @media screen and (max-width: 1200px) {
     font-size: 2rem;
   }
@@ -66,20 +66,20 @@ export const Title = styled.div`
 export const Price = styled.span`
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  /* font-size: 40px; */
   @media screen and (max-width: 1200px) {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 `;
 export const SndPrice = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  /* font-size: 30px; */
 `;
 export const Description = styled.div`
   font-style: normal;
   font-weight: 250;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   margin-bottom: 30px;
   @media screen and (max-width: 1200px) {
     font-size: 1.2rem;
@@ -97,7 +97,7 @@ export const ButtonContainer = styled.div`
 export const P = styled.p`
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  /* font-size: 40px; */
   color: var(--white);
   @media screen and (max-width: 1200px) {
     font-size: 2rem;

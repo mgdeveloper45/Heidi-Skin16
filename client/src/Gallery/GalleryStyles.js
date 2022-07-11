@@ -15,7 +15,7 @@ export const GalleryHeader = styled.h1`
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
-  margin: 52px;
+  /* margin: 52px; */
 `;
 export const GalleryImageContainer = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ export const GalleryImageContainer = styled.div`
 `;
 
 export const GalleryImage = styled.div`
-  background-image: url(${props => props.image});
+  background-image: url(${(props) => props.image});
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;

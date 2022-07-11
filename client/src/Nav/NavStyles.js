@@ -22,14 +22,14 @@ export const Heading = styled.p`
   align-items: center;
   font-weight: 700;
   font-style: normal;
-  font-size: 60px;
+  /* font-size: 60px; */
 `;
 export const Span = styled.span`
   font-weight: 200;
   font-style: normal;
-  font-size: 60px;
+  /* font-size: 60px; */
   @media (max-width: 768px) {
-    font-size: 40px;
+    /* font-size: 40px; */
   }
 `;
 export const Icons = styled.div`
@@ -66,7 +66,7 @@ export const P = styled.p`
   height: 40px;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  /* font-size: 24px; */
   &:hover {
     text-decoration: underline;
   }

@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
 export const AboutHeader = styled.h1`
   text-align: center;
   margin-bottom: 20px;
-  font-size: 4rem;
+  /* font-size: 4rem; */
   margin-top: 10px;
 `;
 
@@ -35,20 +35,20 @@ export const Heading = styled.p`
   font-weight: 700;
 
   font-style: normal;
-  font-size: 60px;
+  /* font-size: 60px; */
 `;
 
 export const Span = styled.span`
   font-weight: 200;
 
   font-style: normal;
-  font-size: 60px;
+  /* font-size: 60px; */
 `;
 
 export const ParagraphContainer = styled.div``;
 
 export const Paragraph = styled.p`
   padding: 10px;
-  font-size: 2em;
+  /* font-size: 2em; */
   line-height: 60px;
 `;

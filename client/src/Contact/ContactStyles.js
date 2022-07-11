@@ -30,7 +30,7 @@ export const H2 = styled.h2`
   height: 198px;
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
+  /* font-size: 60px; */
   align-self: center;
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@ export const Label = styled.label`
   height: 64px;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
+  /* font-size: 35px; */
 `;
 export const Input = styled.input`
   width: 573px;
@@ -51,7 +51,7 @@ export const Input = styled.input`
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
-  font-size: 35px;
+  /* font-size: 35px; */
 `;
 export const EmailInput = styled.input`
   width: 859px;
@@ -61,7 +61,7 @@ export const EmailInput = styled.input`
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
-  font-size: 35px;
+  /* font-size: 35px; */
 `;
 export const TextArea = styled.textarea`
   width: 1126px;
@@ -71,7 +71,7 @@ export const TextArea = styled.textarea`
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 10px;
-  font-size: 35px;
+  /* font-size: 35px; */
 `;
 export const Confirm = styled.div`
   display: flex;
@@ -90,7 +90,7 @@ export const Button = styled.button`
   border-radius: 20px;
   font-style: normal;
   font-weight: bold;
-  font-size: 55px;
+  /* font-size: 55px; */
   text-align: center;
   color: var(--white);
 `;
@@ -98,5 +98,5 @@ export const P = styled.p`
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  /* font-size: 25px; */
 `;

@@ -23,10 +23,10 @@ export const AddOnContainer = styled.div`
 export const Price = styled.span`
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  /* font-size: 30px; */
   margin-right: 10px;
   @media screen and (max-width: 900px) {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 `;
 
@@ -38,12 +38,12 @@ export const Title = styled.div`
 
   font-weight: 350;
   font-style: normal;
-  font-size: 80px;
+  /* font-size: 80px; */
   @media screen and (max-width: 1200px) {
-    font-size: 65px;
+    /* font-size: 65px; */
   }
   @media screen and (max-width: 1000px) {
-    font-size: 50px;
+    /* font-size: 50px; */
   }
   @media screen and (max-width: 600px) {
     margin: 50px 0px;
@@ -73,6 +73,6 @@ export const ServiceTitleWrap = styled.div``;
 export const ServiceTitle = styled.h1`
   display: flex;
   @media screen and (max-width: 900px) {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 `;

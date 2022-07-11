@@ -24,7 +24,7 @@ export const LI = styled.h1`
 
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  /* font-size: 25px; */
   &:hover {
     text-decoration: underline;
   }
@@ -53,7 +53,7 @@ export const Foot = styled.div`
 export const NAME = styled.div`
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  /* font-size: 40px; */
   /* @media (max-width: 768px) {
     font-size: 40px;
     font-weight: 700;
@@ -62,7 +62,7 @@ export const NAME = styled.div`
 export const Rights = styled.div`
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  /* font-size: 20px; */
   text-align: center;
 `;
 export const Social = styled.div`

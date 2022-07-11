@@ -38,19 +38,19 @@ export const Name = styled.div`
   align-items: flex-start;
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
+  /* font-size: 90px; */
   height: 90px;
   z-index: ${(props) => (props.visible ? "-1" : "1")};
 `;
 export const Span = styled.span`
   font-style: normal;
   font-weight: 200;
-  font-size: 90px;
+  /* font-size: 90px; */
 `;
 export const Book = styled.p`
   font-style: normal;
   font-weight: bold;
-  font-size: 55px;
+  /* font-size: 55px; */
   color: var(--white);
   &:hover {
     cursor: pointer;
@@ -102,12 +102,12 @@ export const Covid = styled.div``;
 export const Deserve = styled.span`
   font-weight: 700;
   font-style: normal;
-  font-size: 120px;
+  /* font-size: 120px; */
 `;
 export const More = styled.div`
   font-weight: 300;
   font-style: normal;
-  font-size: 70px;
+  /* font-size: 70px; */
   height: 200px;
 `;
 export const Policy = styled.div`
@@ -121,12 +121,12 @@ export const Policy = styled.div`
 export const Appointments = styled.p`
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  /* font-size: 30px; */
 `;
 export const Protocol = styled.p`
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
+  /* font-size: 30px; */
   &:hover {
     text-decoration: underline;
   }

@@ -31,7 +31,7 @@ export const Title = styled.p`
 
   font-weight: 345;
   font-style: normal;
-  font-size: 80px;
+  /* font-size: 80px; */
   margin-bottom: 5rem;
   @media screen and (max-width: 600px) {
     font-size: 65px;
@@ -69,7 +69,7 @@ export const Description = styled.p`
 
   font-style: normal;
   font-weight: 300;
-  font-size: 28px;
+  /* font-size: 28px; */
   line-height: 50px;
   @media screen and (max-width: 1200px) {
     font-size: 1.5rem;
@@ -97,7 +97,7 @@ export const ToTopButton = styled.button`
 export const Top = styled.span`
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  /* font-size: 25px; */
   text-align: center;
   color: #fff;
 `;
