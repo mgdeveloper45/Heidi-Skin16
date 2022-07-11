@@ -31,7 +31,7 @@ export const Price = styled.span`
 `;
 
 export const Title = styled.div`
-  color: ${(props) => (props.color ? "var(black)" : "var(--white)")};
+  color: ${(props) => (props.color ? "var(--black)" : "var(--white)")};
   margin-top: 200px;
   margin-bottom: 40%;
   width: 50%;

@@ -7,7 +7,8 @@ ${variables}
 
 body {
   color: var(--black);
-  font-size:var(--fz-md);
+  
+
 }
 `;
 
