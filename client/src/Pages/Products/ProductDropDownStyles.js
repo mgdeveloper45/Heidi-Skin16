@@ -3,15 +3,19 @@ import styled from "styled-components";
 export const DropContainer = styled.div``;
 
 export const MenuBtn = styled.button`
-  position: relative;
-
+  width: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: column;
+  align-items: flex-end;
+  color: var(--pink);
+  margin-left: 20px;
 
   background: none;
   border: none;
-  font-size: 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const MenuPosition = styled.div`
@@ -20,15 +24,16 @@ export const MenuPosition = styled.div`
 `;
 
 export const Menu = styled.div`
-  text-align: center;
-  font-size: 20px;
-
-  background-color: rgba(216, 155, 166, 0.75);
-  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: black;
+  height: 300px;
+  width: 270px;
   padding: 1rem;
   letter-spacing: 0.05rem;
   border-radius: 5px;
-  z-index: 1;
 
   a:visited,
   a:link,
@@ -41,4 +46,8 @@ export const Menu = styled.div`
   }
 `;
 
-export const CategoryLinks = styled.div``;
+export const CategoryLinks = styled.div`
+  &:hover {
+    color: var(--pink);
+  }
+`;
