@@ -56,7 +56,8 @@ const Nav = ({ animateImg, close, visible, categories }) => {
               onClick={() => {
                 animateImg();
                 setService(false);
-              }}>
+              }}
+            >
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
@@ -80,11 +81,12 @@ const Nav = ({ animateImg, close, visible, categories }) => {
             onClick={() => {
               close("/services");
               setService(false);
-            }}>
+            }}
+          >
             Salon Service
           </P>
           <MenuBtn onClick={() => setService(!services)}>
-            <MdOutlineArrowDropDown style={{ fontSize: "40px" }} />
+            <MdOutlineArrowDropDown style={{ fontSize: "24px" }} />
             <DropContainer style={services ? dropDownStyle : null}>
               {services === true ? (
                 <MenuPosition>
@@ -95,7 +97,8 @@ const Nav = ({ animateImg, close, visible, categories }) => {
                         onClick={() => {
                           close("/services");
                           scrollTo(service.title);
-                        }}>
+                        }}
+                      >
                         {service.title}
                       </CategoryLinks>
                     ))}
@@ -109,14 +112,16 @@ const Nav = ({ animateImg, close, visible, categories }) => {
           onClick={() => {
             close("/products");
             setService(false);
-          }}>
+          }}
+        >
           Buy Products
         </P>
         <P
           onClick={() => {
             close("/contact");
             setService(false);
-          }}>
+          }}
+        >
           Contact Us
         </P>
       </Navi>

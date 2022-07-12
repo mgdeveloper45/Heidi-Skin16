@@ -8,7 +8,7 @@ export const Page = styled.div`
 `;
 export const MainContainer = styled.div`
   width: 100%;
-  height: 780px;
+  height: 100%;
   position: relative;
   background: var(--pink);
   display: flex;
@@ -18,7 +18,7 @@ export const MainImg = styled.div`
   visibility: ${(props) => (props.visible ? "hidden" : "visible")};
   background-repeat: no-repeat;
   background-size: cover;
-  width: 850px;
+  width: 100%;
   height: 825px;
   margin-top: 10px;
   background-image: url(https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934402/heidi-skin16/full_face_cropped_vynebe.png);
@@ -85,18 +85,13 @@ export const LeftImg = styled.div`
   border-radius: 0px 20px 0px 0px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 425px;
+  width: 25%;
   height: 825px;
   margin-top: 10px;
 `;
-export const RightImg = styled.div`
+export const RightImg = styled(LeftImg)`
   background-image: url(https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934393/heidi-skin16/landing2_right_cropped_yfuej3.png);
   border-radius: 20px 0px 0px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 425px;
-  height: 825px;
-  margin-top: 10px;
 `;
 export const Covid = styled.div``;
 export const Deserve = styled.span`
@@ -121,12 +116,10 @@ export const Policy = styled.div`
 export const Appointments = styled.p`
   font-style: normal;
   font-weight: 300;
-  /* font-size: 30px; */
 `;
 export const Protocol = styled.p`
   font-style: normal;
   font-weight: 300;
-  /* font-size: 30px; */
   &:hover {
     text-decoration: underline;
   }

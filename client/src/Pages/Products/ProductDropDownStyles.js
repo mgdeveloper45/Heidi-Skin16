@@ -23,7 +23,7 @@ export const Menu = styled.div`
   text-align: center;
   /* font-size: 20px; */
 
-  background-color: rgba(216, 155, 166, 0.75);
+  background-color: var(--pink);
   position: absolute;
   padding: 1rem;
   letter-spacing: 0.05rem;

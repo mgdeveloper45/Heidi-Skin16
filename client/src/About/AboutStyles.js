@@ -32,9 +32,6 @@ export const AboutImage = styled.img`
 export const Heading = styled.p`
   margin: 1em 0 1em 0;
   text-align: center;
-  font-weight: 700;
-
-  font-style: normal;
   /* font-size: 60px; */
 `;
 
