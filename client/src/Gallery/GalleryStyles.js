@@ -20,14 +20,25 @@ export const GalleryHeader = styled.h1`
 export const GalleryImageContainer = styled.div`
   display: flex;
   width: 100vw;
-  height: 710px;
-  background-color: white;
-  overflow-x: scroll;
   overflow-y: hidden;
-  margin: 0 10px 0 30px;
-  ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+  margin-bottom: 50px;
+  padding: 0px 20px 20px 20px;
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--pink);
+    border-radius: 50px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
   }
 `;
 

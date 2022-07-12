@@ -16,14 +16,12 @@ export const ProductBody = styled.div`
   align-items: center;
 `;
 
-export const DropDown = styled.h1`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-
-  margin-top: 100px;
+export const DropDown = styled.div`
+  margin-top: 50px;
   margin-bottom: 100px;
+  font-size: 25px;
+
+  display: flex;
 `;
 
 export const ProductGrid = styled.div`

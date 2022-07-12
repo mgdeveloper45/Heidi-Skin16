@@ -8,7 +8,6 @@ export const AboutContainer = styled.div`
 export const AboutHeader = styled.h1`
   text-align: center;
   margin-bottom: 20px;
-  /* font-size: 4rem; */
   margin-top: 10px;
 `;
 
