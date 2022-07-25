@@ -9,10 +9,8 @@ export const MenuBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: none;
   border: none;
-  /* font-size: 40px; */
 `;
 export const MenuPosition = styled.div`
   display: flex;
@@ -20,7 +18,6 @@ export const MenuPosition = styled.div`
 `;
 export const Menu = styled.div`
   text-align: center;
-  /* font-size: 20px; */
   background-color: var(--pink);
   position: absolute;
   padding: 1rem;

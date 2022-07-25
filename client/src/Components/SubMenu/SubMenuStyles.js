@@ -5,8 +5,7 @@ export const SubMenuContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1rem 2rem 7%;
-  /* height: 796px; */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     padding: 2rem;
   }
 `;
@@ -14,12 +13,10 @@ export const ContentContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 75px;
-  @media screen and (max-width: 769px) {
-    margin-bottom: 25px;
-  }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
   }
 `;
 export const Content = styled.div`
@@ -27,8 +24,7 @@ export const Content = styled.div`
   flex-direction: column;
   width: 40%;
   height: 100%;
-  /* height: 500px; */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -44,7 +40,7 @@ export const Image = styled.div`
   background-size: cover;
   border: 3px solid ${(props) => (props.border ? props.border : "var(--white)")};
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     align-self: center;
     width: 80%;
     padding-bottom: 80%;
@@ -53,37 +49,25 @@ export const Image = styled.div`
 `;
 export const Listing = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
-export const Title = styled.div`
-  font-style: normal;
-  font-weight: 400;
-  /* font-size: 40px; */
-  @media screen and (max-width: 1200px) {
-    font-size: 2rem;
-  }
+export const Title = styled.h2`
+  display: flex;
+  align-self: center;
 `;
-export const Price = styled.span`
-  font-style: normal;
-  font-weight: 400;
-  /* font-size: 40px; */
-  @media screen and (max-width: 1200px) {
-    /* font-size: 2rem; */
-  }
+export const Row = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
 `;
-export const SndPrice = styled.p`
-  font-style: normal;
-  font-weight: 400;
-  /* font-size: 30px; */
+export const Price = styled.h6`
+  margin: 1rem;
 `;
+export const Time = styled(Price)``;
+export const SndPrice = styled.p``;
+
 export const Description = styled.div`
-  font-style: normal;
-  font-weight: 250;
-  /* font-size: 1.5rem; */
-  margin-bottom: 30px;
-  @media screen and (max-width: 1200px) {
-    font-size: 1.2rem;
-  }
+  margin: 2rem;
 `;
 
 export const ButtonContainer = styled.div`
@@ -97,11 +81,7 @@ export const ButtonContainer = styled.div`
 export const P = styled.p`
   font-style: normal;
   font-weight: 500;
-  /* font-size: 40px; */
   color: var(--white);
-  @media screen and (max-width: 1200px) {
-    font-size: 2rem;
-  }
 `;
 export const Button = styled.div`
   align-self: center;
@@ -114,8 +94,4 @@ export const Button = styled.div`
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   cursor: pointer;
-  @media screen and (max-width: 1200px) {
-    width: 220px;
-    height: 60px;
-  }
 `;

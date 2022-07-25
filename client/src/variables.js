@@ -2,12 +2,16 @@ import { css } from "styled-components";
 
 const variables = css`
   :root {
+    // Colors
+
     --gold: rgba(223, 213, 177, 0.5);
     --pink: rgba(216, 155, 166, 0.75);
     --green: rgba(13, 104, 120, 0.75);
     --white: rgba(255, 255, 255);
     --black: rgba(0, 0, 0);
     --grey: rgba(229, 229 229);
+
+    // Font Size
 
     --fz-xs: 0.75rem; /* 12px */
     --fs-sm: 0.875rem; /* 14px */
@@ -16,6 +20,9 @@ const variables = css`
     --fs-xl: 1.25rem; /* 20px */
     --fs-2xl: 1.5rem; /* 24px */
     --fs-3xl: 1.875rem; /* 30px */
+    --fs-4xl: 2.25rem; /* 36px */
+
+    // Line Height
 
     --line-xs: 1rem; /* 16px */
     --line-sm: 1.25rem; /* 24px */
@@ -24,6 +31,7 @@ const variables = css`
     --line-xl: 1.75rem; /* 40px */
     --line-2xl: 2rem; /* 48px */
     --line-3xl: 2.25rem; /* 56px */
+    --line-4xl: 2.5rem; /* 64px */
   }
 `;
 

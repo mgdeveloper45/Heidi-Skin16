@@ -1,11 +1,9 @@
 .about-live {
-  font-size: 73px;
-  margin-right: 95px;
+  font-size: 56px;
 }
 
 .beauty {
   font-size: 56px;
-  margin-left: 29px;
 }
 
 .arrow {
@@ -17,7 +15,7 @@
 
 .line {
   width: 76em;
-  background: #d89ba6;
+  background: var(--color-pink);
   height: 3px;
 }
 
@@ -26,6 +24,6 @@
   height: 0;
   border-top: 16px solid transparent;
   border-bottom: 21px solid transparent;
-  border-left: 14px solid #d89ba6;
+  border-left: 14px solid var((--color-pink));
   transform: translate(76em, -20px);
 }

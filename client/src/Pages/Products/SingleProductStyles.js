@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ProductCard = styled.div`
-  /* height: 400px;
-  width: 100%; */
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -20,7 +18,6 @@ export const ImgContainer = styled.div`
   justify-content: center;
 `;
 
-// const ProductImg = styled.img`
 export const ProductImg = styled.div`
   width: 100%;
 
@@ -33,10 +30,6 @@ export const ProductImg = styled.div`
 `;
 
 export const ProductDescription = styled.div`
-  /* display: flex;
-  flex-flow: column;
-  margin-left: 25px; */
-
   display: flex;
   flex: 1 1 auto;
   flex-flow: column;
@@ -71,7 +64,6 @@ export const Input = styled.input`
 export const Arrows = styled.div`
   display: flex;
   flex-flow: column;
-  /* font-size: 18px; */
   color: var(-green);
 
   margin-left: 10px;

@@ -5,9 +5,9 @@ export const AddON = styled.div`
   flex-direction: column;
   margin-bottom: 200px;
   width: 50%;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 769px) {
     width: 80%;
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
   }
 `;
 export const AddOnContainer = styled.div`
@@ -15,35 +15,25 @@ export const AddOnContainer = styled.div`
   justify-content: space-evenly;
   background-color: ${(props) =>
     props.bgColor ? "var(--pink)" : "var(--green)"};
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 769px) {
     flex-direction: column;
     align-items: center;
   }
 `;
 export const Price = styled.span`
-  font-style: normal;
-  font-weight: 300;
-  /* font-size: 30px; */
   margin-right: 10px;
-  @media screen and (max-width: 900px) {
-    /* font-size: 20px; */
+  @media screen and (max-width: 769px) {
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.h1`
   color: ${(props) => (props.color ? "var(--black)" : "var(--white)")};
   margin-top: 200px;
   margin-bottom: 40%;
   width: 50%;
-
-  font-weight: 350;
-  font-style: normal;
-  /* font-size: 80px; */
   @media screen and (max-width: 1200px) {
-    /* font-size: 65px; */
   }
   @media screen and (max-width: 1000px) {
-    /* font-size: 50px; */
   }
   @media screen and (max-width: 600px) {
     margin: 50px 0px;
@@ -69,10 +59,15 @@ export const Image = styled.div`
     margin-bottom: 2rem;
   }
 `;
-export const ServiceTitleWrap = styled.div``;
-export const ServiceTitle = styled.h1`
+export const ServiceTitleWrap = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: space-between;
+`;
+export const ServiceTitle = styled.h4`
+  display: flex;
+  justify-content: space-between;
+
   @media screen and (max-width: 900px) {
-    /* font-size: 18px; */
   }
 `;

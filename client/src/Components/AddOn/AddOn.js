@@ -22,9 +22,33 @@ const AddOn = ({ addOn }) => {
         {service.service.map((service, idx) => (
           <ServiceTitleWrap key={idx}>
             <ServiceTitle>
-              <Price>{service.title}</Price>
-              <Price>{service.price}</Price>
-              <Price>- {service.duration} mins</Price>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  width: "250px",
+                }}
+              >
+                <Price>{service.title}</Price>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  width: "125px",
+                }}
+              >
+                <Price>{service.price}</Price>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  width: "125px",
+                }}
+              >
+                <Price>- {service.duration} mins</Price>
+              </div>
               {service.br && (
                 <>
                   <br />

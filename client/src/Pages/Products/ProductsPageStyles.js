@@ -20,7 +20,6 @@ export const DropDown = styled.div`
   margin-top: 50px;
   margin-bottom: 100px;
   font-size: 25px;
-
   display: flex;
 `;
 

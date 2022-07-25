@@ -38,19 +38,16 @@ export const Name = styled.div`
   align-items: flex-start;
   font-style: normal;
   font-weight: 700;
-  /* font-size: 90px; */
   height: 90px;
   z-index: ${(props) => (props.visible ? "-1" : "1")};
 `;
 export const Span = styled.span`
   font-style: normal;
   font-weight: 200;
-  /* font-size: 90px; */
 `;
 export const Book = styled.p`
-  font-style: normal;
   font-weight: bold;
-  /* font-size: 55px; */
+  font-size: var(--fs-xl);
   color: var(--white);
   &:hover {
     cursor: pointer;
@@ -70,6 +67,10 @@ export const Session = styled.div`
   z-index: ${(props) => (props.visible ? "-1" : "1")};
   background-color: var(--green);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+`;
+export const Deserve = styled.span`
+  font-weight: 700;
+  font-style: normal;
 `;
 export const SlidingImg = styled.div`
   visibility: ${(props) => (props.visible ? "visible" : "hidden")};
@@ -94,11 +95,6 @@ export const RightImg = styled(LeftImg)`
   border-radius: 20px 0px 0px 0px;
 `;
 export const Covid = styled.div``;
-export const Deserve = styled.span`
-  font-weight: 700;
-  font-style: normal;
-  /* font-size: 120px; */
-`;
 export const More = styled.div`
   font-weight: 300;
   font-style: normal;

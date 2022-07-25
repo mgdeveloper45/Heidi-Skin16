@@ -12,7 +12,7 @@ import {
   MenuPosition,
   NavContainer,
   Navi,
-  P,
+  ServiceHeader,
   Span,
 } from "./NavStyles";
 import { Link } from "react-router-dom";
@@ -77,14 +77,14 @@ const Nav = ({ animateImg, close, visible, categories }) => {
       </Header>
       <Navi>
         <div style={{ display: "flex", width: "250px" }}>
-          <P
+          <ServiceHeader
             onClick={() => {
               close("/services");
               setService(false);
             }}
           >
             Salon Service
-          </P>
+          </ServiceHeader>
           <MenuBtn onClick={() => setService(!services)}>
             <MdOutlineArrowDropDown style={{ fontSize: "24px" }} />
             <DropContainer style={services ? dropDownStyle : null}>
@@ -108,22 +108,22 @@ const Nav = ({ animateImg, close, visible, categories }) => {
             </DropContainer>
           </MenuBtn>
         </div>
-        <P
+        <ServiceHeader
           onClick={() => {
             close("/products");
             setService(false);
           }}
         >
           Buy Products
-        </P>
-        <P
+        </ServiceHeader>
+        <ServiceHeader
           onClick={() => {
             close("/contact");
             setService(false);
           }}
         >
           Contact Us
-        </P>
+        </ServiceHeader>
       </Navi>
     </NavContainer>
   );

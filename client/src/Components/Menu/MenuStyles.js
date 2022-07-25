@@ -9,35 +9,31 @@ export const CategoryContainer = styled.div`
 export const Categories = styled.div`
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 `;
 
 export const TitleContainer = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 80%;
     justify-content: center;
   }
 `;
-export const Title = styled.p`
+export const Title = styled.h1`
+  display: flex;
   align-self: center;
   color: ${(props) => (props.title ? props.title : "var(--white)")};
   width: 62%;
-
-  font-weight: 345;
-  font-style: normal;
-  /* font-size: 80px; */
   margin-bottom: 5rem;
-  @media screen and (max-width: 600px) {
-    font-size: 65px;
+  @media screen and (max-width: 768px) {
     margin-bottom: 3rem;
     width: 100%;
-    justify-self: center;
+    justify-content: center;
     margin-top: 2rem;
   }
 `;
@@ -66,18 +62,6 @@ export const DescriptionContainer = styled.div`
 export const Description = styled.p`
   color: ${(props) => (props.description ? props.description : "var(--white)")};
   width: 83.5%;
-
-  font-style: normal;
-  font-weight: 300;
-  /* font-size: 28px; */
-  line-height: 50px;
-  @media screen and (max-width: 1200px) {
-    font-size: 1.5rem;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 1.3rem;
-    line-height: 40px;
-  }
 `;
 export const ToTopButton = styled.button`
   top: 600px;
@@ -97,8 +81,7 @@ export const ToTopButton = styled.button`
 export const Top = styled.span`
   font-style: normal;
   font-weight: normal;
-  /* font-size: 25px; */
   text-align: center;
-  color: #fff;
+  color: var(--white);
 `;
 export const ServiceTitle = styled.div``;

@@ -39,7 +39,7 @@ export const Icon = styled.div`
 
 export const Navi = styled.div`
   padding: 75px 0;
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -52,13 +52,11 @@ export const List = styled.div`
   flex-wrap: wrap;
 `;
 
-export const P = styled.p`
+export const ServiceHeader = styled.h2`
   display: flex;
   justify-content: center;
-  width: 250px;
+  /* width: 250px; */
   height: 40px;
-  font-style: normal;
-  font-weight: normal;
   &:hover {
     text-decoration: underline;
   }
@@ -89,10 +87,10 @@ export const Menu = styled.div`
   align-items: flex-end;
   justify-content: space-around;
   color: black;
-  height: 300px;
-  width: 270px;
-  padding: 1rem;
-  letter-spacing: 0.05rem;
+  /* height: 300px;
+  width: 270px; */
+  /* padding: 1rem; */
+  /* letter-spacing: 0.05rem; */
   border-radius: 5px;
 `;
 

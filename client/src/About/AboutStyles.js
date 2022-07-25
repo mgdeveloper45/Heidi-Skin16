@@ -1,9 +1,6 @@
 import styled from "styled-components";
-// import aboutImg from "../SlideImages/about_us_cropped.jpeg";
 
-export const AboutContainer = styled.div`
-  /* border: 2px solid green; */
-`;
+export const AboutContainer = styled.div``;
 
 export const AboutHeader = styled.h1`
   text-align: center;
@@ -22,8 +19,8 @@ export const AboutImage = styled.img`
   background-image: url(https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655936588/heidi-skin16/about_us_iw8fh0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 54em;
-  width: 38em;
+  height: 46em;
+  width: 30em;
   border-radius: 10px;
   position: relative;
 `;
