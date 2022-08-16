@@ -78,7 +78,9 @@ const LandingPage = ({ animate, close, setVisible, visible }) => {
             </Policy>
           </Statement>
           <Name visible={visible}>
-            <Span>Heidi</Span>Skin16
+            <h1>
+              <Span>Heidi</Span>Skin16
+            </h1>
           </Name>
         </Logo>
       </MainContainer>

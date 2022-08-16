@@ -11,6 +11,7 @@ import {
   Span,
   Social,
   UL,
+  HeaderSkinny,
 } from "./FooterStyles";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { FaFacebook, FaTwitter, FaYelp } from "react-icons/fa";
@@ -41,9 +42,6 @@ const Footer = ({ close }) => {
       width: "35px",
       margin: "0 10px 0 10px ",
     },
-    span: {
-      fontSize: "42px",
-    },
     links: {
       textDecoration: "none",
       color: "black",
@@ -58,7 +56,8 @@ const Footer = ({ close }) => {
               setToTrue();
               scrollToAbout();
             }}
-            style={styles.links}>
+            style={styles.links}
+          >
             <LI>About Us</LI>
           </div>
           <div onClick={() => setToTrue()} style={styles.links}>
@@ -83,9 +82,8 @@ const Footer = ({ close }) => {
       <HR />
       <Foot>
         <NAME>
-          <Span style={styles.span}>
-            Heidi<b>Skin16</b>
-          </Span>
+          <HeaderSkinny>Heidi</HeaderSkinny>
+          <h3>Skin16</h3>
         </NAME>
         <Rights>&copy; 2022 All Rights Reserved HeidiSkin16</Rights>
         <Social>

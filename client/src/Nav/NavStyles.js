@@ -55,7 +55,7 @@ export const List = styled.div`
 export const ServiceHeader = styled.h2`
   display: flex;
   justify-content: center;
-  /* width: 250px; */
+  width: 250px;
   height: 40px;
   &:hover {
     text-decoration: underline;
@@ -68,9 +68,8 @@ export const MenuBtn = styled.button`
   width: 40px;
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
+  align-items: center;
   color: var(--pink);
-
   background: none;
   border: none;
 
@@ -87,10 +86,6 @@ export const Menu = styled.div`
   align-items: flex-end;
   justify-content: space-around;
   color: black;
-  /* height: 300px;
-  width: 270px; */
-  /* padding: 1rem; */
-  /* letter-spacing: 0.05rem; */
   border-radius: 5px;
 `;
 

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div``;
+export const AboutContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+`;
 
 export const AboutHeader = styled.h1`
   text-align: center;
@@ -12,7 +18,7 @@ export const AboutImageContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 `;
 
 export const AboutImage = styled.img`
@@ -25,7 +31,7 @@ export const AboutImage = styled.img`
   position: relative;
 `;
 
-export const Heading = styled.p`
+export const Heading = styled.h1`
   margin: 1em 0 1em 0;
   text-align: center;
 `;

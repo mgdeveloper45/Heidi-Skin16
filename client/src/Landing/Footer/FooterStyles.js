@@ -17,7 +17,7 @@ export const UL = styled.div`
   align-items: flex-start;
   justify-content: flex-end;
 
-  /* width: 165px; */
+  width: 165px;
 `;
 export const LI = styled.h3`
   list-style: none;
@@ -32,7 +32,7 @@ export const Policy = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* width: 385px; */
+  width: 385px;
 `;
 export const HR = styled.hr`
   align-self: center;
@@ -50,28 +50,29 @@ export const Foot = styled.div`
   } */
 `;
 export const NAME = styled.div`
-  font-style: normal;
-  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   /* @media (max-width: 768px) {
     font-size: 40px;
     font-weight: 700;
   } */
 `;
+
+export const HeaderSkinny = styled.h3`
+  font-style: normal;
+  font-weight: 100;
+`;
 export const Rights = styled.div`
   font-style: normal;
   font-weight: 400;
-
   text-align: center;
 `;
 export const Social = styled.div`
-  /* width: 231px; */
+  width: 231px;
   /* @media (max-width: 768px) {
     margin: 20px;
   } */
 `;
-export const Span = styled.span`
-  font-style: normal;
-  font-weight: 200;
-  /* font-size: 40px; */
-`;
+export const Span = styled.span``;

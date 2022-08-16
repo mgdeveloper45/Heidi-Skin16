@@ -12,9 +12,6 @@ export const GalleryHead = styled.div`
   align-items: center;
 `;
 export const GalleryHeader = styled.h1`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 80px;
   margin-bottom: 52px;
 `;
 export const GalleryImageContainer = styled.div`

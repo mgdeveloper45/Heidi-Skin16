@@ -18,6 +18,7 @@ export const MainImg = styled.div`
   visibility: ${(props) => (props.visible ? "hidden" : "visible")};
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 825px;
   margin-top: 10px;
