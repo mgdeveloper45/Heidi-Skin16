@@ -10,6 +10,7 @@ import {
   FormInput,
   H2,
   Info,
+  InfoLine,
   Input,
   Label,
   P,
@@ -24,24 +25,29 @@ const Contact = () => {
         <Form
           action="https://formsubmit.co/heidiskin16@gmail.com"
           target="_blank"
-          method="POST"
-        >
-          <Info>
-            <Label>Name: </Label>
-            <Label>Email:</Label>
-            <Label>Message: </Label>
-          </Info>
+          method="POST">
           <FormInput>
-            <Input type="text" name="name" />
-            <EmailInput type="email" name="email" />
-            <TextArea name="message" />
+            <Info>
+              <InfoLine>
+                <Label>Name: </Label>
+                <Input type="text" name="name" />
+              </InfoLine>
+              <InfoLine>
+                <Label>Email:</Label>
+                <EmailInput type="email" name="email" />
+              </InfoLine>
+              <InfoLine>
+                <Label>Message: </Label>
+                <TextArea name="message" />
+              </InfoLine>
+            </Info>
             <Confirm>
               <Disclaimer>
                 <P>* Service By Appointment Only</P>
+                <Button type="submit" value="Submit">
+                  Submit
+                </Button>
               </Disclaimer>
-              <Button type="submit" value="Submit">
-                Submit
-              </Button>
             </Confirm>
           </FormInput>
         </Form>
