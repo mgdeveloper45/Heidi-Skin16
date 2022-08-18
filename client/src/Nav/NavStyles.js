@@ -40,9 +40,10 @@ export const Icon = styled.div`
 export const Navi = styled.div`
   padding: 75px 0;
   background-color: var(--white);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 `;
 
 export const List = styled.div`
@@ -52,14 +53,11 @@ export const List = styled.div`
   flex-wrap: wrap;
 `;
 
-export const ServiceHeader = styled.h2`
+export const ServiceHeader = styled.h3`
   display: flex;
   justify-content: center;
-  width: 250px;
-  height: 40px;
-  &:hover {
-    text-decoration: underline;
-  }
+  /* width: 250px; */
+  /* height: 40px; */
 `;
 
 export const DropContainer = styled.div``;
@@ -68,7 +66,7 @@ export const MenuBtn = styled.button`
   width: 40px;
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: flex-end;
   color: var(--pink);
   background: none;
   border: none;
@@ -78,15 +76,19 @@ export const MenuBtn = styled.button`
   }
 `;
 
-export const MenuPosition = styled.div``;
+export const MenuPosition = styled.div`
+  position: relative;
+`;
 
 export const Menu = styled.div`
+  width: 250px;
+  padding-top: 1rem;
+  position: static;
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
-  justify-content: space-around;
+  line-height: 2rem;
+  text-align: right;
   color: black;
-  border-radius: 5px;
 `;
 
 export const CategoryLinks = styled.div`

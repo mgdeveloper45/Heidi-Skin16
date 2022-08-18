@@ -56,8 +56,7 @@ const Nav = ({ animateImg, close, visible, categories }) => {
               onClick={() => {
                 animateImg();
                 setService(false);
-              }}
-            >
+              }}>
               <Span>HEIDI</Span>SKIN16
             </Heading>
           </Link>
@@ -76,17 +75,18 @@ const Nav = ({ animateImg, close, visible, categories }) => {
         </Icons>
       </Header>
       <Navi>
-        <div style={{ display: "flex", width: "250px" }}>
-          <ServiceHeader
-            onClick={() => {
-              close("/services");
-              setService(false);
-            }}
-          >
-            Salon Service
+        <ServiceHeader style={{ display: "flex" }}>
+          <ServiceHeader>
+            <div
+              onClick={() => {
+                close("/services");
+                setService(false);
+              }}>
+              Salon Service
+            </div>
           </ServiceHeader>
           <MenuBtn onClick={() => setService(!services)}>
-            <MdOutlineArrowDropDown style={{ fontSize: "24px" }} />
+            <MdOutlineArrowDropDown style={{ fontSize: "var(--fs-4xl)" }} />
             <DropContainer style={services ? dropDownStyle : null}>
               {services === true ? (
                 <MenuPosition>
@@ -97,8 +97,7 @@ const Nav = ({ animateImg, close, visible, categories }) => {
                         onClick={() => {
                           close("/services");
                           scrollTo(service.title);
-                        }}
-                      >
+                        }}>
                         {service.title}
                       </CategoryLinks>
                     ))}
@@ -107,21 +106,19 @@ const Nav = ({ animateImg, close, visible, categories }) => {
               ) : null}
             </DropContainer>
           </MenuBtn>
-        </div>
+        </ServiceHeader>
         <ServiceHeader
           onClick={() => {
             close("/products");
             setService(false);
-          }}
-        >
+          }}>
           Buy Products
         </ServiceHeader>
         <ServiceHeader
           onClick={() => {
             close("/contact");
             setService(false);
-          }}
-        >
+          }}>
           Contact Us
         </ServiceHeader>
       </Navi>
