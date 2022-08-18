@@ -11,6 +11,8 @@ import {
   SndPrice,
   SubMenuContainer,
   ButtonContainer,
+  Row,
+  Time,
   Title,
 } from "./SubMenuStyles";
 
@@ -22,11 +24,13 @@ const SubMenu = ({ item, idx }) => {
           <>
             <Image border={item.color} image={item.image} />
             <Content>
-              <Title>
-                <Listing>{item.title}</Listing>
-              </Title>
-              <Price>{item.price}</Price>
-              <div>time: {item.duration} mins</div>
+              <Listing>
+                <Title>{item.title}</Title>
+              </Listing>
+              <Row>
+                <Price>{item.price}</Price>
+                <Time>time: {item.duration} mins</Time>
+              </Row>
               <SndPrice>{item.sndPrice}</SndPrice>
               <Description>{item.description}</Description>
               <ButtonContainer>

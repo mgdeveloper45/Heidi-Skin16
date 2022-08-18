@@ -11,7 +11,7 @@ export const CartPage = styled.div`
 export const Title = styled.p`
   font-style: normal;
   font-weight: normal;
-  font-size: 45px;
+  /* font-size: 45px; */
   display: flex;
 `;
 

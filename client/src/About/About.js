@@ -13,16 +13,16 @@ import "./About.css";
 
 const About = () => {
   return (
-    <AboutContainer id="about-us">
-      <div className="arrow">
+    <AboutContainer>
+      {/* <div className="arrow">
         <div className="line"></div>
         <div className="point"></div>
-      </div>
+      </div> */}
       <AboutHeader>About Us</AboutHeader>
       <AboutImageContainer>
-        <h3 className="about-live">Live</h3>
+        <h2 className="about-live">Live</h2>
         <AboutImage></AboutImage>
-        <h3 className="beauty">Beautifully</h3>
+        <h2 className="beauty">Beautifully</h2>
       </AboutImageContainer>
       <Heading>
         <Span>HEIDI</Span>SKIN16

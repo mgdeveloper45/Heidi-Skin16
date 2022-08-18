@@ -19,12 +19,11 @@ export const UL = styled.div`
 
   width: 165px;
 `;
-export const LI = styled.h1`
+export const LI = styled.h3`
   list-style: none;
 
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
   &:hover {
     text-decoration: underline;
   }
@@ -38,7 +37,7 @@ export const Policy = styled.div`
 export const HR = styled.hr`
   align-self: center;
   border: 2px solid #000;
-  width: 85vw;
+  width: 85%;
 `;
 
 export const Foot = styled.div`
@@ -51,18 +50,23 @@ export const Foot = styled.div`
   } */
 `;
 export const NAME = styled.div`
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   /* @media (max-width: 768px) {
     font-size: 40px;
     font-weight: 700;
   } */
 `;
+
+export const HeaderSkinny = styled.h3`
+  font-style: normal;
+  font-weight: 100;
+`;
 export const Rights = styled.div`
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
   text-align: center;
 `;
 export const Social = styled.div`
@@ -71,8 +75,4 @@ export const Social = styled.div`
     margin: 20px;
   } */
 `;
-export const Span = styled.span`
-  font-style: normal;
-  font-weight: 200;
-  /* font-size: 40px; */
-`;
+export const Span = styled.span``;

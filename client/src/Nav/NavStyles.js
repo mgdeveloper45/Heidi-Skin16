@@ -18,19 +18,12 @@ export const Logo = styled.div`
   align-items: center;
   justify-content: center;
 `;
-export const Heading = styled.p`
+export const Heading = styled.h1`
   align-items: center;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 60px;
 `;
 export const Span = styled.span`
   font-weight: 200;
   font-style: normal;
-  font-size: 60px;
-  @media (max-width: 768px) {
-    font-size: 40px;
-  }
 `;
 export const Icons = styled.div`
   display: flex;
@@ -46,7 +39,7 @@ export const Icon = styled.div`
 
 export const Navi = styled.div`
   padding: 75px 0;
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -59,14 +52,11 @@ export const List = styled.div`
   flex-wrap: wrap;
 `;
 
-export const P = styled.p`
+export const ServiceHeader = styled.h2`
   display: flex;
   justify-content: center;
   width: 250px;
   height: 40px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
   &:hover {
     text-decoration: underline;
   }
@@ -78,9 +68,8 @@ export const MenuBtn = styled.button`
   width: 40px;
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
+  align-items: center;
   color: var(--pink);
-
   background: none;
   border: none;
 
@@ -97,10 +86,6 @@ export const Menu = styled.div`
   align-items: flex-end;
   justify-content: space-around;
   color: black;
-  height: 300px;
-  width: 270px;
-  padding: 1rem;
-  letter-spacing: 0.05rem;
   border-radius: 5px;
 `;
 

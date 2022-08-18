@@ -17,5 +17,5 @@ export const ToTopBox = styled.div`
 export const Title = styled.h1`
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  /* font-size: 50px; */
 `;

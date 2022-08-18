@@ -17,7 +17,7 @@ export const Address = styled.div`
 export const H3 = styled.h3`
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  /* font-size: 30px; */
   margin: 10px;
 `;
 export const Directions = styled.div`
@@ -53,7 +53,7 @@ export const Code = styled.div`
 export const P = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  /* font-size: 25px; */
   margin: 0;
   padding: 10px 0;
 `;

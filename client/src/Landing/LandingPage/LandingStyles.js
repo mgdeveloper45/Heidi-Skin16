@@ -8,7 +8,7 @@ export const Page = styled.div`
 `;
 export const MainContainer = styled.div`
   width: 100%;
-  height: 780px;
+  height: 100%;
   position: relative;
   background: var(--pink);
   display: flex;
@@ -18,7 +18,8 @@ export const MainImg = styled.div`
   visibility: ${(props) => (props.visible ? "hidden" : "visible")};
   background-repeat: no-repeat;
   background-size: cover;
-  width: 850px;
+  background-position: center;
+  width: 100%;
   height: 825px;
   margin-top: 10px;
   background-image: url(https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934402/heidi-skin16/full_face_cropped_vynebe.png);
@@ -38,19 +39,16 @@ export const Name = styled.div`
   align-items: flex-start;
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
   height: 90px;
   z-index: ${(props) => (props.visible ? "-1" : "1")};
 `;
 export const Span = styled.span`
   font-style: normal;
   font-weight: 200;
-  font-size: 90px;
 `;
 export const Book = styled.p`
-  font-style: normal;
   font-weight: bold;
-  font-size: 55px;
+  font-size: var(--fs-xl);
   color: var(--white);
   &:hover {
     cursor: pointer;
@@ -71,6 +69,10 @@ export const Session = styled.div`
   background-color: var(--green);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 `;
+export const Deserve = styled.span`
+  font-weight: 700;
+  font-style: normal;
+`;
 export const SlidingImg = styled.div`
   visibility: ${(props) => (props.visible ? "visible" : "hidden")};
   width: 100%;
@@ -85,29 +87,19 @@ export const LeftImg = styled.div`
   border-radius: 0px 20px 0px 0px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 425px;
+  width: 25%;
   height: 825px;
   margin-top: 10px;
 `;
-export const RightImg = styled.div`
+export const RightImg = styled(LeftImg)`
   background-image: url(https://res.cloudinary.com/ddvbwfi9a/image/upload/v1655934393/heidi-skin16/landing2_right_cropped_yfuej3.png);
   border-radius: 20px 0px 0px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 425px;
-  height: 825px;
-  margin-top: 10px;
 `;
 export const Covid = styled.div``;
-export const Deserve = styled.span`
-  font-weight: 700;
-  font-style: normal;
-  font-size: 120px;
-`;
 export const More = styled.div`
   font-weight: 300;
   font-style: normal;
-  font-size: 70px;
+  /* font-size: 70px; */
   height: 200px;
 `;
 export const Policy = styled.div`
@@ -121,12 +113,10 @@ export const Policy = styled.div`
 export const Appointments = styled.p`
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
 `;
 export const Protocol = styled.p`
   font-style: normal;
   font-weight: 300;
-  font-size: 30px;
   &:hover {
     text-decoration: underline;
   }
